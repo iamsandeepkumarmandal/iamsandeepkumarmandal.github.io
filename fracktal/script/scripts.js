@@ -94,12 +94,12 @@ jQuery(document).ready(function () {
     });
     $(".savedetails_js").click(function () {
         $(".profiledetails").removeClass("activeinputtype");
-        $(".editaddress_js,.editpasswor_js").slideDown(500);
+        $(".editaddress_js,.hideeditpasswordcolumn_js").slideDown(500);
         $(".changepasswordwrapper").slideUp(500);
         $(".backandsavebuttons").removeClass("active");
     });
     $(".editpasswor_js").click(function () {
-        $(this).slideUp(500);
+        $(".hideeditpasswordcolumn_js").slideUp(500);
         $(".changepasswordwrapper").addClass("activeinputtype");
         $(".changepasswordwrapper").slideDown(500);
         $('#custompassword_js').prop('type', 'text');
