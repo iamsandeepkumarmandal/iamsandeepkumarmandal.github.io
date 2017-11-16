@@ -5,6 +5,13 @@ $(document).keydown(function(event){
     else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
              return false;
     }
+    var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
+    
+    if (event.ctrlKey && (pressedKey == "c" || pressedKey == "u")) {
+        alert('Sorry, This Functionality Has Been Disabled!'); 
+        //disable key press porcessing
+        return false; 
+    }
 });
 
 $(document).on("contextmenu",function(e){        
