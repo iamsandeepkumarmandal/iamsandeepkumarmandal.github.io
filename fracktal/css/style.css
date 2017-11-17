@@ -1088,6 +1088,9 @@ section.bodycontainer {
     padding: 90px 60px 35px;
     box-shadow: 4px 10px 15px rgba(143,143,143,0.75);
 }
+.draganddropwraper:hover {
+    background-color: #e7e7e7;
+}
 .draganddropwraper h2 {
     padding-bottom: 15px;
     border-bottom: 2px solid;
