@@ -120,6 +120,55 @@ jQuery(document).ready(function () {
         $(".triggerOrderDetails_js").removeClass("active");
         $(".orderdetialswrapper").removeClass("active");
     });
+    
+    $(".jqtransform").jqTransform();
+    
+    $(".units_js").click(function(){
+       $(this).parent().parent().children().find("a.units_js").removeClass("active");
+        $(this).addClass("active");
+    });
+    
+    $(".quality_js").click(function(){
+        $(this).parent().parent().children().find("a.quality_js").removeClass("active");
+        $(this).addClass("active");
+    });
+    
+    $(".increasequantity_js").click(function(){
+        var getval = $(this).parent().prev().val();
+        if(getval == ""){
+            getval=0;
+            
+        }
+        getval = parseInt(getval) + 1;
+        $(this).parent().prev().val(getval);
+    });
+    
+    $(".decreasequantity_js").click(function(){
+        var getval = $(this).parent().prev().val();
+        if(getval == ""){
+            getval=0;
+            $(this).parent().prev().val(getval);
+            return false;
+        }
+        if(getval == 0){
+            alert("Quantity Cannot be Negative");
+            return false;
+            
+        }
+        getval = parseInt(getval) - 1;
+        $(this).parent().prev().val(getval);
+    });
+    
+    $(".closeuploadedproduct_js").click(function(){
+        var b =$(this).parent().parent().parent();
+        b.remove();
+    });
+    $(".triggerthreedpopup_js cursorpointer").click(function(){
+        $(".threedviewpopup").addClass("active");
+    });
+    $(".closethreedviewpopup_js").click(function(){
+        $(".threedviewpopup").removeClass("active");
+    });
 });
 
 function isNumberKey(evt) {
