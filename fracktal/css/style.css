@@ -1137,8 +1137,10 @@ section.bodycontainer {
     display: inline-block;
 }
 .cartitems .anylysisofdesignstatus p{
-        padding-left: 36px;
-    font-size: 0.9rem;
+          padding-left: 0;
+    font-size: 0.75rem;
+    text-align: center;
+    padding-top: 5px;
 }
 .cartitems .entereddetails .form-group label {
     margin-bottom: 5px;
@@ -1187,7 +1189,6 @@ select:focus::-ms-value {
     line-height: 50px;
 }
 .cartitems {
-    padding-bottom: 30px;
     border-bottom: 2px solid #c8c8c8;
 }
 .calltoactionbtns {
@@ -1208,6 +1209,182 @@ select:focus::-ms-value {
 .width100{
     width: 100%;
 }
+
+.form-group .jqTransformSelectWrapper {
+    width: 100% !important;
+}
+.zindex3 > div {
+    z-index: 111 !important;
+}
+.zindex2 > div {
+    z-index: 11 !important;
+}
+.zindex1 > div {
+    z-index: 1 !important;
+}
+.typematerialcolor .jqTransformSelectWrapper a.jqTransformSelectOpen {
+    width: 15px;
+    background-position: right center;
+}
+.typematerialcolor .form-group {
+    border-bottom: 2px solid #c8c8c8;
+    padding-bottom: 2px;
+}
+.upload-product figure {
+    position: relative;
+    padding: 15px 15px 10px;
+        border-radius: 5px 5px 0 0;
+}
+.upload-product figure h6{
+    font-size: 0.85rem;
+}
+
+.upload-product figure .closeuploadedproduct {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.upload-product figure img {
+    padding-bottom: 15px;
+}
+.uploaddetails {
+    background-color: #f2f2f2;
+    padding:30px 15px;
+    font-size: 0.85rem;
+    position: relative;
+}
+.attachadditionalfiles {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    padding: 0 15px;
+}
+.upload-product {
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgb(158, 158, 158);
+}
+.cartitems .anylysisofdesignstatus {
+    background-color: #e5e5e5;
+        max-width: initial;
+    padding: 10px 15px;
+}
+.cartandpricebtn .button{
+    background-color: #4caf50;
+}
+.cartandpricebtn .button {
+    border: none;
+    padding: 15px 0;
+    background-color: #808080;
+    border-radius: 0 0 5px 0;
+    border: 5px solid transparent;
+}
+.cartandpricebtn .button.active{
+    background-color: #4caf50;
+    color: #fff;
+}
+.cartandpricebtn .button.getquote{
+    background-color: #2962ff;
+    color: #fff;
+}
+.cartandpricebtn .button.getrequested {
+    background-color: #f2f2f2;
+    color: #5f5f5f;
+    border: 5px solid #5f5f5f;
+}
+.cartandpricebtn .price{
+    margin: auto;
+}
+.updowncolumn{
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+.quantityinput {
+    height: 30px;
+}
+.upload-product figcaption h6 {
+    font-size: 10px;
+    color: #a09b9b;
+}
+.unitqualityquantity .unit.active,.unitqualityquantity .quality.active{
+    color: #2962ff;
+}
+.jqTransformSelectWrapper ul{
+    padding: 0 10px !important;
+}
+.jqTransformSelectWrapper ul a{
+        border-bottom: 1px solid #cccccc !important; 
+}
+.jqTransformSelectWrapper ul li:last-child a{
+    border: none !important;
+}
+.uploaddetails .jqTransformSelectWrapper ul a:hover,.uploaddetails  .jqTransformSelectWrapper ul a.selected:hover{
+    background: transparent;
+    color: #999999;
+}
+.uploaddetails .jqTransformSelectWrapper ul a.selected{
+    background: transparent;
+    color: #2962ff;
+}
+.greencolor{
+    color: #4caf50;
+}
+.uploading-status {
+    position: absolute;
+    top: 0;
+    height: 5px;
+    left: 0;
+    right: 0;
+    background-color: #e6e6e6;
+}
+
+.uploading-status span {
+    position: absolute;
+    height: 100%;
+    background-color: #f94b4b;
+}
+.threedviewpopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(77, 77, 77, 0.5);
+    z-index: 1111;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.threedviewpopup .poupcontent {
+    max-width: 550px;
+    margin: auto;
+    width: 100%;
+    height: 470px;
+    position: relative;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+}
+.threedviewpopup.active{
+    opacity: 1;
+    visibility: visible;
+}
+.threedviewpopup.active .poupcontent {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+.threedviewpopup .details {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.threedviewpopup .poupcontent .threedimage{
+    margin: auto;
+}
+.threedviewpopup .closethreedviewpopup {
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
 /* Media Queries Starts Here */
 
 @media(min-width:992px) and (max-width:1199px) {
@@ -1218,6 +1395,12 @@ select:focus::-ms-value {
     }
     .orderdetialswrapper {
     max-width: 80%;
+    }
+    .uploaddetails{
+        font-size: 0.75rem;
+    }
+    .quantityinput{
+        padding: 0;
     }
    
 }
@@ -1333,6 +1516,28 @@ select:focus::-ms-value {
 }
     .profiledetails > ul li.flex1 {
     text-align: left;
+}
+    .uploaddetails .typematerialcolor {
+    margin-bottom: 20px;
+}
+    .unitqualityquantity .flex2 ul {
+    display: block;
+}
+
+.unitqualityquantity .flex2 ul li {
+    float: left;
+    padding-right: 10px;
+}
+    .unitqualityquantity .flex2 ul li:last-child{
+        padding-right: 0;
+    }
+    .threedviewpopup .poupcontent {
+    max-width: 300px;
+    height: 300px;
+    }
+    .threedviewpopup .poupcontent .threedimage img {
+    max-width: 60%;
+    margin: 0 auto;
 }
 }
 
