@@ -822,7 +822,7 @@ section.bodycontainer {
     max-width: calc(100% - 30px);
 }
 
-.profilecontentswrapper h3 {
+.profilecontentswrapper h3,.title h3 {
     border-bottom: 1px solid #000;
     padding-bottom: 10px;
 }
@@ -1343,7 +1343,10 @@ select:focus::-ms-value {
     height: 100%;
     background-color: #f94b4b;
 }
-.threedviewpopup {
+.cartwrapper .products .checkout-products a {
+    color: #2962ff;
+}
+.threedviewpopup,.editaddresspopup {
     position: fixed;
     top: 0;
     left: 0;
@@ -1355,6 +1358,11 @@ select:focus::-ms-value {
     visibility: hidden;
 }
 
+.editaddresspopup .poupcontent{
+    margin: auto;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+}
 .threedviewpopup .poupcontent {
     max-width: 550px;
     margin: auto;
@@ -1364,11 +1372,11 @@ select:focus::-ms-value {
     transform: scale(0);
     -webkit-transform: scale(0);
 }
-.threedviewpopup.active{
+.threedviewpopup.active,.editaddresspopup.active{
     opacity: 1;
     visibility: visible;
 }
-.threedviewpopup.active .poupcontent {
+.threedviewpopup.active .poupcontent,.editaddresspopup.active .poupcontent {
     transform: scale(1);
     -webkit-transform: scale(1);
 }
@@ -1385,6 +1393,78 @@ select:focus::-ms-value {
     top: 0;
     right: 5px;
 }
+.cartadditional-details .formelements .form-control{
+    border-radius: 0;
+    resize: none;
+}
+.cartadditional-details .addaddressdiv address{
+    margin: auto;
+}
+.cartadditional-details .addressdetails{
+    min-height: 180px;
+}
+.cartadditional-details .addressdetails address{
+    margin: auto;
+}
+.completesummary {
+    padding: 35px 20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+.completesummary .orderidanddate > .displayflex{
+    margin-bottom: 5px;
+}
+.completesummary .seperator {
+    border-top: 1px dashed #ddd;
+    margin: 10px 0;
+    position: relative;
+}
+.completesummary .seperator:before{
+    left: -7.5%;
+}
+.completesummary .seperator:after{
+    right: -7.5%;
+}
+.completesummary .seperator:before ,.completesummary .seperator:after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -10px;
+    background-color: #f4f4f4;
+}
+.emailordownloadquote{
+    padding: 0 10px;
+}
+/* Cart Page Starts Here */
+.cartwrapper .products img {
+    max-width: 100px;
+}
+.cartwrapper .lightgraybg{
+    background-color: #ddd;
+}
+.cartwrapper .cartitemsheader *{
+    font-size: 0.9rem;
+}
+.cartwrapper .products .checkout-products {
+    padding-left: 10px;
+}
+.cartwrapper .cartitemsheader .productsaddedtocart{
+    border-bottom: 1px solid #dddddd;
+}
+.cartwrapper .productsaddedtocart .enterquantity .form-control{
+    max-width: 50%;
+    margin: 0 auto;
+}
+.cartadditional-details h6 {
+    font-size: 1rem;
+}
+
+style.css:99
+
 /* Media Queries Starts Here */
 
 @media(min-width:992px) and (max-width:1199px) {
@@ -1444,6 +1524,16 @@ select:focus::-ms-value {
 }
     .orderdetialswrapper{
         max-width: 100%;
+    }
+    .completesummary .seperator:before, .completesummary .seperator:after{
+        content: none;
+    }
+    .cartadditional-details .formelements .btnwidth {
+        max-width: 120px;
+    }
+    .editaddresspopup .poupcontent .upload-product {
+        max-height: 75vh;
+        overflow-y: scroll;
     }
 }
 
@@ -1538,6 +1628,31 @@ select:focus::-ms-value {
     .threedviewpopup .poupcontent .threedimage img {
     max-width: 60%;
     margin: 0 auto;
+}
+.cartwrapper .cartitemsheader .productsaddedtocart{
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+.cartwrapper .cartitemsheader .productsaddedtocart > .col-xs-12:first-child{
+    margin-bottom: 10px;
+}
+.cartwrapper .productsaddedtocart .enterquantity .form-control {
+    max-width: 100%;
+}
+.cartadditional-details .formelements .btnwidth {
+    max-width: 90px;
+    font-size: 0.75rem;
+}
+
+.cartadditional-details .addressdetails {
+    margin-bottom: 15px;
+}
+.completesummary .seperator:before, .completesummary .seperator:after{
+    content: none;
+}
+.editaddresspopup .poupcontent .upload-product {
+    max-height: 75vh;
+    overflow-y: scroll;
 }
 }
 

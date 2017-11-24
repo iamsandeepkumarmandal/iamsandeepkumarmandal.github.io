@@ -163,11 +163,18 @@ jQuery(document).ready(function () {
         var b =$(this).parent().parent().parent();
         b.remove();
     });
-    $(".triggerthreedpopup_js cursorpointer").click(function(){
+    $(".triggerthreedpopup_js").click(function(){
         $(".threedviewpopup").addClass("active");
     });
     $(".closethreedviewpopup_js").click(function(){
         $(".threedviewpopup").removeClass("active");
+    });
+
+    $(".editaddresspopup_js").click(function(){
+        $(".editaddresspopup").addClass("active");
+    });
+    $(".closeEditAddressPopup_js").click(function(){
+        $(".editaddresspopup").removeClass("active");
     });
 });
 
