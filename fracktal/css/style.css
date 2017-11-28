@@ -897,6 +897,7 @@ section.bodycontainer {
 
 .profiledetails a.editaddress {
     position: relative;
+    margin-left: 10px;
 }
 
 .profiledetails a.editaddress:after {
@@ -1219,6 +1220,8 @@ section.bodycontainer {
 .cartitems .anylysisofdesignstatus h6 {
     padding: 0 10px;
     display: inline-block;
+    width: 100%;
+    text-align: left;
 }
 
 .cartitems .anylysisofdesignstatus p {
@@ -1352,6 +1355,7 @@ select:focus::-ms-value {
     position: absolute;
     top: 5px;
     right: 10px;
+    font-size: 1.2rem;
 }
 
 .upload-product figure img {
@@ -1394,6 +1398,7 @@ select:focus::-ms-value {
     background-color: #808080;
     border-radius: 0 0 5px 0;
     border: 5px solid transparent;
+    font-size: 0.85rem;
 }
 
 .cartandpricebtn .button.active {
@@ -1414,6 +1419,7 @@ select:focus::-ms-value {
 
 .cartandpricebtn .price {
     margin: auto;
+    font-weight: 500;
 }
 
 .updowncolumn {
@@ -1422,6 +1428,8 @@ select:focus::-ms-value {
 }
 
 .quantityinput {
+    padding: 0;
+    text-align: center;
     height: 30px;
 }
 
@@ -1549,6 +1557,7 @@ select:focus::-ms-value {
 
 .cartadditional-details .addressdetails {
     min-height: 180px;
+    font-size: 0.85rem;
 }
 
 .cartadditional-details .addressdetails address {
