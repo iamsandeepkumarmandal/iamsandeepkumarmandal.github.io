@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <div id="prefetch" class="hidden">
+    <input class="typeahead" type="text" placeholder="Countries">
+  </div>
+
+  <div class="search-wrapper">
+    <div class="container">
+        <h1 class="boldfont marginbottom15">SEARCH CUSTOMER DETAILS</h1>
+      <form class="block search-wrapper-form">
+       
+        <div class="row flex">
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+            <div class="form-group nomargin">
+              <label>Customer Name / Phone no</label>
+              <input type="text" class="form-control" id="text-customernameno"/>
+              <div class="form-control-border block">&nbsp;</div>
+              <div class="block result-sets-wrapper whitebg transition">
+                <div class="arrow-up"></div>
+                <div class="reset-set-div block cursorpointer getpersonname_js" data-personName="Ritesh Ranjan">
+                  <strong class="block">Ritesh Ranjan</strong>
+                  <ul class="block">
+                    <li>Loan Amount - ₹ 1,26,000</li>
+                    <li><i class="fa fa-mobile" aria-hidden="true"></i>9845739047</li>
+                  </ul>
+                </div>
+                <div class="reset-set-div block cursorpointer getpersonname_js" data-personName="Ajeet Kumar">
+                  <strong class="block">Ajeet Kumar</strong>
+                  <ul class="block">
+                    <li>Loan Amount - ₹ 1,06,000</li>
+                    <li><i class="fa fa-mobile" aria-hidden="true"></i>8405789123</li>
+                  </ul>
+                </div>
+                <div class="reset-set-div block cursorpointer getpersonname_js" data-personName="Ritesh Ranjan">
+                  <strong class="block">Ritesh Ranjan</strong>
+                  <ul class="block">
+                    <li>Loan Amount - ₹ 1,26,000</li>
+                    <li><i class="fa fa-mobile" aria-hidden="true"></i>9845739047</li>
+                  </ul>
+                </div>
+                <div class="reset-set-div block cursorpointer getpersonname_js" data-personName="Ajeet Kumar">
+                  <strong class="block">Ajeet Kumar</strong>
+                  <ul class="block">
+                    <li>Loan Amount - ₹ 1,06,000</li>
+                    <li><i class="fa fa-mobile" aria-hidden="true"></i>8405789123</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+            <div class="form-group nomargin">
+              <label>Date From</label>
+              <input type="text" class="form-control" id="text-dateFrom"/>
+              <div class="form-control-border block">&nbsp;</div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+            <div class="form-group nomargin">
+              <label>Date To</label>
+              <input type="text" class="form-control" id="text-dateTo"/>
+              <div class="form-control-border block">&nbsp;</div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+              <div class="form-group nomargin">
+                <button type="button" class="btn boldfont themebackgroundcolor btn-danger btn-default block">SEARCH</button>  
+              </div>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+            <div class="form-group block nomargin">
+              <a class="cursorpointer clearall boldfont">Clear All</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="assets/js/handlebars.js"></script>
+  <script src="assets/js/jquery-3.1.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.xdomainrequest.min.js"></script>
+  <script src="assets/js/typeahead.bundle.js"></script>
+  <script src="assets/js/foundation-datepicker.min.js"></script>
+  <link rel="stylesheet" href="assets/css/foundation-datepicker.min.css"/>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
