@@ -312,6 +312,7 @@ a:focus {
     height: 2px;
     background-color: rgba(155, 155, 155, 0.38);
     overflow: hidden;
+    bottom: 0;
 }
 .search-wrapper-form .form-group .form-control-border:before{
   content: "";
@@ -332,7 +333,8 @@ a:focus {
   left: 0;
 
 }
-.search-wrapper-form .form-control:focus ~ .form-control-border:before{
+
+.active#typeahead-textbox .form-control-border:before,.search-wrapper-form .form-control:focus ~ .form-control-border:before{
     transform: translateX(0%);
     -webkit-transform: translateX(0%);
 }
@@ -342,43 +344,42 @@ a:focus {
     height: 55px;
     font-size: 1.2rem;
 }
+.search-wrapper-form .form-group .twitter-typeahead{
+    float: left;
+    width: 100%;
+}
 .search-wrapper-form .form-group .clearall{
     font-size: 0.8rem;
 }
-.result-sets-wrapper {
-    position: absolute;
-    top: 75px;
-    left: 0;
-    right: 0;
-    z-index: 1;
+
+#typeahead-textbox .tt-menu{
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    visibility: hidden;
+    background-color: #fff;
 }
-.search-wrapper-form .form-control:focus ~ .result-sets-wrapper{
+/* .search-wrapper-form .form-control:focus ~ .result-sets-wrapper{
     opacity: 1;
     visibility: visible;
-}
-.result-sets-wrapper .reset-set-div{
+} */
+ .reset-set-div{
     padding: 10px 20px;
     border: solid 1px #ececec;
 }
-.result-sets-wrapper .reset-set-div strong{
+ .reset-set-div strong{
     font-size: 1.12rem;
     color: #14214d;
     margin-bottom: 8px;
 }
-.result-sets-wrapper .reset-set-div ul li{
+ .reset-set-div ul li{
     float: left;
 }
-.result-sets-wrapper .reset-set-div ul li:first-child {
+ .reset-set-div ul li:first-child {
     width: 70%;
 }
-.result-sets-wrapper .reset-set-div ul li:last-child {
+ .reset-set-div ul li:last-child {
     width: 30%;
     text-align: right;
 }
-.result-sets-wrapper .reset-set-div ul li:last-child i{
+ .reset-set-div ul li:last-child i{
     margin-right: 5px;
 }
 .arrow-up {
@@ -416,10 +417,10 @@ a:focus {
     }
 }
 @media (min-width:240px) and (max-width:767px) {
-    .result-sets-wrapper .reset-set-div {
+     .reset-set-div {
         padding: 10px 10px;
     }
-    .result-sets-wrapper .reset-set-div ul li:first-child,.result-sets-wrapper .reset-set-div ul li:last-child{
+     .reset-set-div ul li:first-child, .reset-set-div ul li:last-child{
         width: 100%;
     text-align: left;
     }

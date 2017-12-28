@@ -1,18 +1,32 @@
-var countries = new Bloodhound({
-  datumTokenizer: Bloodhound.tokenizers.whitespace,
+var bestPictures = new Bloodhound({
+  datumTokenizer: Bloodhound.tokenizers.obj.whitespace('firstname'),
   queryTokenizer: Bloodhound.tokenizers.whitespace,
-  // url points to a json file that contains an array of country names, see
-  // https://github.com/twitter/typeahead.js/blob/gh-pages/data/countries.json
-  prefetch: 'http://192.168.1.65/rupeeksearch/assets/json/countries.json'
+  prefetch : 'http://localhost/iamsandeepkumarmandal.github.io/RupeekSearchDashboard/assets/json/test4.json',
+  remote: {
+    url: 'http://localhost/iamsandeepkumarmandal.github.io/RupeekSearchDashboard/assets/json/test4.json',
+    wildcard: '%QUERY'
+  }
 });
 
 // passing in `null` for the `options` arguments will result in the default
 // options being used
-$('#prefetch .typeahead').typeahead(null, {
-  name: 'countries',
-  source: countries
+$('#text-customernameno').typeahead(null, {
+  hint : true,
+  highlight : true,
+  minLength : 3,
+  maxItem : 5,
+  name: 'firstname',
+  display: 'firstname',
+  source: bestPictures,
+  templates: {
+    empty: [
+      '<div class="empty-message">',
+        'Unable to find the result',
+      '</div>'
+    ].join('\n'),
+    suggestion: Handlebars.compile('<div class="reset-set-div block cursorpointer" data-personName="{{firstname}}"><strong class="block">{{firstname}}</strong><ul class="block"><li>Loan Amount - ₹ {{loanamount}}</li><li><i class="fa fa-mobile" aria-hidden="true"></i>{{phone}}</li></ul></div>')
+  }
 });
-
 
 // implementation of disabled form fields
 var nowTemp = new Date();
@@ -40,7 +54,17 @@ var checkout = $('#text-dateTo').fdatepicker({
   checkout.hide();
 }).data('datepicker');
 
-$(".getpersonname_js").click(function(){
+$(".getpersonname_js").click(function () {
   var getname = $(this).attr("data-personName");
   $("#text-customernameno").val(getname);
+});
+
+
+jQuery(document).ready(function(){
+  $("#text-customernameno").focus(function(){
+    $(this).parent().parent().addClass("active");
+  });
+  $("#text-customernameno").blur(function(){
+    $(this).parent().parent().removeClass("active");
+  });
 });
