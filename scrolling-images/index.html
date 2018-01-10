@@ -9,12 +9,63 @@
     h1 {
     text-align: center;
 }
+
+.logodiv img {
+  max-width: 120px;
+}
+.navigationmenu {
+  background-color: #000;
+  padding: 10px 0;
+}
+.navigationmenu ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.navigationmenu ul {
+  margin: 0 auto;
+  display: table;
+}
+.navigationmenu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.introduction-wrapper img {
+  float: right;
+}
+.introduction-wrapper p {
+  float: left;
+  max-width: calc(100% - 250px);
+  width: 100%;
+  line-height: 25px;
+}
+.introduction-wrapper {
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+}
   </style>
 </head>
 <body bgcolor="#fff">
-  <h1>
-    Marquee Tag Example
-  </h1>
+  <div class="logodiv">
+    <img src="images/logo.png" class="logo"/>
+  </div>
+  <div class="navigationmenu">
+    <ul>
+      <li><a href="#0">Home</a></li>
+      <li><a href="#0">About Us</a></li>
+      <li><a href="#0">Gallery</a></li>
+      <li><a href="#0">Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="introduction-wrapper">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    <img src="images/Bugs-Bunny.jpg" width="250"  height="167"/>
+  </div>
   <marquee behavior="scroll"> <!-- Behaviour can be alternate, slide,scroll -->
     <img src="images/cartoon-1.jpg" height="167"/>
     <img src="images/Mickey-mouse.jpg" width="250"/>
