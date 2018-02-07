@@ -1,0 +1,17 @@
+[
+  {
+    "firstname": "Sandeep Kumar Mandal",
+    "loanamount": "2000",
+    "phone": "9238383880"
+  },
+  {
+    "firstname": "Priyanka Mandal",
+    "loanamount": "7000",
+    "phone": "7019242417"
+  },
+  {
+    "firstname": "Abinash Pradhan",
+    "loanamount": "10000",
+    "phone": "9040369235"
+  }
+] 

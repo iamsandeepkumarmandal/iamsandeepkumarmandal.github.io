@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rupeek SEARCH CUSTOMER DETAILS Dashboard</title>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <div id="prefetch" class="hidden">
+    <input class="typeahead" type="text" placeholder="Countries">
+  </div>
+
+  <div class="search-wrapper">
+    <div class="container">
+        <h1 class="boldfont marginbottom15">SEARCH CUSTOMER DETAILS</h1>
+      <form class="block search-wrapper-form">
+       
+        <div class="row flex">
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+            <div class="form-group nomargin block" id="typeahead-textbox">
+              <label>Customer Name / Phone no</label>
+              <input type="text" class="form-control typeahead" id="text-customernameno"/>
+              <div class="form-control-border block">&nbsp;</div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+            <div class="form-group nomargin block">
+              <label>Date From</label>
+              <input type="text" class="form-control" id="text-dateFrom"/>
+              <div class="form-control-border block">&nbsp;</div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+            <div class="form-group nomargin block">
+              <label>Date To</label>
+              <input type="text" class="form-control" id="text-dateTo"/>
+              <div class="form-control-border block">&nbsp;</div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+              <div class="form-group nomargin block">
+                <button type="button" class="btn boldfont themebackgroundcolor btn-danger btn-default block">SEARCH</button>  
+              </div>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+            <div class="form-group block nomargin">
+              <a class="cursorpointer clearall boldfont">Clear All</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="assets/js/handlebars.js"></script>
+  <script src="assets/js/jquery-3.1.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.xdomainrequest.min.js"></script>
+  <script src="assets/js/typeahead.bundle.js"></script>
+  <script src="assets/js/foundation-datepicker.min.js"></script>
+  <link rel="stylesheet" href="assets/css/foundation-datepicker.min.css"/>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

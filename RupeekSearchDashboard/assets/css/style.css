@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('bootstrap.css');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a.link {
+    text-decoration: none !important;
+}
+
+a:focus,
+a:hover,
+a:active {
+    outline: medium none !important;
+}
+
+.sectionpadding5 {
+    padding: 5px 0;
+}
+
+.sectionpadding10 {
+    padding: 10px 0;
+}
+
+.sectionpadding20 {
+    padding: 20px 0;
+}
+
+.sectionpadding30 {
+    padding: 30px 0;
+}
+
+.sectionpadding40 {
+    padding: 40px 0;
+}
+
+.sectionpadding50 {
+    padding: 50px 0;
+}
+
+.sectionpadding60 {
+    padding: 60px 0;
+}
+
+.marginbottom15 {
+    margin-bottom: 15px;
+}
+
+.marginbottom50 {
+    margin-bottom: 50px;
+}
+
+.margintop50 {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.333rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+small,
+.font_small {
+    font-size: 0.88rem;
+}
+
+.boldfont {
+    font-weight: 700;
+}
+
+.lightfont {
+    font-weight: 300;
+}
+
+.leftmargin {
+    margin-left: 20px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #14214d;
+    background-color: #ffffff;
+    font-weight: 300;
+}
+
+.nopad {
+    padding: 0;
+}
+
+.block {
+    float: left;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    line-height: initial;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #fb5632;
+}
+
+.flex {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.justifycontent {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.transitionforappearing {
+    transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -webkit-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -ms-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -o-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -moz-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+}
+
+.transition {
+    transition: all 0.25s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -moz-transition: all 0.25s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -webkit-transition: all 0.25s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -o-transition: all 0.25s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -ms-transition: all 0.25s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+}
+
+.vertical-align-middle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.nomargin {
+    margin: 0;
+}
+
+.whitecolor {
+    color: #fff;
+}
+
+.themecolor {
+    color: #fb5632;
+}
+
+.themebackgroundcolor {
+    background-color: #fb5632;
+}
+
+.whitebg {
+    background-color: #fff;
+}
+
+
+
+/* Typeahead */
+
+.Typeahead {
+  position: relative;
+  *z-index: 1;
+  width: 500px;
+  margin: 50px auto 0 auto;
+  padding: 15px;
+  text-align: left;
+  background-color: #0097cf;
+  background-image: -moz-linear-gradient(top, #04a2dd, #03739c);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#04a2dd), to(#03739c));
+  background-image: -webkit-linear-gradient(top, #04a2dd, #03739c);
+  background-image: -o-linear-gradient(top, #04a2dd, #03739c);
+  background-image: linear-gradient(top, #04a2dd, #03739c);
+  background-repeat: repeat-x;
+  border: 1px solid #024e6a;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-box-shadow: 0 0 2px #111;
+     -moz-box-shadow: 0 0 2px #111;
+          box-shadow: 0 0 2px #111;
+}
+
+.Typeahead-spinner {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  display: none;
+  width: 28px;
+  height: 28px;
+}
+
+.Typeahead-hint,
+.Typeahead-input {
+  width: 100%;
+  padding: 5px 8px;
+  font-size: 24px;
+  line-height: 30px;
+  border: 1px solid #024e6a;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+}
+
+.Typeahead-hint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ccd6dd;
+  opacity: 1;
+}
+
+.Typeahead-input {
+  position: relative;
+  background-color: transparent;
+  background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+  outline: none;
+}
+
+.Typeahead-menu {
+  position: absolute;
+  top: 95%;
+  left: 2.5%;
+  z-index: 100;
+  display: none;
+  width: 95%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+          box-shadow: 0px 0px 0px 1px green;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.Typeahead-menu.is-open {
+  display: block;
+}
+
+.Typeahead-selectable {
+  cursor: pointer;
+}
+
+.Typeahead-selectable + .Typeahead-selectable {
+  border-top: 1px solid #ccd6dd;
+}
+.tt-menu{
+  width: 100%;
+}
+
+
+/* Search Wrapper Css Starts Here */
+.search-wrapper h1 {
+  font-size: 1.2rem;
+  color: #727889;
+  border-bottom: 2px solid #fb5632;
+  display: inline-block;
+}
+.search-wrapper-form{
+  border-radius: 2px;
+  background-color: #fafafa;
+  border: solid 1px #ececec;
+  padding: 25px 20px;
+}
+.search-wrapper-form .form-control{
+  border-width:0;
+  box-shadow: none;
+  background-color: transparent;
+  font-weight: 400;
+    padding-left: 0;
+}
+.search-wrapper-form .form-group{
+  position: relative;
+}
+.search-wrapper-form .form-group .form-control-border{
+  position: absolute;
+    height: 2px;
+    background-color: rgba(155, 155, 155, 0.38);
+    overflow: hidden;
+    bottom: 0;
+}
+.search-wrapper-form .form-group .form-control-border:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fb5632;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -webkit-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -ms-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -o-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -moz-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+}
+
+.active#typeahead-textbox .form-control-border:before,.search-wrapper-form .form-control:focus ~ .form-control-border:before{
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
+
+.search-wrapper-form .form-group .btn{
+    outline: none;
+    height: 55px;
+    font-size: 1.2rem;
+}
+.search-wrapper-form .form-group .twitter-typeahead{
+    float: left;
+    width: 100%;
+}
+.search-wrapper-form .form-group .clearall{
+    font-size: 0.8rem;
+}
+
+#typeahead-textbox .tt-menu{
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+/* .search-wrapper-form .form-control:focus ~ .result-sets-wrapper{
+    opacity: 1;
+    visibility: visible;
+} */
+ .reset-set-div{
+    padding: 10px 20px;
+    border: solid 1px #ececec;
+}
+ .reset-set-div strong{
+    font-size: 1.12rem;
+    color: #14214d;
+    margin-bottom: 8px;
+}
+ .reset-set-div ul li{
+    float: left;
+}
+ .reset-set-div ul li:first-child {
+    width: 70%;
+}
+ .reset-set-div ul li:last-child {
+    width: 30%;
+    text-align: right;
+}
+ .reset-set-div ul li:last-child i{
+    margin-right: 5px;
+}
+.arrow-up {
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #ddd;
+    position: absolute;
+    top: -15px;
+    left: 15px;
+}
+.cursorpointer{
+    cursor: pointer;
+}
+@media(min-width:240px) and (max-width:991px){
+    .search-wrapper-form .flex{
+        display: block;
+    }
+    .search-wrapper-form .form-group{
+        position: relative;
+    margin-bottom: 15px;
+    }
+    .search-wrapper-form .form-group .btn {
+        max-width: 180px;
+        margin: 0 auto;
+        float: none;
+        display: table;
+        height: initial;
+        
+    }
+    .search-wrapper-form .form-group .clearall{
+        margin: 0 auto;
+    display: table;
+    }
+}
+@media (min-width:240px) and (max-width:767px) {
+     .reset-set-div {
+        padding: 10px 10px;
+    }
+     .reset-set-div ul li:first-child, .reset-set-div ul li:last-child{
+        width: 100%;
+    text-align: left;
+    }
+}
+/* Search Wrapper Css Ends Here */
