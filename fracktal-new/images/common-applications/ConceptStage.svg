@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="40px" viewBox="0 0 28 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_lightbulb_outline_48px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_lightbulb_outline_48px" fill="#F94B4B" fill-rule="nonzero">
+            <path d="M8,38 C8,39.1 8.9,40 10,40 L18,40 C19.1,40 20,39.1 20,38 L20,36 L8,36 L8,38 Z M14,0 C6.27,0 0,6.27 0,14 C0,18.76 2.38,22.95 6,25.48 L6,30 C6,31.1 6.9,32 8,32 L20,32 C21.1,32 22,31.1 22,30 L22,25.48 C25.62,22.95 28,18.76 28,14 C28,6.27 21.73,0 14,0 Z M19.71,22.2 L18,23.39 L18,28 L10,28 L10,23.4 L8.29,22.21 C5.6,20.33 4,17.27 4,14.01 C4,8.5 8.49,4.01 14,4.01 C19.51,4.01 24,8.5 24,14.01 C24,17.26 22.4,20.32 19.71,22.2 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
