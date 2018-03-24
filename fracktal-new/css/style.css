@@ -481,7 +481,7 @@ section.bodycontainer {
 }
 
 .product-banner-wrapper {
-    background-image: url(../images/home-banner-background.svg);
+    background-image: url(../images/background-images/background-section1.svg);
     background-position: left center;
     background-size: contain;
 }
@@ -490,6 +490,17 @@ section.bodycontainer {
     background-size: contain;
     background-position: bottom center;
     background-repeat: no-repeat;
+}
+.common-background-wrapper{
+    background-image: url("../images/background-images/background-section-3.svg");
+      background-size: cover;
+    background-position: bottom;
+}
+.download-guide-wrapper {
+    background-color: #FCFCFC;    
+}
+.get-quote {
+    box-shadow: 0px 1px 7px 1px #ddd;
 }
 .padding-bottom-0{
     padding-bottom: 0;
