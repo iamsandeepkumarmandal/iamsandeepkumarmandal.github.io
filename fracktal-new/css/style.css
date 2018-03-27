@@ -483,18 +483,31 @@ section.bodycontainer {
 .product-banner-wrapper {
     background-image: url(../images/background-images/section1.png);
     background-position: left center;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .product-specifications-wrapper{
     background-image: url(../images/product-features-background.svg);
-    background-size: contain;
+    background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
 }
-.common-background-wrapper{
+.common-applications-wrapper{
+    background-image: url(../images/background-images/section3.png);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+/* .common-background-wrapper{
     background-image: url("../images/background-images/background-section-3.svg");
       background-size: cover;
     background-position: bottom;
+} */
+.get-quote-wrapper{
+    background-image: url(../images/background-images/section4.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
 }
 .download-guide-wrapper {
     background-color: #FCFCFC;    
@@ -742,6 +755,8 @@ section.bodycontainer {
     }
     .common-application-details {
         max-width: calc(100% - 200px);
+        text-align: justify;
+        font-size: 0.9rem;
     }
 }
 
