@@ -14,9 +14,9 @@ $(document).keydown(function(event){
     }
 });
 
-$(document).on("contextmenu",function(e){        
-   e.preventDefault();
-});
+// $(document).on("contextmenu",function(e){        
+//    e.preventDefault();
+// });
 
 jQuery(document).ready(function () {
     var getlocation = window.location.href;

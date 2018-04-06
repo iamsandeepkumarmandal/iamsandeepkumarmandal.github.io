@@ -508,6 +508,9 @@ li {
 
 .products-details-wrapper .product-content {
     padding: 20px;
+    margin: auto;
+}
+.products-details-wrapper .border{
     border: 1px solid #ddd;
 }
 
@@ -541,8 +544,8 @@ li {
 }
 
 .location-links ul li a:hover {
-    color: #fcf113;
-    border-color: #fcf113;
+    color: #D1F86F;
+    border-color: #D1F86F;
 }
 
 .footer-top h3 {
@@ -595,7 +598,7 @@ li {
 }
 
 .footer-social-media-links ul li a:hover {
-    color: #fcf113;
+    color: #D1F86F;
 }
 
 /* Branch Page CSS Starts Here */
@@ -613,7 +616,7 @@ li {
 }
 
 .map-details {
-    background-color: #fcf113;
+    background-color: #D1F86F;
     padding: 60px;
     max-width: 50%;
 }
@@ -625,7 +628,7 @@ li {
 
 .map-details .map-button:hover {
     background-color: #000;
-    color: #fcf113;
+    color: #D1F86F;
 }
 
 .map-details h4 {
@@ -682,7 +685,7 @@ li {
     min-height: 270px;
     background-size: cover;
     background-repeat: no-repeat;
-    border-bottom: 10px solid #fcf113;
+    border-bottom: 10px solid #D1F86F;
 }
 .what-drives-us-div .image{
     background-image: url("../images/what-drives-us/londergan_k.jpg");
@@ -701,7 +704,7 @@ li {
     padding-left: 10px;
 }
 .what-drives-us-div .content h5,.openings-wrapper h4{
-    background-image: linear-gradient(180deg,transparent 65%,#fcf113 0);
+    background-image: linear-gradient(180deg,transparent 65%,#D1F86F 0);
     background-size: 0 100%;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -727,18 +730,18 @@ li {
     max-width: 40px;
 }
 .we-are-hiring-header h4{
-    background-color: #fcf113;
+    background-color: #D1F86F;
 }
 .we-are-hiring-header h4 > span{
     width: 100%;
     font-size: 1rem;
 }
 .we-are-hiring-header h4:hover{
-    color: #fcf113;
+    color: #D1F86F;
     background-color: #000000;
 }
 .we-are-hiring-header h4:hover .arrow{
-    background-color: #fcf113;
+    background-color: #D1F86F;
     color: #000000;
 }
 .openings-wrapper h5 {
