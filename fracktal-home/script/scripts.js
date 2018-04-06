@@ -23,7 +23,7 @@ jQuery(document).ready(function () {
     var $root = $('html, body');
     $('.smoothScroll').click(function () {
         $root.animate({
-            scrollTop: $($.attr(this, 'data-target')).offset().top - 64
+            scrollTop: $($.attr(this, 'data-target')).offset().top - 180
         }, 500);
         return false;
     });

@@ -751,10 +751,10 @@ li {
 /* media queries starte here */
 @media(min-width:768px) and (max-width:991px) {
     .banner-container .banner .caption-one {
-        bottom: 0;
+        bottom: 40px;
     }
     .banner-container .banner .caption-two {
-        bottom: 0;
+        bottom: 15%;
         max-width: 40%;
     }
     .what-drives-us-div{
@@ -824,10 +824,10 @@ li {
 
 @media(min-width:992px) and (max-width:1199px) {
     .banner-container .banner .caption-one {
-        bottom: 0;
+        bottom: 40px;
     }
     .banner-container .banner .caption-two {
-        bottom: 0;
+        bottom: 40px;
         max-width: 40%;
     }
     .what-drives-us-div .content h5, .openings-wrapper h4 {
