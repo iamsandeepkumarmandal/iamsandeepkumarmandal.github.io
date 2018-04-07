@@ -1,23 +1,3 @@
-$(document).keydown(function(event){
-    if(event.keyCode==123){
-        return false;
-    }
-    else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
-             return false;
-    }
-    var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
-    
-    if (event.ctrlKey && (pressedKey == "c" || pressedKey == "u")) {
-       // alert('Sorry, This Functionality Has Been Disabled!'); 
-        //disable key press porcessing
-        return false; 
-    }
-});
-
-$(document).on("contextmenu",function(e){        
-   e.preventDefault();
-});
-
 jQuery(document).ready(function () {
     var getlocation = window.location.href;
     var $root = $('html, body');
