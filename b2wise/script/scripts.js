@@ -1,0 +1,158 @@
+// $(document).keydown(function(event){
+//     if(event.keyCode==123){
+//         return false;
+//     }
+//     else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+//              return false;
+//     }
+//     var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
+
+//     if (event.ctrlKey && (pressedKey == "c" || pressedKey == "u")) {
+//         alert('Sorry, This Functionality Has Been Disabled!'); 
+//         //disable key press porcessing
+//         return false; 
+//     }
+// });
+
+function isNumberKey(evt) {
+    var charCode = (evt.which) ? evt.which : event.keyCode;
+    if (charCode != 46 && charCode > 31 &&
+        (charCode < 48 || charCode > 57))
+        return false;
+
+    return true;
+}
+// $(document).on("contextmenu",function(e){        
+//  //  e.preventDefault();
+// });
+
+$(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    if (scroll > 1) {
+        $(".header").addClass("active");
+    } else {
+        $(".header").removeClass("active");
+    }
+});
+
+var textArray = ["Faster, Better Inventory Decisions", "Start your planning Journey today ", "Achieve higher service with lower inventories and fewer expediates", "Increase the flow of relevant materials and information", "Unlock your teams potential with formal supply chain planning training "];
+var index = 0;
+setInterval(function () {
+    $("#headerText_js").animate({
+        opacity: 0
+    }, function () {
+        if (textArray.length > index) {
+            $(this).text(textArray[index]).animate({
+                opacity: 1
+            })
+            index++;
+        } else index = 0;
+    });
+}, 4000);
+
+
+jQuery(document).ready(function () {
+    var getWidth = $(window).width();
+    var customerPraiseOptions = {
+        pagerCustom: '#bx-pager',
+        controls: false,
+        autoStart: true,
+        auto: true,
+    };
+    if (getWidth <= 480) {
+        customerPraiseOptions.adaptiveHeight = true;
+    }
+    $('.bxslider').bxSlider(customerPraiseOptions);
+    $(".banner_slider_js").bxSlider({
+        controls: false,
+        autoStart: true,
+        auto: true,
+        mode: 'fade',
+        speed: 1500,
+        pager: false
+    });
+    $(".main_banner_js").bxSlider({
+        controls: false,
+        autoStart: true,
+        auto: true,
+        speed: 1500,
+        pager: true
+    });
+    var clientsSliderOptions = {
+        minSlides: 8,
+        maxSlides: 8,
+        slideWidth: 150,
+        slideMargin: 10,
+        responsive: true,
+        pager: false,
+    };
+    if (getWidth <= 480) {
+        clientsSliderOptions.minSlides = 1;
+        clientsSliderOptions.maxSlides = 1;
+    }
+    if (getWidth > 480 && getWidth <= 640) {
+        clientsSliderOptions.minSlides = 2;
+        clientsSliderOptions.maxSlides = 2;
+    }
+    if (getWidth > 640 && getWidth <= 768) {
+        clientsSliderOptions.minSlides = 4;
+        clientsSliderOptions.maxSlides = 4;
+    }
+    if (getWidth > 768 && getWidth <= 992) {
+        clientsSliderOptions.minSlides = 5;
+        clientsSliderOptions.maxSlides = 5;
+    }
+    if (getWidth > 992 && getWidth <= 1199) {
+        clientsSliderOptions.minSlides = 6;
+        clientsSliderOptions.maxSlides = 6;
+    }
+
+    $(".clients_slider_js").bxSlider(clientsSliderOptions);
+
+    $(".trigger_menu_js").click(function () {
+        $(".main-menu").addClass("active");
+    });
+    $(".close_menu_js").click(function () {
+        $(".main-menu").removeClass("active");
+    });
+    var owl = $('.owl-carousel.customer_slider_js');
+    owl.owlCarousel({
+        loop: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            768: {
+                margin: 5,
+                items: 3
+            },
+            1000: {
+                margin: 5,
+                items: 5
+            }
+        }
+    });
+    var partnersSlider = $(".owl-carousel.partners_js");
+    partnersSlider.owlCarousel({
+        loop: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            768: {
+                margin: 5,
+                items: 1
+            },
+            1000: {
+                margin: 5,
+                items: 3
+            }
+        }
+    });
+});
