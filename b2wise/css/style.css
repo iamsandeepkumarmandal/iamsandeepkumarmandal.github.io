@@ -973,6 +973,8 @@ nav.main-menu ul li a:hover:before{
 .partner img{
     max-width: 180px;
     margin: auto;
+    max-height: 65px;
+    min-height: 70px;
 }
 .border-white{
     border: 1px solid #fff;
