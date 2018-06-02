@@ -142,12 +142,13 @@ jQuery(document).ready(function () {
             0: {
                 items: 1
             },
-            600: {
-                items: 2
+            640: {
+                margin:5,
+                items: 3
             },
             768: {
                 margin: 5,
-                items: 1
+                items: 3
             },
             1000: {
                 margin: 5,
