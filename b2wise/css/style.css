@@ -958,7 +958,10 @@ nav.main-menu ul li a:hover:before{
     right:10px;
     max-width: 110px;
 }
-
+.application-overview .image img {
+    height: 150px;
+    width: 150px;
+}
 /* Footer Offices Wrapper Starts Here */
 .offices-wrapper {
     padding: 20px 10px;
