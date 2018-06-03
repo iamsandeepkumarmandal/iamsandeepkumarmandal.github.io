@@ -457,7 +457,9 @@ nav.main-menu ul li a:hover:before{
     position: relative;
 }
 .about-us img {
-    max-width: 80px;
+   max-width: 100px;
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 .about-us h3 {
