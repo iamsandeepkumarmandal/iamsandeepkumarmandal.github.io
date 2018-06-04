@@ -369,17 +369,17 @@ nav.main-menu ul li a:hover:before{
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    color: #000;
+    color: #fff;
     left: 0;
     right: 0;
     text-align: center;
     font-weight: 700;
     max-width: 50%;
     margin: 0 auto;
-    text-shadow: 2px 3px 10px #fff;
+    text-shadow: 2px 3px 10px #000;
 }
 .main-banner .bx-wrapper ul li:after {
-    content: "";
+    /* content: ""; */
     background-color: rgba(255, 255, 255, 0.35);
     height: 100%;
     width: 100%;
@@ -858,13 +858,26 @@ nav.main-menu ul li a:hover:before{
 .social-media-icons ul li a {
     width: 40px;
     height: 40px;
-    border: 1px solid #1e2020;
+    border: 1px solid transparent;
     display: inline-flex;
     border-radius: 50%;
 }
-
+.social-media-icons ul li a.facebook{
+    background-color: #3b5898;
+   
+}
+.social-media-icons ul li a.twitter{
+    background-color: #1ea1f3;
+}
+.social-media-icons ul li a.linkedin{
+    background-color: #007ab9;
+}
+.social-media-icons ul li a.youtube{
+    background-color: #f34225;
+}
 .social-media-icons ul li a i {
-    color: #1e2020;
+    /* color: #1e2020; */
+    color: #fff;
     margin: auto;
     font-size: 1.2rem;
 }
