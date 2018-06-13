@@ -682,6 +682,9 @@ nav.main-menu ul li.language-selection img {
 }
 
 /* Learn More CTA Wrapper */
+.learn-more-cta-wrapper{
+    overflow: hidden;
+}
 .learn-more-cta-wrapper h4 {
     position: relative;
 }
@@ -940,7 +943,85 @@ nav.main-menu ul li.language-selection img {
     padding-left: 10px;
     padding-right: 10px;
 }
+.request-demo-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 11111;
+    opacity: 0;
+    visibility: hidden;
+}
+.request-demo-wrapper.active .request-demo{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+.request-demo-wrapper.active{
+    opacity: 1;
+    visibility: visible;
+}
+.request-demo {
+    box-shadow: 2px 3px 13px rgba(0, 0, 0, 0.38);
+    border: 1px solid #ddd;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+}
+.request-demo header {
+    background-color: #539f2f;
+    padding: 10px;
+}
+.request-demo .contact-wrapper {
+    padding: 0 20px;
+}
+.request-demo .contact-wrapper .form-control {
+        border-radius: 0;
+    resize: none;
+    position: relative;
+    border-width: 0 0 1px 0;
+    box-shadow: none;
+}
+.request-demo .contact-wrapper .form-control:after{
+    content: "";
+}
+.request-demo .contact-wrapper .flex-2 {
+    position: relative;
+    overflow: hidden;
+}
 
+.request-demo .contact-wrapper .flex-2 .botton-border-form-control {
+    position: absolute;
+    bottom:  0;
+    height: 2px;
+    background-color: #539f2f;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+.request-demo .contact-wrapper .form-control:focus ~ .botton-border-form-control{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+.request-demo .close-button {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    box-shadow: 2px 2px 10px #ddd;
+}
+.request-demo .close-button:hover{
+    background-color: #539f2f;
+}
+.request-demo .close-button:hover a{
+    color: #fff;
+}
+.request-demo .close-button a {
+    margin: auto;
+    line-height: initial;
+    font-size: 13px;
+}
 /* Customers Wrapper Starts Here */
 .customer {
     max-width: 100%;

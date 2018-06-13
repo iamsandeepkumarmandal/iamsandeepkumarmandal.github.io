@@ -156,4 +156,10 @@ jQuery(document).ready(function () {
             }
         }
     });
+    $(".trigger_contact_js").click(function(){
+        $(".request-demo-wrapper").addClass("active");
+    });
+    $(".close_contact_us_js").click(function(){
+        $(".request-demo-wrapper").removeClass("active");
+    });
 });
