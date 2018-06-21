@@ -162,4 +162,13 @@ jQuery(document).ready(function () {
     $(".close_contact_us_js").click(function(){
         $(".request-demo-wrapper").removeClass("active");
     });
+    $('.journey-text a').click(function(){
+        var getDetailsId = $(this).attr('data-details-id');
+        $(getDetailsId).toggleClass('active');
+        if(getWidth < 768){
+            $('html, body').animate({
+                scrollTop: $(getDetailsId).offset().top - 50
+              }, 1000);
+        }
+    });
 });
