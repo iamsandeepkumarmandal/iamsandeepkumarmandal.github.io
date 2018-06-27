@@ -202,4 +202,16 @@ jQuery(document).ready(function () {
             }, 1000);
         }
     });
+    $(document).on('click', '.slow_scroll_js', function (e) {
+        var getId = $(this).attr('href');
+        if (getId.split('#')[1] == "") {
+            e.preventDefault();
+        } else {
+            var selector = '#' + getId.split('#')[1];
+            $('html, body').animate({
+                scrollTop: $(selector).offset().top - 70
+            }, 500);
+            return false;
+        }
+    });
 });

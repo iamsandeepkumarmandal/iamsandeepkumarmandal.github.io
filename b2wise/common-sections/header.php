@@ -3,7 +3,7 @@
     <div class="row display-flex flex-align-center flex-justify-content">
       <div class="col-lg-3 col-md-2 col-sm-2 col-xs-12">
         <div class="logo transition">
-          <a href="#0">
+          <a href="index.php">
             <img src="images/logo/logo.png" class="img-responsive" alt="" />
           </a>
         </div>
@@ -16,16 +16,16 @@
               <a class="cursor-pointer bold-font close_menu_js">X</a>
             </li>
             <li>
-              <a href="#0">Your Journey</a>
+              <a href="our-journey.php">Your Journey</a>
             </li>
             <li>
-              <a href="#0">Our Application</a>
+              <a href="index.php#applications" class='slow_scroll_js'>Our Application</a>
             </li>
             <li>
               <a href="#0">Pricing</a>
             </li>
             <li>
-              <a href="#0">Stay Connected</a>
+              <a href="#stay-connected" class='slow_scroll_js'>Stay Connected</a>
             </li>
             <li>
               <a href="#0">Client Login</a>
@@ -46,7 +46,6 @@
         </div>
         <div class="institute-training pull-right hidden-xs">
           <img src="images/header/demand-driven-institute.png" class="img-responsive" alt="" />
-  
         </div>
       </div>
     </div>

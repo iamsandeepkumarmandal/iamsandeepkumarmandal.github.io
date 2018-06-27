@@ -1,4 +1,4 @@
-<footer class="block text-center footer gray-background">
+<footer class="block text-center footer gray-background" id="stay-connected">
   <div class="container">
     <div class="title margin-bottom-10px bold-font">Stay Connected</div>
     <div class="sub-title margin-bottom-20px">Our Offices</div>
