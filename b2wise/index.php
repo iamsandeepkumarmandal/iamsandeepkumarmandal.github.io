@@ -3,71 +3,11 @@
 <meta http-equiv="content-type" content="text/html" />
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>B2Wise</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Sandeep Kumar" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="images/favicon/cropped-Favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" href="images/favicon/cropped-Favicon-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon-precomposed" href="images/favicon/cropped-Favicon-180x180.png" />
+<?php  include('common-sections/head.php'); ?> 
 </head>
 
 <body>
-    <header class="block section-padding-5px transition header">
-        <div class="container-fluid ">
-            <div class="row display-flex flex-align-center flex-justify-content">
-                <div class="col-lg-3 col-md-2 col-sm-2 col-xs-12">
-                    <div class="logo transition">
-                        <a href="#0">
-                            <img src="images/logo/logo.png" class="img-responsive" alt="" />
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-8 col-sm-8 col-xs-12">
-                    <nav class="main-menu transition">
-
-                        <ul>
-                            <li class=" hidden-lg hidden-md hidden-sm ">
-                                <a class="cursor-pointer bold-font close_menu_js">X</a>
-                            </li>
-                            <li>
-                                <a href="our-journey.html">Your Journey</a>
-                            </li>
-                            <li>
-                                <a href="#0">Our Application</a>
-                            </li>
-                            <li>
-                                <a href="#0">Pricing</a>
-                            </li>
-                            <li>
-                                <a href="#0">Stay Connected</a>
-                            </li>
-                            <li>
-                                <a href="#0">Client Login</a>
-                            </li>
-                            <li class="language-selection">
-                                <a href="#0" title="French"><img src="images/language/french.png" class="img-responsive" alt=""/></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-3 col-md-2 col-sm-2 col-xs-6 ">
-                    <div class="mobile-menu-button hidden-lg hidden-md hidden-sm text-right">
-                        <a class="cursor-pointer trigger_menu_js">
-                            <i class="fa fa-bars" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="institute-training pull-right hidden-xs">
-                        <img src="images/header/demand-driven-institute.png" class="img-responsive" alt="" />
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+  <?php  include('common-sections/header.php'); ?> 
     <section class="block body-container">
         <section class="main-banner block">
             <ul class="main_banner_js">
@@ -345,7 +285,7 @@
                 </div>
             </div>
         </section>
-        <section class="block section-padding-50px application-overview-wrapper gray-background">
+        <section class="block section-padding-50px application-overview-wrapper gray-background" id="applications">
             <h3 class="title text-capitalize text-center margin-bottom-50px light-font title-with-underline">Our Application Overview </h3>
             <div class="container">
                 <div class="row">
@@ -482,200 +422,11 @@
                 <path id="hero-mask-path" d="M0 35.5h1600v-35L793.8 35 0 0.5V35.5z" fill="#f3f3f3"></path>
             </svg>
         </section>
-        <footer class="block text-center footer gray-background">
-            <div class="container">
-                <div class="title margin-bottom-10px bold-font">Stay Connected</div>
-                <div class="sub-title margin-bottom-20px">Our Offices</div>
-                <div class="row margin-bottom-20px">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="offices-wrapper block white-background">
-                            <img src="images/offices/France.gif" class="img-responsive display-inline margin-bottom-20px" alt="" />
-                            <h5>Asnières-sur-Seine,
-                                <br/> Paris,
-                                <br/> France
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="offices-wrapper block white-background">
-                            <img src="images/offices/UK.jpg" class="img-responsive display-inline margin-bottom-20px" alt="" />
-                            <h5>Solihull,
-                                <br/> West Midlands,
-                                <br/> UK
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="offices-wrapper block white-background">
-                            <img src="images/offices/South Africa.gif" class="img-responsive display-inline margin-bottom-20px" alt="" />
-                            <h5>Bedfordview,
-                                <br/> Johannesburg,
-                                <br/> South Africa
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="offices-wrapper block white-background">
-                            <img src="images/offices/USA.jpg" class="img-responsive display-inline margin-bottom-20px" alt="" />
-                            <h5>Lincoln Park,
-                                <br/> New Jersey,
-                                <br/> USA
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="sub-title margin-bottom-20px">Approved Global Implementation Partners</div>
-                <section class="client-wrapper block ">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
-                            <div class="partners_js owl-carousel block owl-theme">
-                                <div class="item">
-                                    <a href="http://www.citwell.com/" class="display-inline-block block white-background border-white" target="_blank">
-                                        <div class="partner block display-flex">
-                                            <img src="images/partners/citwell.jpg" class="img-responsive" alt="" />
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="http://www.santova.com/" class="display-inline-block block white-background border-white" target="_blank">
-                                        <div class="partner block display-flex">
-                                            <img src="images/partners/santova.jpg" class="img-responsive" alt="" />
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="http://shea.ca/" class="display-inline-block block white-background border-white" target="_blank">
-                                        <div class="partner block display-flex">
-                                            <img src="images/partners/shea.gif" class="img-responsive" alt="" />
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
-                <div class="contact-details section-padding-30px block ">
-                    <div class="contact-us-cta margin-bottom-20px">
-                        <a class="cursor-pointer theme-btn transition text-uppercase trigger_contact_js">
-                            <span>Contact Us</span>
-                        </a>
-                    </div>
-                    <!-- <h5 class="margin-bottom-5px transition">
-                        <span>080 99999999</span>
-                    </h5>
-                    <br>
-                    <h5 class="transition">
-                        <span>support@b2wise.com</span>
-                    </h5> -->
-                </div>
-                <div class="social-media-icons block margin-bottom-20px">
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/" class="transition facebook">
-                                <i class="fa fa-facebook transition" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#0" class="transition twitter">
-                                <i class="fa fa-twitter transition" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#0" class="transition linkedin">
-                                <i class="fa fa-linkedin transition" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#0" class="transition youtube">
-                                <i class="fa fa-youtube transition" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-animation block "></div>
-            <div class="display-flex block copy-right-wrapper ">
-                <div class="flex-1 ">
-                    <div class="block text-left section-padding-20px font-small white-color">
-                        Copyright &copy; 2018 B2Wise. All rights reserved.
-                    </div>
-                </div>
-                <div class="flex-1">
-                    <div class="block text-right section-padding-20px font-small">
-                        <a href="mailto:sandeep@sandeepkumarmandal.com" class=" white-color"> Designed &amp Developed By : Sandeep</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include('common-sections/footer.php') ?>
     </section>
-    <div class="request-demo-wrapper block display-flex transition">
-        <div class="request-demo col-lg-4 white-background margin-auto no-padding transition">
-            <div class="close-button close_contact_us_js cursor-pointer transition display-flex">
-                <a class="bold-font transition">X</a>
-            </div>
-            <header class="block  margin-bottom-20px ">
-                <h4 class="text-center white-color">Please provide your details and our company representative will contact you sortly.</h4>
-            </header>
-            <div class="contact-wrapper block">
-                <div class="form-group display-flex block">
-                    <div class="flex-1">
-                        <label class="control-label">Name</label>
-                    </div>
-                    <div class="flex-2">
-                        <input type="text" placeholder="Please enter your name" class="form-control" />
-                        <div class="botton-border-form-control block transition"></div>
-                    </div>
-                </div>
-                <div class="form-group display-flex block">
-                    <div class="flex-1">
-                        <label class="control-label">Email</label>
-                    </div>
-                    <div class="flex-2">
-                        <input type="text" placeholder="Please enter your email id" class="form-control" />
-                        <div class="botton-border-form-control block transition"></div>
-                    </div>
-                </div>
-                <div class="form-group display-flex block">
-                    <div class="flex-1">
-                        <label class="control-label">Subject</label>
-                    </div>
-                    <div class="flex-2">
-                        <input type="text" placeholder="Please enter the subject" class="form-control" />
-                        <div class="botton-border-form-control block transition"></div>
-                    </div>
-                </div>
-                <div class="form-group display-flex block">
-                    <div class="flex-1">
-                        <label class="control-label">Message</label>
-                    </div>
-                    <div class="flex-2">
-                        <textarea rows="3" placeholder="Please enter the subject" class="form-control"></textarea>
-                        <div class="botton-border-form-control block transition"></div>
-                    </div>
-                </div>
-                
-            </div>
-            <footer class="block">
-                <div class="block">
-                    <button class="cursor-pointer theme-btn transition block">
-                                <span class="transition text-uppercase">Submit</span>
-                    </button>
-                </div>
-            </footer>
-        </div>
-    </div>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="resources/bootstrap/jquery-3.1.1.min.js"></script>
-    <script src="resources/bootstrap/bootstrap.min.js"></script>
-    <script src="resources/bootstrap/jquery.min.js"></script>
-    <script src="resources/bxslider/plugins/jquery.easing.1.3.js"></script>
-    <script src="resources/bxslider/jquery.bxslider.min.js"></script>
-    <script src="resources/owl/js/owl/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="resources/owl/js/owl/owl.carousel.min.css" />
-    <link rel="stylesheet" href="resources/owl/js/owl/owl.theme.default.min.css" />
-    <script src="script/scripts.js"></script>
+    
+  <?php include('common-sections/request-demo.php') ?>
+  <?php include('common-sections/scripts.php') ?>
 </body>
 
 </html>
