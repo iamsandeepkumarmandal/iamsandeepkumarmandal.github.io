@@ -545,7 +545,7 @@ Media Queries Footer CSS
 
 .benefits .icon {
   background-size: 900px;
-  background-image: url("/images/about-sprite.svg");
+  background-image: url("../images/about-sprite.svg");
   background-repeat: no-repeat;
   width: 300px;
   height: 300px; }
