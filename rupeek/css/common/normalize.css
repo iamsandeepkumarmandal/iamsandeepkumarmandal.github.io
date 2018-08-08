@@ -1,0 +1,71 @@
+/* ==========
+Import Font family from fonts.google.com
+ ========== */
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow:400,400i,500,700");
+/* ==========
+Define Font family
+ ========== */
+/* ==========
+Define Font Size
+ ========== */
+/* ==========
+Define font weight
+========== */
+/* ==========
+Define the color  variables 
+========== */
+/* ==========
+Define Border Radius 
+========== */
+/* ==========
+Define the breakpoints at which your layout will change,
+ adapting to different screen sizes.
+==========  */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+  box-sizing: border-box; }
+
+a:focus,
+a:hover,
+a:active {
+  outline: medium none !important;
+  text-decoration: none; }
+
+a {
+  text-decoration: none !important;
+  color: #40150a; }
+
+/* Change Default Styling for <H1> TO </H6> tags */
+h1 {
+  font-size: 2rem;
+  letter-spacing: -.2px; }
+
+h2 {
+  font-size: 1.5rem; }
+
+h3 {
+  font-size: 1.3rem; }
+
+h4 {
+  font-size: 1.2rem; }
+
+h5 {
+  font-size: 1.15rem; }
+
+h6 {
+  font-size: 1.15rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0; }
+
+/* Change Default Styling for <H1> TO </H6> tags */
+
+/*# sourceMappingURL=normalize.css.map */

@@ -1,0 +1,62 @@
+/* ==========
+Import Font family from fonts.google.com
+ ========== */
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow:400,400i,500,700");
+/* ==========
+Define Font family
+ ========== */
+/* ==========
+Define Font Size
+ ========== */
+/* ==========
+Define font weight
+========== */
+/* ==========
+Define the color  variables 
+========== */
+/* ==========
+Define Border Radius 
+========== */
+/* ==========
+Define the breakpoints at which your layout will change,
+ adapting to different screen sizes.
+==========  */
+/* ==========
+Footer Wrapper Starts Here 
+========== */
+.footer-links-wrapper {
+  justify-content: center;
+  -webkit-justify-content: center; }
+
+.footer-links li {
+  margin-left: 50px;
+  display: inline-block;
+  font-size: 1.2rem; }
+
+.copyright-wrapper {
+  background: -webkit-linear-gradient(90deg, #f26622, #f78f1e);
+  background: linear-gradient(90deg, #f26622, #f78f1e); }
+  .copyright-wrapper li, .copyright-wrapper a {
+    color: #fff; }
+  .copyright-wrapper a:hover {
+    color: #40150a; }
+
+/* ==========
+Media Queries Footer CSS 
+========== */
+@media (max-width: 767.98px) {
+  .google-play-store-icon {
+    margin-bottom: 20px; }
+
+  .footer-links li {
+    margin: 0 15px; }
+    .footer-links li a {
+      color: #f26422; }
+
+  .copyright-wrapper li:first-child {
+    margin-bottom: 20px;
+    display: block; }
+  .copyright-wrapper li a {
+    color: #fff; } }
+
+/*# sourceMappingURL=footer.css.map */
