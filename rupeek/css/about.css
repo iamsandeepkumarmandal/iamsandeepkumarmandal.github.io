@@ -680,7 +680,7 @@ Media Queries Footer CSS
 }
 /* About CSS Starts Here */
 .inner-page-introduction h4 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .inner-page-introduction img {
   max-width: 150px;
@@ -693,12 +693,12 @@ Media Queries Footer CSS
   line-height: 20px;
 }
 .benefits-list-wrapper h4 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .benefits .icon {
   background-size: 900px;
-  background-image: url("../images/about-sprite.svg");
+  background-image: url("..//images/about-sprite.svg");
   background-repeat: no-repeat;
   width: 300px;
   height: 300px;
@@ -736,6 +736,21 @@ Media Queries About Us CSS  : for mobile devices
 
   .benefits {
     margin-bottom: 30px;
+  }
+  .benefits .icon {
+    width: 185px;
+    height: 185px;
+    background-size: 585px;
+    margin-bottom: 20px;
+  }
+  .benefits .safe-and-secure {
+    background-position: 0px -195px;
+  }
+  .benefits .easy-to-use {
+    background-position: -396px 25px;
+  }
+  .benefits .affordable-solutions {
+    background-position: -200px 18px;
   }
   .benefits:last-child {
     margin-bottom: 0;

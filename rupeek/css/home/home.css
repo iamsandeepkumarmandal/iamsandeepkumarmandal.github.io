@@ -67,7 +67,7 @@ Define the breakpoints at which your layout will change,
 }
 .why-rupeek .image {
   height: 65px;
-  background-image: url("../images/sprites/Why-rupeek.png");
+  background-image: url("..//images/sprites/Why-rupeek.png");
   background-repeat: no-repeat;
 }
 .why-rupeek .text {
@@ -143,7 +143,7 @@ Define the breakpoints at which your layout will change,
   content: "";
   position: absolute;
   z-index: -1;
-  background-image: url("../images/simple-convenient-background.png");
+  background-image: url("..//images/simple-convenient-background.png");
   top: 0;
   height: 100%;
   width: 100%;
@@ -161,7 +161,7 @@ Define the breakpoints at which your layout will change,
   position: absolute;
   height: 4px;
   width: 100%;
-  background: url("../images/simple-convenient-divider.png") no-repeat center;
+  background: url("..//images/simple-convenient-divider.png") no-repeat center;
   top: 40%;
   left: 90%;
 }
@@ -170,7 +170,7 @@ Define the breakpoints at which your layout will change,
   margin: 0 auto 15px;
   text-indent: -2000%;
   overflow: hidden;
-  background-image: url("../images/sprites/Sprites-Simple-and-convenient.png");
+  background-image: url("..//images/sprites/Sprites-Simple-and-convenient.png");
   background-repeat: no-repeat;
 }
 .simple-convenient .call {
@@ -216,7 +216,7 @@ Rupeek in media sdtarts here
 }
 .rupeek-in-media .icon {
   max-width: 205px;
-  background-image: url("../images/sprites/media.png");
+  background-image: url("..//images/sprites/media.png");
   height: 61px;
   margin: 0 auto 30px;
 }
@@ -272,7 +272,7 @@ Testimonials Wrapper Starts Here
 .testimonials .icon {
   width: 108px;
   height: 108px;
-  background-image: url("../images/sprites/customer-testimonial-sprite.jpg");
+  background-image: url("..//images/sprites/customer-testimonial-sprite.jpg");
   border-radius: 50%;
   display: inline-block;
 }
@@ -325,7 +325,7 @@ Scmemes Wrapper Starts Here
   height: 250px;
   margin: 0 auto;
   display: table;
-  background-image: url("../images/sprites/schemes-sprite.png");
+  background-image: url("..//images/sprites/schemes-sprite.png");
   background-repeat: no-repeat;
 }
 .schemes .rupeek-vyapar {
@@ -380,7 +380,7 @@ Lenders Wrapper Starts Here
 .lenders-wrapper .lenders {
   height: 106px;
   width: 296px;
-  background-image: url("../images/sprites/partners.png");
+  background-image: url("..//images/sprites/partners.png");
   margin: 0 20px;
   overflow: hidden;
   text-indent: -200%;

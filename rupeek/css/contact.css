@@ -891,7 +891,7 @@ Media Queries Footer CSS
 
 .public-icon, .input-icon {
   background-repeat: no-repeat;
-  background-image: url("../images/sprites/public-sprite.svg");
+  background-image: url("..//images/sprites/public-sprite.svg");
 }
 
 .input-icon {
@@ -899,13 +899,43 @@ Media Queries Footer CSS
   width: 25px;
   display: inline-block;
   position: absolute;
-  top: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   left: 12px;
   background-size: 250px;
 }
 
 .icon-phone {
   background-position: -150px 0px;
+}
+
+.icon-name {
+  background-position: -25px 0px;
+}
+
+.icon-identity {
+  background-position: -50px 0px;
+}
+
+.icon-password {
+  background-position: 0px 0px;
+}
+
+.icon-organization {
+  background-position: -125px 0px;
+}
+
+.icon-phone {
+  background-position: -150px 0px;
+}
+
+.icon-email {
+  background-position: -100px 0px;
+}
+
+.icon-money {
+  background-position: -75px -50px;
 }
 
 .icon-play-store-bg {
@@ -946,6 +976,7 @@ Media Queries Contact Us : for mobile
 
   .write-to-us-wrapper .contact-support {
     margin-bottom: 50px;
+    text-align: center;
   }
   .write-to-us-wrapper .display-flex {
     align-items: center;
