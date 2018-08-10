@@ -678,77 +678,279 @@ Media Queries Footer CSS
     color: #fff;
   }
 }
-.careers-summary {
-  font-size: 1.0666666667rem;
-  line-height: 20px;
+.address-div {
+  -moz-box-shadow: 3px 3px 10px #dddddd;
+  -webkit-box-shadow: 3px 3px 10px #dddddd;
+  box-shadow: 3px 3px 10px #dddddd;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  padding: 15px 0;
 }
-.careers-summary li {
-  float: left;
-  width: 33.333%;
-  min-height: 150px;
-  margin-bottom: 20px;
+.address-div .icon-map {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
-.careers-summary li p {
+.address-div a.map-link {
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid #f26422;
+  background-color: #f26422;
+  text-decoration: none;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.address-wrapper {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+.address-wrapper .flex-1 {
   padding: 0 10px;
-  max-width: 275px;
-  margin: 0 auto;
-}
-.careers-summary .icons {
-  display: inline-flex;
-  width: 65px;
-  height: 64px;
-}
-.careers-summary .careersicon {
-  background-image: url("../images/careers.png");
-  background-size: auto auto;
-  background-repeat: no-repeat;
-  margin: auto;
 }
 
-.careersicon.passionate {
-  background-position: -6px -12px;
-  width: 51px;
-  height: 33px;
+.no-margin {
+  margin: 0;
 }
 
-.careersicon.innovate {
-  background-position: -72px -5px;
-  width: 47px;
-  height: 51px;
+.lenders-branch-wrapper .display-flex {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.lenders-branch-wrapper .flex-1 {
+  min-width: 300px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+.lenders-branch-wrapper .flex-1 .address-div {
+  margin-bottom: 15px;
 }
 
-.careersicon.Steep {
-  background-position: -135px -6px;
-  width: 51px;
+/* Serving more than 300 locations */
+/* Zone Wise Details CSS Starts Here */
+.zone-wise-details li {
+  display: flex;
+  display: -webkit- flex;
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.zone-wise-details li strong {
+  float: left;
+  min-width: 100px;
+}
+.zone-wise-details li strong:after {
+  content: ":";
+  font-size: 15px;
+  padding: 0 10px;
+  float: right;
+}
+.zone-wise-details li ul li {
+  float: left;
+  position: relative;
+  width: initial;
+}
+.zone-wise-details li ul li:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  height: 10px;
+  width: 2px;
+  background-color: #e1e1e1;
+  margin: 0 10px;
+  top: 3px;
+}
+.zone-wise-details li ul li:last-child:after {
+  content: none;
+}
+
+.location-details-tabs .tabs-header ul {
+  display: flex;
+  display: -webkit- flex;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+.location-details-tabs .tabs-header ul a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 50px;
+  margin-bottom: 20px;
+  border: 2px solid #40150a;
+  color: #40150a;
+  font-size: 1.2rem;
+  position: relative;
+  border-radius: 5px;
+}
+.location-details-tabs .tabs-header ul a.active, .location-details-tabs .tabs-header ul a:hover {
+  background-color: #f26422;
+  color: #ffffff;
+  border-color: #f26422;
+}
+.location-details-tabs .tabs-header ul a.active:after, .location-details-tabs .tabs-header ul a:hover:after {
+  border-top-color: #f26422;
+}
+.location-details-tabs .tabs-header ul a:after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid transparent;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.location-details-tabs .tabs-content {
+  border: 1px solid #40150a;
+  padding: 20px;
+  border-radius: 3px;
+  display: table;
+}
+.location-details-tabs .tabs-content > div {
+  display: none;
+}
+.location-details-tabs .tabs-content > div.active {
+  display: block;
+}
+
+/* Write to us CSS Starts Here */
+.write-to-us-wrapper {
+  background: -webkit-linear-gradient(90deg, #f26622, #f78f1e);
+  background: linear-gradient(90deg, #f26622, #f78f1e);
+}
+
+.contact-form textarea, .contact-form input[type=text] {
+  float: left;
+  width: 100%;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.contact-form input[type=submit], .contact-form textarea, .contact-form input[type=text] {
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+
+.contact-form input[type=submit], .contact-form textarea::-ms-input-placeholder, .contact-form input[type=text]::-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder, .contact-form input[type=text]:-ms-input-placeholder, .contact-form textarea::placeholder, .contact-form input[type=text]::placeholder {
+  font-size: 0.8rem;
+}
+
+.contact-form textarea::placeholder, .contact-form input[type=text]::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #dddddd;
+  opacity: 1;
+  /* Firefox */
+}
+.contact-form textarea:-ms-input-placeholder, .contact-form input[type=text]:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff;
+}
+.contact-form textarea::-ms-input-placeholder, .contact-form input[type=text]::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ffffff;
+}
+
+.contact-form input[type=text] {
   height: 45px;
+  padding: 10px 0 10px 45px;
+}
+.contact-form textarea {
+  resize: none;
+  padding: 10px 20px;
+}
+.contact-form input[type=submit] {
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.contact-form input[type=submit]:hover {
+  background-color: #ffffff;
 }
 
-.careersicon.Steeper {
-  background-position: -6px -71px;
-  width: 51px;
-  height: 51px;
+.captcha-contact-us iframe {
+  margin: 0 auto;
+  display: table;
 }
 
-.careersicon.Wealth {
-  background-position: -70px -79px;
-  width: 51px;
-  height: 47px;
+.write-to-us-wrapper .display-flex {
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+.write-to-us-wrapper .display-flex .flex-1 {
+  max-width: 400px;
+  width: 100%;
 }
 
-.careersicon.Work {
-  background-position: -135px -71px;
-  width: 51px;
-  height: 51px;
+.contact-support {
+  font-size: 1.2rem;
+}
+
+.public-icon, .input-icon {
+  background-repeat: no-repeat;
+  background-image: url("../images/sprites/public-sprite.svg");
+}
+
+.input-icon {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-size: 250px;
+}
+
+.icon-phone {
+  background-position: -150px 0px;
+}
+
+.icon-play-store-bg {
+  width: 250px;
+  height: 84px;
+  background-position: -500px -83px;
+  background-size: 834px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* ==========
-Media Queries About Us CSS  : for mobile devices
+Media Queries Contact Us : for tablets, medium and large devices
+========== */
+@media (min-width: 768px) {
+  .address-wrapper :first-child {
+    padding-left: 0;
+  }
+  .address-wrapper :last-child {
+    padding-right: 0;
+  }
+}
+/* ==========
+Media Queries Contact Us : for mobile
 ========== */
 @media (max-width: 767.98px) {
-  .careers-summary li {
-    width: 100%;
-    min-height: initial;
+  .address-div {
+    margin-bottom: 10px;
+  }
+
+  .zone-wise-details li strong:after {
+    float: none;
+  }
+
+  .zone-wise-details li {
+    margin-bottom: 2px;
+  }
+
+  .write-to-us-wrapper .contact-support {
+    margin-bottom: 50px;
+  }
+  .write-to-us-wrapper .display-flex {
+    align-items: center;
+    -webkit-align-items: center;
   }
 }
 
-/*# sourceMappingURL=careers.css.map */
+/*# sourceMappingURL=contact.css.map */

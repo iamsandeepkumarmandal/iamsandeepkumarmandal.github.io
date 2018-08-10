@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAAA;;cAEc;AACN,oGAA4F;AACpG;;cAEc;AAId;;cAEc;AAId;;aAEa;AAKb;;aAEa;AAKb;;aAEa;AAGb;;;cAGc;ACnCd;;aAEa;AACb,qBAAqB;ECiBjB,eAAe,EDhBU,MAAM;ECiB/B,uBAAuB,EDjBE,MAAM;;AAI/B,gBAAE;EACE,WAAW,EAAE,IAAI;EACjB,OAAO,EAAE,YAAY;EACrB,SAAS,EAAE,MAAW;;AAG9B,kBAAkB;EACd,UAAU,EAAE,gDAAoE;EAChF,UAAU,EAAE,wCAA4D;EACxE,2CAAI;IACA,KAAK,EAAE,IAAI;EAEf,0BAAS;IACL,KAAK,EDEE,OAAO;;ACCtB;;aAEa;AACb,4BAA8C;EAC1C,uBAAuB;IACnB,aAAa,EAAE,IAAI;;EAGnB,gBAAE;IACE,MAAM,EAAE,MAAM;IACd,kBAAC;MACG,KAAK,EDXI,OAAO;;ECiBpB,iCAAa;IACT,aAAa,EAAE,IAAI;IACnB,OAAO,EAAE,KAAK;EAElB,uBAAC;IACG,KAAK,EAAE,IAAI",
-"sources": ["../../sass/common/variables.scss","../../sass/footer/footer.scss","../../sass/common/mixins.scss"],
-"names": [],
-"file": "footer.css"
-}
+{"version":3,"sourceRoot":"","sources":["../../sass/common/variables.scss","../../sass/footer/footer.scss","../../sass/common/mixins.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;AAGQ;AACR;AAAA;AAAA;AAMA;AAAA;AAAA;AAMA;AAAA;AAAA;AAOA;AAAA;AAAA;AAQA;AAAA;AAAA;AAKA;AAAA;AAAA;AAAA;ACjCA;AAAA;AAAA;AAGA;ECiBI,iBDhByB;ECiBzB,yBDjByB;;;AAIzB;EACI;EACA;EACA;;;AAGR;EACI;EACA;;AAEI;EACI;;AAGR;EACI;;AAEJ;EACI,ODHO;;;ACMf;AAAA;AAAA;AAGA;EACI;IACI;;;EAGA;IACI;;EACA;IACI,ODhBS;;;ECsBb;IACI;IACA;;EAEJ;IACI","file":"footer.css"}

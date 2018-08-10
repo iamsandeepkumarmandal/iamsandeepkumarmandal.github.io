@@ -6,7 +6,7 @@ jQuery(document).ready(function(){
     function initializeOwl(largeDevicesItems,mediumDevicesItems,tabletItems,showDotsFlagForDesktop,infiniteLoopDesktop){
       return owlCarouselOptions = {
         loop: false,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 4000,
         nav: false,
         dots: true,
@@ -17,17 +17,17 @@ jQuery(document).ready(function(){
             items: 1,
             dots: false,
             nav: true,
-            loop: false
+            loop: true
           },
           480: {
             items: 1,
-            loop: false,
+            loop: true,
             dots: false,
             nav: true
           },
           640: {
             items: 1,
-            loop: false,
+            loop: true,
             dots: false,
             nav: true,
           },
@@ -44,7 +44,8 @@ jQuery(document).ready(function(){
           1000: {
             items: largeDevicesItems,
             loop: infiniteLoopDesktop,
-            dots: showDotsFlagForDesktop
+            dots: showDotsFlagForDesktop,
+            mouseDrag : false
           }
         }
       };

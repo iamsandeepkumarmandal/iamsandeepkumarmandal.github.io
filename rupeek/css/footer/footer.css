@@ -26,37 +26,51 @@ Footer Wrapper Starts Here
 ========== */
 .footer-links-wrapper {
   justify-content: center;
-  -webkit-justify-content: center; }
+  -webkit-justify-content: center;
+}
 
 .footer-links li {
   margin-left: 50px;
   display: inline-block;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+}
 
 .copyright-wrapper {
   background: -webkit-linear-gradient(90deg, #f26622, #f78f1e);
-  background: linear-gradient(90deg, #f26622, #f78f1e); }
-  .copyright-wrapper li, .copyright-wrapper a {
-    color: #fff; }
-  .copyright-wrapper a:hover {
-    color: #40150a; }
+  background: linear-gradient(90deg, #f26622, #f78f1e);
+}
+.copyright-wrapper li:first-child {
+  margin-left: 0;
+}
+.copyright-wrapper li, .copyright-wrapper a {
+  color: #fff;
+}
+.copyright-wrapper a:hover {
+  color: #40150a;
+}
 
 /* ==========
 Media Queries Footer CSS 
 ========== */
 @media (max-width: 767.98px) {
   .google-play-store-icon {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+  }
 
   .footer-links li {
-    margin: 0 15px; }
-    .footer-links li a {
-      color: #f26422; }
+    margin: 0 15px;
+  }
+  .footer-links li a {
+    color: #f26422;
+  }
 
   .copyright-wrapper li:first-child {
     margin-bottom: 20px;
-    display: block; }
+    display: block;
+  }
   .copyright-wrapper li a {
-    color: #fff; } }
+    color: #fff;
+  }
+}
 
 /*# sourceMappingURL=footer.css.map */
