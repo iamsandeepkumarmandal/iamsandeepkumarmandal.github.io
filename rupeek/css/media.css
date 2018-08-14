@@ -258,7 +258,7 @@ li {
 .margin-bottom-30px {
   margin-bottom: 30px; }
 
-.margin-auto {
+.margin-auto, .media-wrapper .media-logo .logo {
   margin: auto; }
 
 .transition {
@@ -506,7 +506,7 @@ select.form-control {
   .container {
     width: 1170px; } }
 @media (max-width: 767.98px) {
-  .inner-page-introduction, .benefits-list-wrapper, .benefits .details {
+  .inner-page-introduction {
     max-width: 100%;
     width: 100%; }
 
@@ -708,64 +708,87 @@ Media Queries Footer CSS
     display: block; }
   .copyright-wrapper li a {
     color: #fff; } }
-/* About CSS Starts Here */
-.inner-page-introduction h4 {
-  font-size: 1.8rem; }
-.inner-page-introduction img {
-  max-width: 150px; }
+.opacity-75-percent {
+  opacity: 0.75; }
 
-.benefits-list-wrapper {
-  max-width: 80%;
-  margin: 0 auto;
-  font-size: 1.0666666667rem;
-  line-height: 20px; }
-  .benefits-list-wrapper h4 {
-    font-size: 1.8rem; }
+.media-wrapper .icon, .media-wrapper .details {
+  width: 100%; }
 
-.benefits .icon {
-  background-size: 900px;
-  background-image: url("../images/about-sprite.svg");
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 300px; }
-.benefits .details {
-  max-width: calc(100% - 300px);
-  padding: 0 20px; }
-.benefits .safe-and-secure {
-  background-position: 0px -300px; }
-.benefits .easy-to-use {
-  background-position: -600px 0px; }
-.benefits .affordable-solutions {
-  background-position: -300px 0px; }
+.rupeek-in-media-wrapper {
+  margin: 0 auto; }
+  .rupeek-in-media-wrapper .media-wrapper {
+    border-bottom: 1px solid #dddddd;
+    justify-content: space-between;
+    -webkit-justify-content: space-between; }
+    .rupeek-in-media-wrapper .media-wrapper:first-child {
+      padding-top: 0; }
+    .rupeek-in-media-wrapper .media-wrapper:last-child {
+      border-bottom: none;
+      padding-bottom: 0; }
 
-/* ==========
-Media Queries About Us CSS  : for TABLETS and above
-========== */
+.media-wrapper .icon {
+  max-width: 240px; }
+.media-wrapper .details {
+  position: relative; }
+  .media-wrapper .details h3:hover a {
+    color: #f26422; }
+.media-wrapper .rupeek-btn {
+  font-size: 1rem;
+  padding: 10px 40px; }
+.media-wrapper .media-logo {
+  height: 160px;
+  width: 240px;
+  margin: 0 auto 10px;
+  border: 1px solid rgba(157, 174, 184, 0.4);
+  box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.35), 0 2px 10px -2px rgba(0, 0, 0, 0.13), 0 0px 2px 0 rgba(0, 0, 0, 0.12); }
+  .media-wrapper .media-logo .logo {
+    background-image: url("../images/sprites/media-sprite.jpg");
+    background-repeat: no-repeat;
+    height: 60px; }
+  .media-wrapper .media-logo .prajavani {
+    background-position: -163px 9px;
+    width: 204px; }
+  .media-wrapper .media-logo .eenadu {
+    width: 150px;
+    background-position: 0 -82px; }
+  .media-wrapper .media-logo .sanje-vani {
+    background-position: -522px -100px;
+    width: 150px; }
+  .media-wrapper .media-logo .samyuktha {
+    width: 170px;
+    background-position: -349px -93px; }
+  .media-wrapper .media-logo .hosa-digantha {
+    width: 188px;
+    background-position: -158px -90px; }
+  .media-wrapper .media-logo .andhra-jyothi {
+    width: 190px;
+    background-position: -372px 1px; }
+  .media-wrapper .media-logo .suvarna-times {
+    background-position: -679px -100px;
+    width: 165px; }
+  .media-wrapper .media-logo .vishwa-vani {
+    width: 150px;
+    background-position: 0 -9px; }
+  .media-wrapper .media-logo .cio-icon {
+    width: 60px;
+    height: 83px;
+    background-position: -571px -7px; }
+
 @media (min-width: 768px) {
-  .benefits-list-wrapper .benefits:nth-child(even) {
-    flex-direction: row-reverse; } }
-/* ==========
-Media Queries About Us CSS  : for mobile devices
-========== */
+  .rupeek-in-media-wrapper {
+    max-width: 85%; }
+
+  .media-wrapper .details {
+    max-width: calc(100% - 300px); }
+    .media-wrapper .details .read-more {
+      position: absolute;
+      bottom: 0; } }
 @media (max-width: 767.98px) {
-  .inner-page-introduction, .benefits-list-wrapper, .benefits .details {
-    max-width: 100%;
-    width: 100%; }
+  .media-wrapper {
+    align-items: center;
+    -webkit-align-items: center;
+    text-align: center; }
+    .media-wrapper .details {
+      margin-top: 20px; } }
 
-  .benefits {
-    margin-bottom: 30px; }
-    .benefits .icon {
-      width: 185px;
-      height: 185px;
-      background-size: 585px;
-      margin-bottom: 20px; }
-    .benefits .safe-and-secure {
-      background-position: 0px -195px; }
-    .benefits .easy-to-use {
-      background-position: -396px 25px; }
-    .benefits .affordable-solutions {
-      background-position: -200px 18px; }
-    .benefits:last-child {
-      margin-bottom: 0; } }
-
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=media.css.map */
