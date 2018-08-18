@@ -79,3 +79,16 @@ jQuery(document).ready(function(){
         });
       })
 });
+
+var getDeviceWidth = $(window).width();
+if(getDeviceWidth < 768){
+  $(document).scroll(function(){
+    var scrollTop = $(window).scrollTop();
+    var getPositionToOpenFixedFooter = $('main').offset().top;
+    if(scrollTop > getPositionToOpenFixedFooter){
+      $('.trigger_fixed_footer_js').addClass('active');
+    }else{
+      $('.trigger_fixed_footer_js').removeClass('active');
+    }
+  })
+}

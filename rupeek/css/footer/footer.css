@@ -1,8 +1,4 @@
 /* ==========
-Import Font family from fonts.google.com
- ========== */
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow:400,400i,500,700");
-/* ==========
 Define Font family
  ========== */
 /* ==========
@@ -49,6 +45,31 @@ Footer Wrapper Starts Here
   color: #40150a;
 }
 
+.mobile-fixed-footer {
+  position: fixed;
+  bottom: 0;
+  padding: 5px 10px;
+  z-index: 1111;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -moz-box-shadow: inset 1px 0px 5px 3px #dddddd;
+  -webkit-box-shadow: inset 1px 0px 5px 3px #dddddd;
+  box-shadow: inset 1px 0px 5px 3px #dddddd;
+}
+.mobile-fixed-footer.active {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.mobile-fixed-footer .display-flex {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.mobile-fixed-footer .icon {
+  margin-left: 20px;
+}
+
 /* ==========
 Media Queries Footer CSS 
 ========== */
@@ -68,8 +89,15 @@ Media Queries Footer CSS
     margin-bottom: 20px;
     display: block;
   }
+  .copyright-wrapper li:nth-child(2) {
+    margin-left: 0;
+  }
   .copyright-wrapper li a {
     color: #fff;
+  }
+
+  .copyright-wrapper {
+    margin-bottom: 60px;
   }
 }
 

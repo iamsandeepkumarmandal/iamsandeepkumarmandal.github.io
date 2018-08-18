@@ -1,8 +1,4 @@
 /* ==========
-Import Font family from fonts.google.com
- ========== */
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow:400,400i,500,700");
-/* ==========
 Define Font family
  ========== */
 /* ==========
@@ -30,19 +26,28 @@ Define the breakpoints at which your layout will change,
   display: inline-block;
   padding: 0 10px;
 }
+.main-menu li:not(:last-child) a {
+  color: #40150a;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #f26422, #f26422 50%, #40150a 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+}
 .main-menu li a:hover {
   color: #f26422;
+  background-position: 0%;
 }
-.main-menu li:last-child {
-  padding-right: 0;
-}
-.main-menu .rupeek-btn {
+.main-menu li a.rupeek-btn {
   box-shadow: none;
   font-size: initial;
   padding: 10px 20px;
 }
-.main-menu .rupeek-btn:hover {
+.main-menu li a.rupeek-btn:hover {
   color: #ffffff;
+}
+.main-menu li:last-child {
+  padding-right: 0;
 }
 
 /* Hamburger Menu Starts Here */

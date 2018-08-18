@@ -297,9 +297,9 @@ li {
  Section seperator css
 ========== */
 .section-seperator {
-  -moz-box-shadow: 1px 6px 7px rgba(33, 30, 30, 0.1);
-  -webkit-box-shadow: 1px 6px 7px rgba(33, 30, 30, 0.1);
-  box-shadow: 1px 6px 7px rgba(33, 30, 30, 0.1);
+  -moz-box-shadow: 1px 4px 7px rgba(33, 30, 30, 0.1);
+  -webkit-box-shadow: 1px 4px 7px rgba(33, 30, 30, 0.1);
+  box-shadow: 1px 4px 7px rgba(33, 30, 30, 0.1);
 }
 
 /* ==========
@@ -578,6 +578,9 @@ table th[class*=col-] {
   display: table-cell;
 }
 
+/* ==========
+  Media queries
+========== */
 @media (min-width: 767.98px) {
   .container {
     width: 750px;

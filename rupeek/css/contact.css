@@ -1,8 +1,4 @@
 /* ==========
-Import Font family from fonts.google.com
- ========== */
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow:400,400i,500,700");
-/* ==========
 Define Font family
  ========== */
 /* ==========
@@ -21,8 +17,6 @@ Define Border Radius
 Define the breakpoints at which your layout will change,
  adapting to different screen sizes.
 ==========  */
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow:400,400i,500,700");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow:400,400i,500,700");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow:400,400i,500,700");
 .public-icon, .input-icon {
   background-repeat: no-repeat;
@@ -397,9 +391,9 @@ li {
  Section seperator css
 ========== */
 .section-seperator {
-  -moz-box-shadow: 1px 6px 7px rgba(33, 30, 30, 0.1);
-  -webkit-box-shadow: 1px 6px 7px rgba(33, 30, 30, 0.1);
-  box-shadow: 1px 6px 7px rgba(33, 30, 30, 0.1);
+  -moz-box-shadow: 1px 4px 7px rgba(33, 30, 30, 0.1);
+  -webkit-box-shadow: 1px 4px 7px rgba(33, 30, 30, 0.1);
+  box-shadow: 1px 4px 7px rgba(33, 30, 30, 0.1);
 }
 
 /* ==========
@@ -678,6 +672,9 @@ table th[class*=col-] {
   display: table-cell;
 }
 
+/* ==========
+  Media queries
+========== */
 @media (min-width: 767.98px) {
   .container {
     width: 750px;
@@ -749,9 +746,6 @@ table th[class*=col-] {
 }
 /* Import Header SCSS */
 /* ==========
-Import Font family from fonts.google.com
- ========== */
-/* ==========
 Define Font family
  ========== */
 /* ==========
@@ -789,19 +783,28 @@ Define the breakpoints at which your layout will change,
   display: inline-block;
   padding: 0 10px;
 }
+.main-menu li:not(:last-child) a {
+  color: #40150a;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #f26422, #f26422 50%, #40150a 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+}
 .main-menu li a:hover {
   color: #f26422;
+  background-position: 0%;
 }
-.main-menu li:last-child {
-  padding-right: 0;
-}
-.main-menu .rupeek-btn {
+.main-menu li a.rupeek-btn {
   box-shadow: none;
   font-size: initial;
   padding: 10px 20px;
 }
-.main-menu .rupeek-btn:hover {
+.main-menu li a.rupeek-btn:hover {
   color: #ffffff;
+}
+.main-menu li:last-child {
+  padding-right: 0;
 }
 
 /* Hamburger Menu Starts Here */
@@ -871,9 +874,6 @@ Define the breakpoints at which your layout will change,
 }
 /* Import Footer SCSS */
 /* ==========
-Import Font family from fonts.google.com
- ========== */
-/* ==========
 Define Font family
  ========== */
 /* ==========
@@ -930,6 +930,31 @@ Footer Wrapper Starts Here
   color: #40150a;
 }
 
+.mobile-fixed-footer {
+  position: fixed;
+  bottom: 0;
+  padding: 5px 10px;
+  z-index: 1111;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -moz-box-shadow: inset 1px 0px 5px 3px #dddddd;
+  -webkit-box-shadow: inset 1px 0px 5px 3px #dddddd;
+  box-shadow: inset 1px 0px 5px 3px #dddddd;
+}
+.mobile-fixed-footer.active {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.mobile-fixed-footer .display-flex {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.mobile-fixed-footer .icon {
+  margin-left: 20px;
+}
+
 /* ==========
 Media Queries Footer CSS 
 ========== */
@@ -949,8 +974,15 @@ Media Queries Footer CSS
     margin-bottom: 20px;
     display: block;
   }
+  .copyright-wrapper li:nth-child(2) {
+    margin-left: 0;
+  }
   .copyright-wrapper li a {
     color: #fff;
+  }
+
+  .copyright-wrapper {
+    margin-bottom: 60px;
   }
 }
 .address-div {
