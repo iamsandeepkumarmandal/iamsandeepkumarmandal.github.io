@@ -349,9 +349,17 @@ a:focus {
     min-height: 795px;
 }
 .left-gallery,.right-gallery-image-1,.right-gallery-image-2{
+    position: relative;
+}
+.left-gallery:before,.right-gallery-image-1:before,.right-gallery-image-2:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     background-repeat: no-repeat;
     background-color: rgba(255, 29, 37, 0.2);
-    background-blend-mode: multiply;
 }
 .right-gallery-image-1{
     background-image: url('../images/gallery/fracktal-2.jpg');
