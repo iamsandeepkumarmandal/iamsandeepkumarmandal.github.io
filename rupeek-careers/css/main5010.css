@@ -1367,7 +1367,7 @@ border-top-right-radius: 5px;border-bottom-right-radius: 5px}
 /* Flex Classes Ends Here */
 .start-your-careers-wrapper{
   min-height: 600px;
-  background-image: url('/img/image-3.jpg');
+  background-image: url('../img/image-3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
