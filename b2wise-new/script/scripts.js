@@ -1,18 +1,18 @@
-// $(document).keydown(function(event){
-//     if(event.keyCode==123){
-//         return false;
-//     }
-//     else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
-//              return false;
-//     }
-//     var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
+$(document).keydown(function(event){
+    if(event.keyCode==123){
+        return false;
+    }
+    else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+             return false;
+    }
+    var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
 
-//     if (event.ctrlKey && (pressedKey == "c" || pressedKey == "u")) {
-//         alert('Sorry, This Functionality Has Been Disabled!'); 
-//         //disable key press porcessing
-//         return false; 
-//     }
-// });
+    if (event.ctrlKey && (pressedKey == "c" || pressedKey == "u")) {
+        //alert('Sorry, This Functionality Has Been Disabled!'); 
+        //disable key press porcessing
+        return false; 
+    }
+});
 
 function isNumberKey(evt) {
     var charCode = (evt.which) ? evt.which : event.keyCode;
@@ -22,9 +22,9 @@ function isNumberKey(evt) {
 
     return true;
 }
-// $(document).on("contextmenu",function(e){        
-//  //  e.preventDefault();
-// });
+$(document).on("contextmenu",function(e){        
+   e.preventDefault();
+});
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
     /*loop through a collection of all HTML elements:*/
