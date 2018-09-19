@@ -23,7 +23,7 @@ function isNumberKey(evt) {
     return true;
 }
 $(document).on("contextmenu",function(e){        
-   // e.preventDefault();
+   e.preventDefault();
 });
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
