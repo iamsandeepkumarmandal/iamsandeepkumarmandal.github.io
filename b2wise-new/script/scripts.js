@@ -85,7 +85,7 @@ jQuery(document).ready(function () {
     includeHTML();
     var getWidth = $(window).width();
     var customerPraiseOptions = {
-        pagerCustom: '#bx-pager',
+        // pagerCustom: '#bx-pager',
         controls: false,
         autoStart: true,
         auto: true,
@@ -175,15 +175,15 @@ jQuery(document).ready(function () {
             },
             640: {
                 margin: 5,
-                items: 3
+                items: 2
             },
             768: {
                 margin: 5,
-                items: 3
+                items: 2
             },
             1000: {
                 margin: 5,
-                items: 3
+                items: 2
             }
         }
     });
