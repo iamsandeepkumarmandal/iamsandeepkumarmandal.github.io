@@ -309,47 +309,7 @@ nav.main-menu > ul > li {
     font-weight: 900;
     position: relative;
 }
-nav.main-menu ul li > ul {
-    position: absolute;
-    display: block;
-    min-width: 150px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,.07);
-    opacity: 0;
-    visibility: hidden;
-    top: 110%;
-    left: 50%;
-    transform: translate(-50%,5px);
-    -webkit-transform: translate(-50%,5px);
-}
-nav.main-menu ul li:hover ul {
-    opacity: 1;
-    visibility: visible;
-    transform: translate(-50%,0px);
-    -webkit-transform: translate(-50%,0px);
-}
-nav.main-menu ul li:hover > a{
-    color: #539f2f;
-}
-nav.main-menu ul li > ul > li {
-    float: left;
-    width: 100%;
-    background-color: #ffffff;
-}
-nav.main-menu ul li > ul > li a {
-    padding: 10px 0;
-    float: left;
-    width: 100%;
-    text-align: center;
-}
-nav.main-menu ul li > ul:before{
-    content: '';
-    background-image: url(../images/dropdown-header.svg);
-    width: 44px;
-    height: 9px;
-    display: table;
-    margin: 0 auto;
-    background-size: 100% 100%;
-}
+
 nav.main-menu > ul {
     margin: 0 auto;
     display: table;
@@ -358,9 +318,7 @@ nav.main-menu ul li a {
     position: relative;
     
 }
-nav.main-menu ul li a:hover{
-    color: #43ac00;
-}
+
 nav.main-menu ul li a:before {
     content: none;
     position: absolute;
@@ -387,6 +345,30 @@ nav.main-menu ul li.language-selection img {
     max-width: 20px;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
     border-radius: 50%;
+}
+.dropdown:after {
+    content: '';
+    border: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #ccc;
+    position: absolute;
+    right: -1px;
+    top: 6px;
+    transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -webkit-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -ms-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -o-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -moz-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover:after {
+    transform: rotate(180deg);
+    border-top-color: #539f2f;
 }
 /* Banner CSS Starts Here */
 .main-banner .bx-wrapper {
@@ -1407,6 +1389,10 @@ nav.main-menu ul li.language-selection img {
         flex-direction: column;
         -webkit-flex-direction: column;
     }
+    .dropdown:after {
+        right: -20px;
+        top: 9px;
+    }
 }
 @media(min-width:240px) and (max-width:767px){
     .testimonials-slider-controls ul {
@@ -1528,6 +1514,9 @@ nav.main-menu ul li.language-selection img {
         transform: translateY(0);
         -webkit-transform: translateY(0);
     }
+    .main-menu > ul ul {
+        text-align: center;
+    }
 }
 @media(min-width:768px) and (max-width:991px){
     html {
@@ -1601,5 +1590,50 @@ nav.main-menu ul li.language-selection img {
     .journey-steps .journey-image,.journey-steps .journey-text{
         min-width: 50%;
         max-width: 50%;
+    }
+    nav.main-menu ul li > ul {
+        position: absolute;
+        display: block;
+        min-width: 150px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,.07);
+        opacity: 0;
+        visibility: hidden;
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%,5px);
+        -webkit-transform: translate(-50%,5px);
+        z-index: 11;
+    }
+    nav.main-menu ul li:hover ul {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%,0px);
+        -webkit-transform: translate(-50%,0px);
+    }
+    nav.main-menu ul li > ul > li {
+        float: left;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    nav.main-menu ul li > ul > li a {
+        padding: 10px 0;
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+    nav.main-menu ul li > ul:before{
+        content: '';
+        background-image: url(../images/dropdown-header.svg);
+        width: 44px;
+        height: 9px;
+        display: table;
+        margin: 0 auto;
+        background-size: 100% 100%;
+    }
+    nav.main-menu ul li a:hover{
+        color: #43ac00;
+    }
+    nav.main-menu ul li:hover > a{
+        color: #539f2f;
     }
 }
