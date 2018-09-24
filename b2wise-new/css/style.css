@@ -1180,6 +1180,7 @@ nav.main-menu ul li.language-selection img {
 .partner {
     min-height: 190px;
     max-height: 190px;
+    max-width: 300px;
 }
 .partner img{
     max-width: 180px;
