@@ -292,6 +292,7 @@ li {
     left: 0;
     right: 0;
     z-index: 11111;
+    background-color: #ffffff;
 }
 .header.active .logo{
     transform: scale(1);
@@ -1414,6 +1415,30 @@ nav.main-menu ul li.language-selection img {
 .request-demo.active-training .contact-wrapper{
     padding: 0;
 }
+
+/* Solutions CSS Starts Here */
+.features-wrapper .flex-1{
+    width: 100%;
+    min-width: 200px;
+    max-width: 200px;
+}
+.features {
+    height: 150px;-webkit-box-shadow: 0 0 15px 3px rgba(0,0,0,0.10);box-shadow: 0 0 15px 3px rgba(0,0,0,0.10);}
+
+.features h5 {
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+}
+.features-wrapper {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.features-wrapper.demand-management .flex-1 {
+    max-width: 250px;
+}
 @media(min-width:240px) and (max-width:767px){
     .flex-direction-column-mobile{
         flex-direction: column;
@@ -1422,6 +1447,10 @@ nav.main-menu ul li.language-selection img {
     .dropdown:after {
         right: -20px;
         top: 9px;
+    }
+    .features-wrapper {
+        justify-content: center;
+        -webkit-justify-content: center;
     }
 }
 @media(min-width:240px) and (max-width:767px){
