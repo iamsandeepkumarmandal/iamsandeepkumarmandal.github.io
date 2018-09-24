@@ -1384,6 +1384,36 @@ nav.main-menu ul li.language-selection img {
 .journey-steps.our-history .journey-text h4 {
     font-size: 2rem;
 }
+
+
+/* Training CSS Starts Here ?*/
+.official-text-book img {
+    box-shadow: 1px 1px 10px rgba(33, 30, 30, 0.25);
+}
+.course-content h6 {
+    background-color: #ddd;
+    padding: 5px 10px;
+}
+
+.course-content ul li {
+    list-style: circle;
+    list-style-position: inside;
+    line-height: 24px;
+}
+
+.course-content ul li p {
+    display: inline-block;
+}
+
+.request-demo.active-training {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    box-shadow: none;
+    border: none;
+}
+.request-demo.active-training .contact-wrapper{
+    padding: 0;
+}
 @media(min-width:240px) and (max-width:767px){
     .flex-direction-column-mobile{
         flex-direction: column;
