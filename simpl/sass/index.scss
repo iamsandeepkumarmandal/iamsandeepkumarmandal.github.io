@@ -1,0 +1,85 @@
+@import 'common/_base.scss';
+
+/* Import Header SCSS */
+@import 'common/_header.scss';
+%inline-block {
+    display: inline-block;
+}
+.customer-welcome {
+    padding-bottom: 40px;
+    h1 {
+        font-size: (24/$base-font-size)+rem;
+        color: #4a4a4a;
+    }
+    h2 {
+        color: $body-bold-font-color;
+    }
+}
+%menu-hover-active {
+    color: $body-bold-font-color;
+}
+%width-100 {
+    width: 100%;
+}
+.customer-tabs__links-wrapper {
+    border-bottom: 1px solid #e6ebe9;
+    li {
+        @extend %inline-block;
+        padding: 0 30px;
+        &:first-child {
+            padding-left: 0px;
+        }
+        &:last-child {
+            padding-right: 0px;
+        }
+        a {
+            @extend %inline-block;
+            padding-bottom: 15px;
+            position: relative;
+            font-size: (14/$base-font-size)+rem;
+            letter-spacing: 1px;
+            @include transition(0.5s);
+            &.active {
+                @extend %menu-hover-active;
+                &:after {
+                    @extend %width-100;
+                }
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                left: 0;
+                height: 2px;
+                background-color: $body-bold-font-color;
+                @include transition(0.5s);
+            }
+            &:hover {
+                @extend %menu-hover-active;
+                &:after {
+                    @extend %width-100;
+                }
+            }
+        }
+    }
+    
+}
+@media (max-width:$mobile-devices-max-width+px) {
+    .customer-welcome {
+        h2 {
+            span {
+                display: block;
+            }
+        }
+    }
+    .customer-welcome {
+        &__name{
+            display: block;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+    }
+}
+@import 'common/_footer.scss';
