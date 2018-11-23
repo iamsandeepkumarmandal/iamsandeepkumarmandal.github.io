@@ -405,7 +405,7 @@ Define the breakpoints at which your layout will change,
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 209, 193, 0.75);
+    background-color: rgba(0, 209, 193, 0.95);
     z-index: 111;
     left: 0;
     opacity: 0;
@@ -702,6 +702,10 @@ Define the breakpoints at which your layout will change,
 }
 
 @media (max-width: 767.98px) {
+  .customer-tabs__links-wrapper li {
+    padding: 0;
+  }
+
   .customer-welcome h2 span {
     display: block;
   }

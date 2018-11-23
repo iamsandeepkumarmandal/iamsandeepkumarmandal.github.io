@@ -323,6 +323,11 @@
     }
 }
 @media (max-width:$mobile-devices-max-width+px) {
+    .customer-tabs__links-wrapper {
+        li {
+            padding: 0;
+        }
+    }
     .customer-welcome {
         h2 {
             span {
@@ -339,7 +344,7 @@
         }
     }
 }
-@media(min-width:768px) {
+@media(min-width:$tablet-devices-min+px) {
     .customer-tabs__content-wrapper {
         .flex-1 {
             &:first-child {
