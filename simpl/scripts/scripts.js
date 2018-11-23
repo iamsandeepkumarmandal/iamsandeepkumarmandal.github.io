@@ -16,7 +16,7 @@ if(deviceWidth < 768) {
     $('.slider').bxSlider({
         minSlides: 1,
         maxSlides: 8,
-        slideWidth: 80,
+        slideWidth: 120,
         infiniteLoop: false,
         hideControlOnEnd: true,
         slideMargin: 10,
