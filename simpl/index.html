@@ -70,19 +70,389 @@
             </h2>
         </div>
     </section>
-    <sectoion class="customer-tabs">
+    <section class="customer-tabs">
         <div class="customer-tabs__links-wrapper white-background">
             <div class="container">
                 <ul>
-                    <li><a href="#0" class="active">OVERVIEW</a></li>
-                    <li><a href="#0">PROFILE</a></li>
-                    <li><a href="#0">TRANSACTIONS</a></li>
-                    <li><a href="#0">MERCHANTS</a></li>
-                    <li><a href="#0">HELP</a></li>
+                    <li><a href="#expenditure" class="active">OVERVIEW</a></li>
+                    <li><a href="#profile">PROFILE</a></li>
+                    <li><a href="#transactions">TRANSACTIONS</a></li>
+                    <li><a href="#marchants">MERCHANTS</a></li>
+                    <li><a href="#faqs">HELP</a></li>
                 </ul>
             </div>
         </div>
-    </sectoion>
+        <div class="customer-tabs__content-wrapper section-padding-30px">
+            <div class="container display-flex flex-direction-column-mobile">
+                <div class="flex-1">
+                    <section class="customer-tabs_content-wrapper__expenditure margin-bottom-30px block" id='expenditure'>
+                        <h5 class="margin-bottom-10px normal-font">EXPENDITURE</h5>
+                        <div class="expenditure card card__padding white-background block">
+                            <div class="total-spent-spending-limit-wrapper display-flex flex-align-center flex-justify-content-space-between">
+                                <div class="total-spent">
+                                    <h6 class="normal-font">Total Spent</h6>
+                                    <p><span class="normal-font">&#8377;</span>
+                                    <span class="bold-font">750</span></p>
+                                </div>
+                                <div class="total-spent text-right">
+                                    <h6 class="normal-font">Spending Limit</h6>
+                                    <p><span class="normal-font">&#8377;</span>
+                                    <span class="bold-font">5000</span></p>
+                                </div>
+                            </div>
+                            <div class="expenditure__progressbar">
+                                <div class="progress transition"></div>
+                            </div>
+                            <button class="simpl-btn block"><i class="fa fa-lock" aria-hidden="true"></i> PAY NOW</button>
+                        </div>
+                    </section>
+                    <section class="customer-tabs_content-wrapper__transactions margin-bottom-30px block" id='transactions'>
+                        <h5 class="margin-bottom-10px normal-font">TRANSACTIONS</h5>
+                        <div class="expenditure-wrapper card white-background block">
+                            <div class="expenditure-wrapper__list">
+                                <header class="display-flex flex-align-center  flex-justify-content-space-between">
+                                    <div class="merchant">
+                                        <h5 class="medium-bold-font">Faasos</h5>
+                                        <h6 class="normal-font">May 27, 04:25 PM</h6>
+                                    </div>
+                                    <div class="date-of-transaction text-right">
+                                        <h5><span class="normal-font">&#8377;</span></span>180</h5>
+                                        <a class="cursor-pointer more-button show-transaction-details_js" data-target-body='#show-more-1'>More</a>
+                                    </div>
+                                </header>
+                                <div class="expenditure-wrapper__list__body" id='show-more-1'>
+                                    <div class="expenditure-wrapper__list__body__details display-flex flex-justify-content-space-between">
+                                        <div class="paid-amount-date display-flex flex-align-center">
+                                            <svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon">
+                                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <g id="transaction-icon-tick" transform="translate(1.000000, 1.000000)">
+                                                        <circle id="Oval" stroke="#00D1C1" stroke-width="2" cx="16" cy="16" r="16"></circle>
+                                                        <path d="M13.424,20.668 L10.384,17.594 C10.0706975,17.3145779 9.93649599,16.8854688 10.0347673,16.4773292 C10.1330386,16.0691896 10.4478496,15.7481932 10.854,15.642 C11.2612067,15.5400741 11.6912216,15.6744055 11.968,15.99 L14.217,18.25 L20.165,12.254 C20.6115098,11.8878705 21.2631883,11.9212122 21.67,12.331 C22.0781856,12.7425143 22.1126075,13.3948106 21.75,13.847 L15.012,20.668 C14.8023263,20.8802853 14.5163758,20.9997679 14.218,20.9997679 C13.9196242,20.9997679 13.6336737,20.8802853 13.424,20.668 Z" id="Path" fill="#00D1C1"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <div class="paid-amount theme-color">
+                                                <h5 class="medium-bold-font">You Paid Simpl</h5>
+                                                <h6 class="normal-font">Jun 10, 01:30 PM</h6>
+                                            </div>
+                                        </div>
+                                        <div class="paid-amount-in-rupee theme-color text-right">
+                                            <h5><span class="normal-font small-font">CR</span> <span><span class="normal-font">&#8377;</span></span> 560</h5>
+                                            <h6 class="normal-font small-font">Thank you</h6>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="expenditure-wrapper__list">
+                                <header class="display-flex flex-align-center  flex-justify-content-space-between">
+                                    <div class="merchant">
+                                        <h5 class="medium-bold-font">BookMyShow</h5>
+                                        <h6 class="normal-font">May 22, 09:30 PM</h6>
+                                    </div>
+                                    <div class="date-of-transaction text-right">
+                                        <h5><span class="normal-font">&#8377;</span></span>320</h5>
+                                        <a class="cursor-pointer more-button show-transaction-details_js" data-target-body='#show-more-2'>More</a>
+                                    </div>
+                                </header>
+                                <div class="expenditure-wrapper__list__body" id='show-more-2'>
+                                    <div class="expenditure-wrapper__list__body__details display-flex flex-justify-content-space-between">
+                                        <div class="paid-amount-date display-flex flex-align-center">
+                                            <svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" class="icon">
+                                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <g id="transaction-icon-tick" transform="translate(1.000000, 1.000000)">
+                                                        <circle id="Oval" stroke="#00D1C1" stroke-width="2" cx="16" cy="16" r="16"></circle>
+                                                        <path d="M13.424,20.668 L10.384,17.594 C10.0706975,17.3145779 9.93649599,16.8854688 10.0347673,16.4773292 C10.1330386,16.0691896 10.4478496,15.7481932 10.854,15.642 C11.2612067,15.5400741 11.6912216,15.6744055 11.968,15.99 L14.217,18.25 L20.165,12.254 C20.6115098,11.8878705 21.2631883,11.9212122 21.67,12.331 C22.0781856,12.7425143 22.1126075,13.3948106 21.75,13.847 L15.012,20.668 C14.8023263,20.8802853 14.5163758,20.9997679 14.218,20.9997679 C13.9196242,20.9997679 13.6336737,20.8802853 13.424,20.668 Z"
+                                                            id="Path" fill="#00D1C1"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <div class="paid-amount theme-color">
+                                                <h5 class="medium-bold-font">You Paid Simpl</h5>
+                                                <h6 class="normal-font">Jun 10, 01:30 PM</h6>
+                                            </div>
+                                        </div>
+                                        <div class="paid-amount-in-rupee theme-color text-right">
+                                            <h5><span class="normal-font small-font">CR</span> <span><span class="normal-font">&#8377;</span></span>
+                                                560</h5>
+                                            <h6 class="normal-font small-font">Thank you</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="expenditure-wrapper__list">
+                                <header class="display-flex flex-align-center  flex-justify-content-space-between">
+                                    <div class="merchant">
+                                        <h5 class="medium-bold-font">DocsApp</h5>
+                                        <h6 class="normal-font">May 19, 11:30 AM</h6>
+                                    </div>
+                                    <div class="date-of-transaction text-right">
+                                        <h5><span class="normal-font">&#8377;</span></span>180</h5>
+                                        <a class="cursor-pointer more-button show-transaction-details_js" data-target-body='#show-more-3'>More</a>
+                                    </div>
+                                </header>
+                                <div class="expenditure-wrapper__list__body" id='show-more-3'>
+                                    <div class="expenditure-wrapper__list__body__details display-flex flex-justify-content-space-between">
+                                        <div class="paid-amount-date display-flex flex-align-center">
+                                            <svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" class="icon">
+                                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <g id="transaction-icon-tick" transform="translate(1.000000, 1.000000)">
+                                                        <circle id="Oval" stroke="#00D1C1" stroke-width="2" cx="16" cy="16" r="16"></circle>
+                                                        <path d="M13.424,20.668 L10.384,17.594 C10.0706975,17.3145779 9.93649599,16.8854688 10.0347673,16.4773292 C10.1330386,16.0691896 10.4478496,15.7481932 10.854,15.642 C11.2612067,15.5400741 11.6912216,15.6744055 11.968,15.99 L14.217,18.25 L20.165,12.254 C20.6115098,11.8878705 21.2631883,11.9212122 21.67,12.331 C22.0781856,12.7425143 22.1126075,13.3948106 21.75,13.847 L15.012,20.668 C14.8023263,20.8802853 14.5163758,20.9997679 14.218,20.9997679 C13.9196242,20.9997679 13.6336737,20.8802853 13.424,20.668 Z"
+                                                            id="Path" fill="#00D1C1"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <div class="paid-amount theme-color">
+                                                <h5 class="medium-bold-font">You Paid Simpl</h5>
+                                                <h6 class="normal-font">Jun 10, 01:30 PM</h6>
+                                            </div>
+                                        </div>
+                                        <div class="paid-amount-in-rupee theme-color text-right">
+                                            <h5><span class="normal-font small-font">CR</span> <span><span class="normal-font">&#8377;</span></span>
+                                                560</h5>
+                                            <h6 class="normal-font small-font">Thank you</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="expenditure-wrapper__list">
+                                <header class="display-flex flex-align-center  flex-justify-content-space-between">
+                                    <div class="merchant">
+                                        <h5 class="medium-bold-font">HolaChef</h5>
+                                        <h6 class="normal-font">May 17, 04:25 PM</h6>
+                                    </div>
+                                    <div class="date-of-transaction text-right">
+                                        <h5><span class="normal-font">&#8377;</span></span>380</h5>
+                                        <a class="cursor-pointer more-button show-transaction-details_js" data-target-body='#show-more-4'>More</a>
+                                    </div>
+                                </header>
+                                <div class="expenditure-wrapper__list__body" id='show-more-4'>
+                                    <div class="expenditure-wrapper__list__body__details display-flex flex-justify-content-space-between">
+                                        <div class="paid-amount-date display-flex flex-align-center">
+                                            <svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" class="icon">
+                                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <g id="transaction-icon-tick" transform="translate(1.000000, 1.000000)">
+                                                        <circle id="Oval" stroke="#00D1C1" stroke-width="2" cx="16" cy="16" r="16"></circle>
+                                                        <path d="M13.424,20.668 L10.384,17.594 C10.0706975,17.3145779 9.93649599,16.8854688 10.0347673,16.4773292 C10.1330386,16.0691896 10.4478496,15.7481932 10.854,15.642 C11.2612067,15.5400741 11.6912216,15.6744055 11.968,15.99 L14.217,18.25 L20.165,12.254 C20.6115098,11.8878705 21.2631883,11.9212122 21.67,12.331 C22.0781856,12.7425143 22.1126075,13.3948106 21.75,13.847 L15.012,20.668 C14.8023263,20.8802853 14.5163758,20.9997679 14.218,20.9997679 C13.9196242,20.9997679 13.6336737,20.8802853 13.424,20.668 Z"
+                                                            id="Path" fill="#00D1C1"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <div class="paid-amount theme-color">
+                                                <h5 class="medium-bold-font">You Paid Simpl</h5>
+                                                <h6 class="normal-font">Jun 10, 01:30 PM</h6>
+                                            </div>
+                                        </div>
+                                        <div class="paid-amount-in-rupee theme-color text-right">
+                                            <h5><span class="normal-font small-font">CR</span> <span><span class="normal-font">&#8377;</span></span>
+                                                560</h5>
+                                            <h6 class="normal-font small-font">Thank you</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="expenditure-wrapper__list">
+                                <header class="display-flex flex-align-center  flex-justify-content-space-between">
+                                    <div class="merchant">
+                                        <h5 class="medium-bold-font">Refund</h5>
+                                        <h6 class="normal-font">May 27, 04:25 PM</h6>
+                                    </div>
+                                    <div class="date-of-transaction text-right">
+                                        <h5><span class="normal-font small-font">CR</span> <span class="normal-font">&#8377;</span> </span>180</h5>
+                                        <a class="cursor-pointer more-button show-transaction-details_js" data-target-body='#show-more-5'>More</a>
+                                    </div>
+                                </header>
+                                <div class="expenditure-wrapper__list__body" id='show-more-5'>
+                                    <div class="expenditure-wrapper__list__body__details display-flex flex-justify-content-space-between">
+                                        <div class="paid-amount-date display-flex flex-align-center">
+                                            <svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" class="icon">
+                                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <g id="transaction-icon-tick" transform="translate(1.000000, 1.000000)">
+                                                        <circle id="Oval" stroke="#00D1C1" stroke-width="2" cx="16" cy="16" r="16"></circle>
+                                                        <path d="M13.424,20.668 L10.384,17.594 C10.0706975,17.3145779 9.93649599,16.8854688 10.0347673,16.4773292 C10.1330386,16.0691896 10.4478496,15.7481932 10.854,15.642 C11.2612067,15.5400741 11.6912216,15.6744055 11.968,15.99 L14.217,18.25 L20.165,12.254 C20.6115098,11.8878705 21.2631883,11.9212122 21.67,12.331 C22.0781856,12.7425143 22.1126075,13.3948106 21.75,13.847 L15.012,20.668 C14.8023263,20.8802853 14.5163758,20.9997679 14.218,20.9997679 C13.9196242,20.9997679 13.6336737,20.8802853 13.424,20.668 Z"
+                                                            id="Path" fill="#00D1C1"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <div class="paid-amount theme-color">
+                                                <h5 class="medium-bold-font">You Paid Simpl</h5>
+                                                <h6 class="normal-font">Jun 10, 01:30 PM</h6>
+                                            </div>
+                                        </div>
+                                        <div class="paid-amount-in-rupee theme-color text-right">
+                                            <h5><span class="normal-font small-font">CR</span> <span><span class="normal-font">&#8377;</span></span>
+                                                560</h5>
+                                            <h6 class="normal-font small-font">Thank you</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="expenditure-wrapper__list">
+                                    <header class="display-flex flex-align-center  flex-justify-content-space-between">
+                                        <div class="merchant">
+                                            <h5 class="medium-bold-font">Freshmenu</h5>
+                                            <h6 class="normal-font">May 27, 04:25 PM</h6>
+                                        </div>
+                                        <div class="date-of-transaction text-right">
+                                            <h5><span class="normal-font small-font">CR</span> <span class="normal-font">&#8377;</span> </span>180</h5>
+                                            <a class="cursor-pointer more-button show-transaction-details_js" data-target-body='#show-more-6'>More</a>
+                                        </div>
+                                    </header>
+                                    <div class="expenditure-wrapper__list__body" id='show-more-6'>
+                                        <div class="expenditure-wrapper__list__body__details display-flex flex-justify-content-space-between">
+                                            <div class="paid-amount-date display-flex flex-align-center">
+                                                <svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" class="icon">
+                                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                        <g id="transaction-icon-tick" transform="translate(1.000000, 1.000000)">
+                                                            <circle id="Oval" stroke="#00D1C1" stroke-width="2" cx="16" cy="16" r="16"></circle>
+                                                            <path d="M13.424,20.668 L10.384,17.594 C10.0706975,17.3145779 9.93649599,16.8854688 10.0347673,16.4773292 C10.1330386,16.0691896 10.4478496,15.7481932 10.854,15.642 C11.2612067,15.5400741 11.6912216,15.6744055 11.968,15.99 L14.217,18.25 L20.165,12.254 C20.6115098,11.8878705 21.2631883,11.9212122 21.67,12.331 C22.0781856,12.7425143 22.1126075,13.3948106 21.75,13.847 L15.012,20.668 C14.8023263,20.8802853 14.5163758,20.9997679 14.218,20.9997679 C13.9196242,20.9997679 13.6336737,20.8802853 13.424,20.668 Z"
+                                                                id="Path" fill="#00D1C1"></path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                                <div class="paid-amount theme-color">
+                                                    <h5 class="medium-bold-font">You Paid Simpl</h5>
+                                                    <h6 class="normal-font">Jun 10, 01:30 PM</h6>
+                                                </div>
+                                            </div>
+                                            <div class="paid-amount-in-rupee theme-color text-right">
+                                                <h5><span class="normal-font small-font">CR</span> <span><span class="normal-font">&#8377;</span></span>
+                                                    560</h5>
+                                                <h6 class="normal-font small-font">Thank you</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <footer>
+                                <h5 class="normal-font"><a href="#0" class="theme-color"><i class="fa fa-angle-right" aria-hidden="true"></i>See all transactions</a></h5>
+                            </footer>
+                        </div>
+                        
+                    </section>
+                </div>
+                <div class="flex-1">
+                    <section class="profile-content-wrapper margin-bottom-30px block" id='profile'>
+                        <h5 class="margin-bottom-10px normal-font">PROFILE</h5>
+                        <div class="profile-content-wrapper__container card white-background block">
+                            <div class="profile-image-name-credit-score">
+                                <figure>
+                                    <div class="profile-pic margin-bottom-10px">
+                                        <i class="fa fa-user-circle-o theme-color" aria-hidden="true"></i>
+                                    </div>
+                                    <figcaption>
+                                        <h5>John Doe</h5>
+                                        <div class="credit-score">
+                                            <h6 class="display-inline-block normal-font">Simpl Credit Score</h6> <span class="credit-score__ratings">3.5 / <span class="small-font">10</span></span>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="devices-used">
+                                <h5 class="normal-font"><i class="fa fa-mobile" aria-hidden="true"></i> &nbsp; Oneplus 3T + 2 more</h5>
+                                <h6>9870763023</h6>
+                            </div>
+                            <div class="transaction-details">
+                                <h5 class="normal-font">Total Transactions</h5>
+                                <div class="transaction-details__graph display-flex flex-align-center section-padding-30px">
+                                    <div class="graph">
+                                        <img src="./images/graph.png" class="img-responsive" alt=""/>
+                                    </div>
+                                    <div class="graph-info">
+                                        <ul>
+                                            <li><span class="circle food"></span>Food</li>
+                                            <li><span class="circle personal-care"></span>Personal Care</li>
+                                            <li><span class="circle clothes"></span>Clothes</li>
+                                            <li><span class="circle travel"></span>Travel</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <footer class="block">
+                                <h5 class="normal-font pull-left"><a href="#0" class="theme-color"><i class="fa fa-angle-right" aria-hidden="true"></i>Your Profile</a></h5> 
+                                <h5 class="normal-font pull-right incomplete">Incomplete</h5>
+                            </footer>
+                        </div>
+                    </section>
+                    <section class="faqs-wrapper margin-bottom-30px block" id='faqs'>
+                        <h5 class="margin-bottom-10px normal-font">FAQ</h5>
+                        <div class="card white-background block theme-color">
+                            <div class="faqs-wrapper__list">
+                                <header class="cursor-pointer show-transaction-details_js" data-target-body='#faq-1'>How does Simpl work?</header>
+                                <div class="body-wrapper" id='faq-1'>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                </div>
+                            </div>
+                            <div class="faqs-wrapper__list">
+                                <header class="cursor-pointer show-transaction-details_js" data-target-body='#faq-2'>How is my Spending limit determined?</header>
+                                <div class="body-wrapper" id='faq-2'>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                </div>
+                            </div>
+                            <div class="faqs-wrapper__list no-border">
+                                <header class="cursor-pointer show-transaction-details_js" data-target-body='#faq-3'>How does Simpl’s billing cycle works?</header>
+                                <div class="body-wrapper" id='faq-3'>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                                </div>
+                            </div>
+                            <footer class="block">
+                                <h5 class="normal-font pull-left"><a href="#0" class="theme-color"><i class="fa fa-angle-right" aria-hidden="true"></i>See all questions</a></h5> 
+                            </footer>
+                        </div>
+                    </section>
+                    <section class="marchants-wrapper margin-bottom-30px block" id='marchants'>
+                            <h5 class="margin-bottom-10px normal-font">MERCHANTS WE SUPPORT</h5>
+                            <div class="card white-background block theme-color">
+                                <div class="marchants-wrapper__list display-flex">
+                                    <div class="flex-1">
+                                        <div class="merchant text-center">
+                                            <figure class="logo display-flex">
+                                                <img src="images/merchants/bookmyshow-logo.png" class="img-responsive margin-auto" alt="" />
+                                            </figure>
+                                            <h5 class="normal-font text-uppercase">Android</h5>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="merchant text-center">
+                                            <figure class="logo display-flex">
+                                                <img src="images/merchants/fassos.png" class="img-responsive margin-auto" alt="" />
+                                            </figure>
+                                            <h5 class="normal-font text-uppercase">Android iOS We</h5>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="merchant text-center">
+                                            <figure class="logo display-flex">
+                                                <img src="images/merchants/freshmenu.png" class="img-responsive margin-auto" alt="" />
+                                            </figure>
+                                            <h5 class="normal-font text-uppercase">Android iOS Web</h5>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="merchant text-center">
+                                            <figure class="logo display-flex">
+                                                <img src="images/merchants/zomato.png" class="img-responsive margin-auto" alt="" />
+                                            </figure>
+                                            <h5 class="normal-font text-uppercase">ios</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <footer class="block">
+                                    <h5 class="normal-font pull-left"><a href="#0" class="theme-color"><i class="fa fa-angle-right" aria-hidden="true"></i>See all 44+ merchants</a></h5> 
+                                </footer>
+                            </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="site-footer section-padding-50px">
         <div class="container">
             <div class="site-footer__wrapper display-flex flex-direction-column-mobile  margin-bottom-50px">

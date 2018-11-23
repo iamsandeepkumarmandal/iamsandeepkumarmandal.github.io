@@ -80,9 +80,8 @@ body {
 }
 
 /* Background Color as white */
-small,
-.font-small {
-    font-size: 0.88rem;
+.small-font {
+    font-size: (12/$base-font-size)+rem;
 }
 
 .mandatory-star {
@@ -242,7 +241,9 @@ li {
     color: $white-color;
     border:none;
     outline: none;
-    padding: 15px 0;   
+    padding: 15px 0;
+    font-size: (15/$base-font-size)+rem;
+    font-weight: $medium-bold-weight;
     @include box-shadow(0 4px 8px 0,rgba(0, 209, 193, 0.3));
 }
 .simpl-btn:hover{

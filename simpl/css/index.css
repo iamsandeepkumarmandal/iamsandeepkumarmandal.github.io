@@ -130,9 +130,8 @@ body {
 }
 
 /* Background Color as white */
-small,
-.font-small {
-  font-size: 0.88rem;
+.small-font {
+  font-size: 0.75rem;
 }
 
 .mandatory-star {
@@ -300,6 +299,8 @@ li {
   border: none;
   outline: none;
   padding: 15px 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
   -moz-box-shadow: 0 4px 8px 0 rgba(0, 209, 193, 0.3);
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 209, 193, 0.3);
   box-shadow: 0 4px 8px 0 rgba(0, 209, 193, 0.3);
@@ -453,12 +454,16 @@ Define the breakpoints at which your layout will change,
   color: #344647;
 }
 
-.customer-tabs__links-wrapper li a:hover, .customer-tabs__links-wrapper li a.active {
+.expenditure-wrapper__list header h6, .expenditure-wrapper__list header h5, .customer-tabs__content-wrapper .total-spent-spending-limit-wrapper, .customer-tabs__links-wrapper li a:hover, .customer-tabs__links-wrapper li a.active {
   color: #344647;
 }
 
 .customer-tabs__links-wrapper li a:hover:after, .customer-tabs__links-wrapper li a.active:after {
   width: 100%;
+}
+
+.customer-tabs__content-wrapper .expenditure__progressbar .progress, .customer-tabs__content-wrapper .expenditure__progressbar, .customer-tabs__content-wrapper .card {
+  border-radius: 4px;
 }
 
 .customer-tabs__links-wrapper {
@@ -498,6 +503,204 @@ Define the breakpoints at which your layout will change,
   -o-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
   -moz-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
 }
+.customer-tabs__content-wrapper {
+  background-color: #f7faf9;
+}
+.customer-tabs__content-wrapper .card {
+  -moz-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+}
+.customer-tabs__content-wrapper .card__padding {
+  padding: 25px;
+}
+.customer-tabs__content-wrapper .total-spent p {
+  font-size: 1.5rem;
+}
+.customer-tabs__content-wrapper .total-spent p i {
+  font-size: initial;
+}
+.customer-tabs__content-wrapper .expenditure__progressbar {
+  position: relative;
+  height: 8px;
+  background-color: #77898a;
+  margin: 10px 0 20px;
+}
+.customer-tabs__content-wrapper .expenditure__progressbar .progress {
+  position: absolute;
+  height: 100%;
+  background-color: #00d1c1;
+  width: 20%;
+}
+.expenditure-wrapper__list:first-child header {
+  margin-top: 10px;
+}
+.expenditure-wrapper__list header {
+  padding: 10px 20px;
+}
+.expenditure-wrapper__list header .merchant h6 {
+  font-size: 0.875rem;
+}
+.expenditure-wrapper__list header .more-button {
+  font-size: 0.75rem;
+  position: relative;
+}
+.expenditure-wrapper__list header .more-button:after {
+  content: "";
+  font-family: fontAwesome;
+  position: relative;
+  right: -5px;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -webkit-transition: all 0.3s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -ms-transition: all 0.3s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -o-transition: all 0.3s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -moz-transition: all 0.3s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+}
+.expenditure-wrapper__list header .more-button.active:after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.expenditure-wrapper__list header .more-button:hover {
+  color: #00d1c1;
+}
+.expenditure-wrapper__list__body {
+  padding: 10px 20px;
+  display: none;
+}
+.expenditure-wrapper__list__body__details .icon {
+  margin-right: 10px;
+}
+.expenditure-wrapper__list__body__details h5 {
+  font-size: 1.125rem;
+}
+.expenditure-wrapper__list__body__details .paid-amount h6 {
+  font-size: 0.875rem;
+}
+.marchants-wrapper__list, .profile-content-wrapper .transaction-details, .profile-content-wrapper .devices-used, .profile-content-wrapper .profile-image-name-credit-score {
+  padding: 25px 20px;
+}
+
+.marchants-wrapper footer, .faqs-wrapper footer, .profile-content-wrapper footer, .expenditure-wrapper footer {
+  padding: 15px 20px;
+  border-top: 1px solid #e6ebe9;
+}
+.marchants-wrapper footer i, .faqs-wrapper footer i, .profile-content-wrapper footer i, .expenditure-wrapper footer i {
+  padding-right: 5px;
+}
+
+.profile-content-wrapper .profile-image-name-credit-score {
+  color: #344647;
+  border-bottom: 1px solid #e6ebe9;
+}
+.profile-content-wrapper .profile-image-name-credit-score .profile-pic {
+  font-size: 2rem;
+}
+.profile-content-wrapper .profile-image-name-credit-score figcaption h5 {
+  font-size: 1.25rem;
+}
+.profile-content-wrapper .profile-image-name-credit-score .credit-score__ratings {
+  display: inline-block;
+  padding: 2px;
+  margin-left: 5px;
+  border: 1px solid #344647;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+.profile-content-wrapper .devices-used {
+  color: #344647;
+  border-bottom: 1px solid #e6ebe9;
+}
+.profile-content-wrapper .devices-used h6 {
+  font-size: 1.375rem;
+}
+.profile-content-wrapper .transaction-details {
+  padding-bottom: 0;
+}
+.profile-content-wrapper .transaction-details__graph .graph {
+  max-width: 100px;
+}
+.profile-content-wrapper .transaction-details__graph .graph-info {
+  padding-left: 20px;
+}
+.profile-content-wrapper .transaction-details__graph .graph-info li {
+  font-size: 0.875rem;
+  line-height: 25px;
+}
+.profile-content-wrapper .transaction-details__graph .graph-info .circle {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.profile-content-wrapper .transaction-details__graph .graph-info .circle.food {
+  background-color: #00d1c1;
+}
+.profile-content-wrapper .transaction-details__graph .graph-info .circle.personal-care {
+  background-color: #ff9600;
+}
+.profile-content-wrapper .transaction-details__graph .graph-info .circle.clothes {
+  background-color: #ff5950;
+}
+.profile-content-wrapper .transaction-details__graph .graph-info .circle.travel {
+  background-color: #77898a;
+}
+.profile-content-wrapper footer .incomplete {
+  color: #ff5950;
+}
+
+.faqs-wrapper__list {
+  padding: 0px 20px;
+}
+.faqs-wrapper__list header {
+  padding: 15px 0px;
+  border-bottom: 1px solid #e6ebe9;
+}
+.faqs-wrapper__list header:before {
+  content: "";
+  font-family: fontAwesome;
+  position: relative;
+  display: inline-block;
+  margin-right: 8px;
+  transition: all 0.3s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -webkit-transition: all 0.3s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -ms-transition: all 0.3s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -o-transition: all 0.3s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -moz-transition: all 0.3s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+}
+.faqs-wrapper__list header.active:before {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.faqs-wrapper__list .body-wrapper {
+  padding: 10px 0;
+  display: none;
+  border-bottom: 1px solid #e6ebe9;
+}
+.faqs-wrapper__list.no-border header {
+  border-bottom: none;
+}
+.faqs-wrapper__list.no-border header.active {
+  border-bottom: 1px solid #e6ebe9;
+}
+.faqs-wrapper__list.no-border .body-wrapper {
+  border-bottom: none;
+}
+.marchants-wrapper .merchant figure {
+  max-width: 100px;
+  height: 70px;
+  border-radius: 4px;
+  border: 1px solid #e6ebe9;
+  margin: 0 auto;
+}
+.marchants-wrapper .merchant h5 {
+  font-size: 0.625rem;
+  margin-top: 5px;
+}
+
 @media (max-width: 767.98px) {
   .customer-welcome h2 span {
     display: block;
@@ -508,6 +711,14 @@ Define the breakpoints at which your layout will change,
   }
   .customer-welcome h1 {
     margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .customer-tabs__content-wrapper .flex-1:first-child {
+    padding-right: 20px;
+  }
+  .customer-tabs__content-wrapper .flex-1:last-child {
+    padding-left: 20px;
   }
 }
 .quick-links h4, .site-footer__wrapper__logo {
