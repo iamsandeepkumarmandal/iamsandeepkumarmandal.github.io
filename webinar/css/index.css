@@ -693,7 +693,7 @@ header {
   animation-iteration-count: infinite;
   animation-name: cityscape;
   animation-timing-function: linear;
-  background-image: url("../../images/background-pattern/footer-animation.png");
+  background-image: url("../images/background-pattern/footer-animation.png");
   background-position: 0 0;
   background-repeat: repeat-x;
   height: 60px;
