@@ -276,13 +276,23 @@ li {
     border-radius: $base-border-radius;
     @extend .text-capitalize;
     @extend .bold-font;
-    @include padding(10px 30px);   
+    @include padding(10px 50px);   
     @include button-box-shadow;
     @include transition(0.2s);
+    &.new {
+        background-color: #ff61b6;
+        color: #000;
+        border: 1px solid #fe62b7;
+        font-size: (15/$base-font-size)+rem;
+        border-radius: 5px;
+        @include padding(10px 50px);  
+        @extend .text-uppercase;
+    }
 }
 .videoken-btn:hover{
     background-color: $theme-color;
     color: $theme-secondary-color;
+    border-color: $theme-color;
 }
 
 /* ==========
