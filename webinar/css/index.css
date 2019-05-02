@@ -693,7 +693,7 @@ header {
   animation-iteration-count: infinite;
   animation-name: cityscape;
   animation-timing-function: linear;
-  background-image: url("../images/background-pattern/footer-animation.png");
+  background-image: url("../../images/background-pattern/footer-animation.png");
   background-position: 0 0;
   background-repeat: repeat-x;
   height: 60px;
@@ -766,12 +766,23 @@ header {
 .banner-wrapper--text h1 {
   text-shadow: 2px 2px 10px #000;
 }
+@media (max-width: 351px) {
+  .banner-wrapper--text li {
+    font-size: 0.8rem;
+  }
+}
 .banner-wrapper--text li:nth-child(2) {
   padding: 0 10px;
   margin: 0 10px;
   border-width: 0 1px;
   border-style: solid;
   border-color: #ffffff;
+}
+@media (max-width: 351px) {
+  .banner-wrapper--text li:nth-child(2) {
+    padding: 0 5px;
+    margin: 0 5px;
+  }
 }
 
 .article-title {
