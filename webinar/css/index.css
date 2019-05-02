@@ -434,6 +434,8 @@ li {
 .videoken-btn:hover {
   background-color: #13264F;
   color: #DFFBFF;
+}
+.videoken-btn.new:hover {
   border-color: #13264F;
 }
 

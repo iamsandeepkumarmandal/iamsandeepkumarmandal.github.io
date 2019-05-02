@@ -289,10 +289,16 @@ li {
         @extend .text-uppercase;
     }
 }
-.videoken-btn:hover{
-    background-color: $theme-color;
-    color: $theme-secondary-color;
-    border-color: $theme-color;
+.videoken-btn {
+    &:hover{
+        background-color: $theme-color;
+        color: $theme-secondary-color;
+    }
+    &.new {
+        &:hover {
+            border-color: $theme-color;
+        }
+    }
 }
 
 /* ==========
