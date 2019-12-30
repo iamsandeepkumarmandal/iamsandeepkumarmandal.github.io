@@ -34,6 +34,9 @@ body {
         background-color: #fff;
         padding: 20px 15px;
         h4 {
+            margin-bottom: 5px;
+        }
+        h5 {
             margin-bottom: 15px;
         }
     }
@@ -196,6 +199,7 @@ body {
                     position: relative;
                     z-index: 1;
                     overflow: hidden;
+                    margin-bottom: 5px;
                     &:hover {
                         h6 {
                             transform: translateX(0px); 
@@ -210,6 +214,7 @@ body {
                         overflow: hidden;
                         img {
                             max-width: 15px;
+                            max-height: 15px;
                         }
                     }
                     h6 {
@@ -227,6 +232,15 @@ body {
                         transition: all 0.3s ease-in-out;
                     }
                 }
+            }
+            &--featured-video {
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.75);
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                color: #fff;
             }
         }
         .featured-landing-video {
@@ -266,7 +280,7 @@ body {
     &--categories-wrapper {
         .categroies-wrapper {
             position: relative;
-            height: 300px;
+            height: 250px;
             width: 100%;
             background-size: cover;
             color: #fff;    
@@ -274,7 +288,7 @@ body {
             .category-name {
                 position: absolute;
                 top: 20px;
-                font-size: 2.5rem;
+                font-size: 2rem;
                 font-weight: bold;
                 left: 0;
                 padding: 10px;
@@ -294,7 +308,7 @@ body {
                 left: 0;
                 height: 100%;
                 width: 100%;
-                background-color: rgba(0, 0, 0, 0.45);
+                background-color: rgba(0, 0, 0, 0.65);
             }
             .category-cta {
                 position: absolute;

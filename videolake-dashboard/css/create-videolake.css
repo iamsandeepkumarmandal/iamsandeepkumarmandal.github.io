@@ -13,6 +13,16 @@
   border-radius: 5px;
   min-width: 500px;
 }
+.create-video-lake--form-wrapper h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.create-video-lake--form-wrapper h3 {
+  font-size: 1rem;
+}
+.create-video-lake--form-wrapper h4 {
+  font-size: 0.9rem;
+}
 .create-video-lake--form-wrapper .organization-short-name--check {
   position: relative;
   margin-left: 15px;

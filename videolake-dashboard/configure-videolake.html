@@ -19,14 +19,15 @@
         <div class="videolake-dashboard">
             <div class="videolake-dashboard--navigation mb-3">
                 <ul>
-                    <li><a href="index.html">Setup Videolake</a></li>
-                    <li><a href="configure-videolake.html" class="active">Configure</a></li>
+                    <li><a href="index.html">Settings</a></li>
+                    <li><a href="configure-videolake.html" class="active">VideoLake Manager</a></li>
                 </ul>
             </div>
             <div class="row mb-3">
                 <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xl-12">
                     <div class="videolake-dashboard--card videolake-dashboard--featured-videos">
                         <h4>Featured Videos</h4>
+                        <h5>VideoLake allows 6 videos to be featured, you can add/remove features videos from here. </h5>
                         <div class="row">
                             <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
                                 <div class="featured-landing-video">
@@ -50,19 +51,8 @@
                                                     <img src="https://i.ytimg.com/vi/TAOziHOk7iA/mqdefault.jpg"
                                                         class="img-fluid w-100" />
                                                     <h3>17:59</h3>
-                                                    <div class="video-preview--cta">
-                                                        <ul>
-                                                            <li>
-                                                                <a
-                                                                    class="add-landing-featured-video d-flex align-items-center">
-                                                                    <div class="icon d-flex">
-                                                                        <img src="images/visible.svg"
-                                                                            class="img-responsive m-auto" alt="">
-                                                                    </div>
-                                                                    <h6>Landing featured video</h6>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
+                                                    <div class="video-preview--featured-video d-flex">
+                                                        <h5 class="m-auto">Landing video</h5>
                                                     </div>
                                                 </div>
                                                 <h4>How Kubernetes Changed Everything with Microsoft, Google Cloud,
@@ -85,6 +75,16 @@
                                                                 <a
                                                                     class="add-landing-featured-video d-flex align-items-center">
                                                                     <div class="icon d-flex">
+                                                                        <img src="images/delete.svg"
+                                                                            class="img-responsive m-auto" alt="">
+                                                                    </div>
+                                                                    <h6>Remove</h6>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    class="add-landing-featured-video d-flex align-items-center">
+                                                                    <div class="icon d-flex">
                                                                         <img src="images/visible.svg"
                                                                             class="img-responsive m-auto" alt="">
                                                                     </div>
@@ -111,6 +111,16 @@
                                                             <a
                                                                 class="add-landing-featured-video d-flex align-items-center">
                                                                 <div class="icon d-flex">
+                                                                    <img src="images/delete.svg"
+                                                                        class="img-responsive m-auto" alt="">
+                                                                </div>
+                                                                <h6>Remove</h6>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                class="add-landing-featured-video d-flex align-items-center">
+                                                                <div class="icon d-flex">
                                                                     <img src="images/visible.svg"
                                                                         class="img-responsive m-auto" alt="">
                                                                 </div>
@@ -132,6 +142,16 @@
                                                 <h3>17:59</h3>
                                                 <div class="video-preview--cta">
                                                     <ul>
+                                                        <li>
+                                                            <a
+                                                                class="add-landing-featured-video d-flex align-items-center">
+                                                                <div class="icon d-flex">
+                                                                    <img src="images/delete.svg"
+                                                                        class="img-responsive m-auto" alt="">
+                                                                </div>
+                                                                <h6>Remove</h6>
+                                                            </a>
+                                                        </li>
                                                         <li>
                                                             <a
                                                                 class="add-landing-featured-video d-flex align-items-center">
@@ -161,6 +181,16 @@
                                                             <a
                                                                 class="add-landing-featured-video d-flex align-items-center">
                                                                 <div class="icon d-flex">
+                                                                    <img src="images/delete.svg"
+                                                                        class="img-responsive m-auto" alt="">
+                                                                </div>
+                                                                <h6>Remove</h6>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                class="add-landing-featured-video d-flex align-items-center">
+                                                                <div class="icon d-flex">
                                                                     <img src="images/visible.svg"
                                                                         class="img-responsive m-auto" alt="">
                                                                 </div>
@@ -182,6 +212,16 @@
                                                 <h3>17:59</h3>
                                                 <div class="video-preview--cta">
                                                     <ul>
+                                                        <li>
+                                                            <a
+                                                                class="add-landing-featured-video d-flex align-items-center">
+                                                                <div class="icon d-flex">
+                                                                    <img src="images/delete.svg"
+                                                                        class="img-responsive m-auto" alt="">
+                                                                </div>
+                                                                <h6>Remove</h6>
+                                                            </a>
+                                                        </li>
                                                         <li>
                                                             <a
                                                                 class="add-landing-featured-video d-flex align-items-center">
@@ -205,8 +245,7 @@
                         <div class="row">
                             <div class="col-lg-5 col-xl-5 col-sm-12 col-md-12 col-xs-12 offset-xl-3 offset-lg-3">
                                 <div class="search-add-videos text-center mt-3">
-                                    <h5 class="">Not happy with the above videos. Click here to search and add videos
-                                    </h5>
+                                    <h5 class="">Click here to search & add other videos from video manager</h5>
                                     <button class="btn btn-primary text-uppercase search-videos-js">Add Videos</button>
                                 </div>
                             </div>
@@ -217,9 +256,10 @@
             <div class="row mb-3">
                 <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xl-12">
                     <div class="videolake-dashboard--card videolake-dashboard--categories-wrapper">
-                        <h4>Categories</h4>
+                        <h4>Video Categories</h4>
+                        <h5>You can control the visibility of different categories on VideoLake</h5>
                         <div class="row">
-                            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-xs-12">
                                 <div class="categroies-wrapper"
                                     style="background-image: url('https://i.ytimg.com/vi/q7v5NtV8v6I/mqdefault.jpg');">
                                     <h4 class="category-name">Health</h4>
@@ -228,7 +268,7 @@
                                         <ul>
                                             <li>
                                                 <a class="show-on-videolake d-flex">
-                                                    <h3>SHOW ON VIDEOLAKE</h3>
+                                                    <h3>VISIBLE</h3>
                                                     <div class="icon d-flex">
                                                         <img src="images/visible.svg" class="img-responsive" alt="" />
                                                     </div>
@@ -238,7 +278,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-xs-12">
                                 <div class="categroies-wrapper"
                                     style="background-image: url('https://i.ytimg.com/vi/iCvmsMzlF7o/mqdefault.jpg');">
                                     <h4 class="category-name">TED Talk</h4>
@@ -247,9 +287,9 @@
                                         <ul>
                                             <li>
                                                 <a class="show-on-videolake d-flex">
-                                                    <h3>SHOW ON VIDEOLAKE</h3>
+                                                    <h3>ADD TO VIDEOLAKE</h3>
                                                     <div class="icon d-flex">
-                                                        <img src="images/visible.svg" class="img-responsive" alt="" />
+                                                        <img src="images/add-to-videolake.svg" class="img-responsive" alt="" />
                                                     </div>
                                                 </a>
                                             </li>
@@ -257,7 +297,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-xs-12">
                                 <div class="categroies-wrapper"
                                     style="background-image: url('https://i.ytimg.com/vi/YPxmBxON1l8/mqdefault.jpg');">
                                     <h4 class="category-name">Politics</h4>
@@ -266,9 +306,9 @@
                                         <ul>
                                             <li>
                                                 <a class="show-on-videolake d-flex">
-                                                    <h3>SHOW ON VIDEOLAKE</h3>
+                                                    <h3>ADD TO VIDEOLAKE</h3>
                                                     <div class="icon d-flex">
-                                                        <img src="images/visible.svg" class="img-responsive" alt="" />
+                                                        <img src="images/add-to-videolake.svg" class="img-responsive" alt="" />
                                                     </div>
                                                 </a>
                                             </li>
@@ -276,7 +316,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-xs-12">
                                 <div class="categroies-wrapper"
                                     style="background-image: url('https://i.ytimg.com/vi/q7v5NtV8v6I/mqdefault.jpg');">
                                     <h4 class="category-name">Health</h4>
@@ -285,7 +325,7 @@
                                         <ul>
                                             <li>
                                                 <a class="show-on-videolake d-flex">
-                                                    <h3>SHOW ON VIDEOLAKE</h3>
+                                                    <h3>VISIBLE</h3>
                                                     <div class="icon d-flex">
                                                         <img src="images/visible.svg" class="img-responsive" alt="" />
                                                     </div>
@@ -295,7 +335,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-xs-12">
                                 <div class="categroies-wrapper"
                                     style="background-image: url('https://i.ytimg.com/vi/iCvmsMzlF7o/mqdefault.jpg');">
                                     <h4 class="category-name">TED Talk</h4>
@@ -304,7 +344,7 @@
                                         <ul>
                                             <li>
                                                 <a class="show-on-videolake d-flex">
-                                                    <h3>SHOW ON VIDEOLAKE</h3>
+                                                    <h3>VISIBLE</h3>
                                                     <div class="icon d-flex">
                                                         <img src="images/visible.svg" class="img-responsive" alt="" />
                                                     </div>
@@ -314,7 +354,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-xs-12">
                                 <div class="categroies-wrapper"
                                     style="background-image: url('https://i.ytimg.com/vi/YPxmBxON1l8/mqdefault.jpg');">
                                     <h4 class="category-name">Politics</h4>
@@ -323,7 +363,45 @@
                                         <ul>
                                             <li>
                                                 <a class="show-on-videolake d-flex">
-                                                    <h3>SHOW ON VIDEOLAKE</h3>
+                                                    <h3>VISIBLE</h3>
+                                                    <div class="icon d-flex">
+                                                        <img src="images/visible.svg" class="img-responsive" alt="" />
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="categroies-wrapper"
+                                    style="background-image: url('https://i.ytimg.com/vi/iCvmsMzlF7o/mqdefault.jpg');">
+                                    <h4 class="category-name">TED Talk</h4>
+                                    <h5 class="videos">4 Videos</h5>
+                                    <div class="category-cta">
+                                        <ul>
+                                            <li>
+                                                <a class="show-on-videolake d-flex">
+                                                    <h3>VISIBLE</h3>
+                                                    <div class="icon d-flex">
+                                                        <img src="images/visible.svg" class="img-responsive" alt="" />
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="categroies-wrapper"
+                                    style="background-image: url('https://i.ytimg.com/vi/YPxmBxON1l8/mqdefault.jpg');">
+                                    <h4 class="category-name">Politics</h4>
+                                    <h5 class="videos">14 Videos</h5>
+                                    <div class="category-cta">
+                                        <ul>
+                                            <li>
+                                                <a class="show-on-videolake d-flex">
+                                                    <h3>VISIBLE</h3>
                                                     <div class="icon d-flex">
                                                         <img src="images/visible.svg" class="img-responsive" alt="" />
                                                     </div>
@@ -341,6 +419,7 @@
                     <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xl-12">
                         <div class="videolake-dashboard--card videolake-dashboard--topics-wrapper">
                             <h4>Top Topics</h4>
+                            <h5>You can select/modify key topics to appear on VideoLake </h5>
                             <div class="videolake-dashboard--topics-wrapper--topics mb-3">
                                 <h5>All Top Topic</h5>
                                 <ul>
