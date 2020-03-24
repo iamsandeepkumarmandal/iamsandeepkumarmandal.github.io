@@ -1,0 +1,27 @@
+// define colours here
+$header-font-color: #696969;
+$body-font-color: #6d7396;
+$header-contact-background: #f5f5f5;
+$white-color: #ffffff;
+$navigation-hover-color: #fab702;
+$banner-background-color: #a7a9fe;
+$footer-background-color: #252c3a;
+
+// font-family
+$base-font-size: 14;
+$body-font-family: 'Roboto', sans-serif;
+$secondary-font-family: 'Montserrat', sans-serif;
+
+// define the font-weights here
+$normal-font-weight: 400;
+$light-font-weight: 300;
+$medium-font-weight: 500;
+$bold-font-weight: 700;
+
+// define break points
+$large-device-min-width: 1200;
+$medium-device-max-width: ($large-device-min-width - 0.02);
+$medium-device-min-width: 992;
+$tablet-max-width: ($medium-device-min-width - 0.02);
+$tablet-min-width: 768;
+$mobile-max-width: ($tablet-min-width - 0.02);
