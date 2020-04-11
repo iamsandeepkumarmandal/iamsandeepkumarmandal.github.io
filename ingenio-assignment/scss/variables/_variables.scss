@@ -6,7 +6,10 @@ $white-color: #ffffff;
 
 // font-family
 $base-font-size: 16;
+$medium-device-font-size: 15;
+$tablet-font-size: 14;
 $mobile-font-size: 14;
+$extra-small-device: 12;
 $body-font-family: 'Roboto', sans-serif;
 
 // define the font-weights here
@@ -24,4 +27,4 @@ $medium-device-min-width: 992;
 $tablet-max-width: ($medium-device-min-width - 0.02);
 $tablet-min-width: 768;
 $mobile-max-width: ($tablet-min-width - 0.02);
-$extra-small-mobile-devices: 439.80;
+$extra-small-mobile-devices-max-width: (440 - 0.02);

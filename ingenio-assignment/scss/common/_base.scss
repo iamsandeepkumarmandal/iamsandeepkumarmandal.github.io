@@ -1,25 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 @import '../variables/_variables.scss';
 @import '../common/_mixins.scss';
-
-.container { 
-    max-width: 1170px;
-    margin: 0 auto;
-    @media (max-width: $medium-device-min-width+px) {
-        padding: 0 10px;
-    }
-}
+@import '../common/_normalize.scss';
 
 body {
     font-family: $body-font-family;
     color: $body-font-color;
     font-size: 1rem;
-    @media (max-width: $mobile-max-width+px) {
-        font-size: ($mobile-font-size/$base-font-size)+rem;
-    }
-    @media (max-width: $extra-small-mobile-devices+px) {
-        font-size: 12px;
-    }
 }
 .display-block {
     display: block;
@@ -75,7 +62,26 @@ body {
 
 .heading-font {
    font-size: (24/$base-font-size)+rem;
-   @media (max-width: $mobile-max-width+px) {
-       font-size: (20/$base-font-size)+rem;
+   @media (min-width: $tablet-min-width+px) and (max-width: $tablet-max-width+px) {
+        font-size: (20/$tablet-font-size)+rem;
    }
+   @media (max-width: $mobile-max-width+px) {
+       font-size: (18/$mobile-font-size)+rem;
+   }
+}
+
+.left-padding-adjustment {
+    @media (min-width: $tablet-min-width+px) and (max-width: $tablet-max-width+px) {
+        padding-left: 0;
+    }
+    @media (min-width: $medium-device-min-width+px) and (max-width: $medium-device-max-width+px) {
+        padding-left: 0;
+    }
+}
+
+.extra-small-device-offset-adjust {
+    @media (max-width: $extra-small-mobile-devices-max-width+px) {
+        margin-left: 0;
+        width: 100%;
+    }
 }
