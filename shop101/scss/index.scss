@@ -416,6 +416,12 @@
         -webkit-justify-content: space-between;
         background-color: $white-color;
         padding: 20px;
+        &:hover {
+            &:before {
+                width: 100%;
+                opacity: 0.45;
+            }
+        }
         &:before {
             content: '';
             @extend .position-absolute;
@@ -425,8 +431,11 @@
             width: 3px;
             height: 100%;
             background-color: $navigation-hover-color;
+            @include transition(600ms); 
         }
         .content {
+            @extend .position-relative;
+            z-index: 1;
             h4 {
                 font-size: (20/$base-font-size)+rem;
                 font-weight: normal;
@@ -439,6 +448,8 @@
             }
         }
         .cta {
+            @extend .position-relative;
+            z-index: 1;
             a {
                 @extend .display-inline-block;
                 padding: 10px 20px;

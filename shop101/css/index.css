@@ -71,7 +71,7 @@ body {
   -ms-flex: 1;
 }
 
-.position-relative, .leadgen-wrapper--leadgen, .featured-works-wrapper--tabs li a, .featured-works-wrapper .featured-work--details h5, .services-wrapper--types .service--details a {
+.position-relative, .leadgen-wrapper--leadgen .cta, .leadgen-wrapper--leadgen .content, .leadgen-wrapper--leadgen, .featured-works-wrapper--tabs li a, .featured-works-wrapper .featured-work--details h5, .services-wrapper--types .service--details a {
   position: relative;
 }
 
@@ -549,6 +549,10 @@ body {
   background-color: #ffffff;
   padding: 20px;
 }
+.leadgen-wrapper--leadgen:hover:before {
+  width: 100%;
+  opacity: 0.45;
+}
 .leadgen-wrapper--leadgen:before {
   content: "";
   top: 0;
@@ -557,6 +561,14 @@ body {
   width: 3px;
   height: 100%;
   background-color: #fab702;
+  transition: all 600ms ease-in-out;
+  -webkit-transition: all 600ms ease-in-out;
+  -moz-transition: all 600ms ease-in-out;
+  -ms-transition: all 600ms ease-in-out;
+  -o-transition: all 600ms ease-in-out;
+}
+.leadgen-wrapper--leadgen .content {
+  z-index: 1;
 }
 .leadgen-wrapper--leadgen .content h4 {
   font-size: 1.4285714286rem;
@@ -569,6 +581,9 @@ body {
   .leadgen-wrapper--leadgen .content h5 {
     padding: 10px 0;
   }
+}
+.leadgen-wrapper--leadgen .cta {
+  z-index: 1;
 }
 .leadgen-wrapper--leadgen .cta a {
   padding: 10px 20px;
