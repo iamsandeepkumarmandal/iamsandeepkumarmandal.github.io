@@ -1,0 +1,1595 @@
+@charset "UTF-8";
+/* ==========
+Define Font family
+ ========== */
+/* ==========
+Define Font Size
+ ========== */
+/* ==========
+Define font weight
+========== */
+/* ==========
+Define the color  variables 
+========== */
+/* ==========
+Define Border Radius 
+========== */
+/* ==========
+Define the breakpoints at which your layout will change,
+ adapting to different screen sizes.
+==========  */
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow:400,400i,500,700");
+.public-icon, .input-icon {
+  background-repeat: no-repeat;
+  background-image: url("../images/sprites/public-sprite.svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+  box-sizing: border-box;
+}
+
+a:focus,
+a:hover,
+a:active {
+  outline: medium none !important;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: #40150a;
+}
+
+/* Change Default Styling for <H1> TO </H6> tags */
+h1 {
+  font-size: 2rem;
+  letter-spacing: -0.2px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1.15rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Change Default Styling for <H1> TO </H6> tags */
+address {
+  font-style: normal;
+}
+
+/* ==========
+Import Font family from fonts.google.com
+ ========== */
+/* ==========
+Define Font family
+ ========== */
+/* ==========
+Define Font Size
+ ========== */
+/* ==========
+Define font weight
+========== */
+/* ==========
+Define the color  variables 
+========== */
+/* ==========
+Define Border Radius 
+========== */
+/* ==========
+Define the breakpoints at which your layout will change,
+ adapting to different screen sizes.
+==========  */
+.public-icon, .input-icon {
+  background-repeat: no-repeat;
+  background-image: url("../images/sprites/public-sprite.svg");
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1rem;
+  color: #40150a;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Reset Padding and Margin to 0px Starts Here*/
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+/* Reset Padding and Margin to 0px Ends Here*/
+/* Display Classes Starts Here */
+.display-inline-block {
+  display: inline-block;
+}
+
+.display-inline {
+  display: inline;
+}
+
+/* Display Classes Ends Here */
+/* Font Weights Starts Here */
+.bold-font-family {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: normal;
+}
+
+.bold-font {
+  font-weight: 700;
+}
+
+.normal-font {
+  font-weight: 400;
+}
+
+/* Font Weights Ends Here */
+/* Background Color as white */
+.white-background {
+  background-color: #ffffff;
+}
+
+.white-color {
+  color: #ffffff;
+}
+
+.theme-color {
+  color: #40150a;
+}
+
+/* Background Color as white */
+small,
+.font-small {
+  font-size: 0.88rem;
+}
+
+.mandatory-star {
+  font-size: 6px;
+}
+
+.block {
+  float: left;
+  width: 100%;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Flex Classes Starts Here */
+.display-flex {
+  display: flex;
+  -webkit-display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+  -ms-flex: 2;
+  -webkit-flex: 2;
+}
+
+.flex-align-center {
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.flex-align-bottom {
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+}
+
+.flex-justify-content-space-between {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+@media (max-width: 767.98px) {
+  .flex-direction-column-mobile {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+}
+/* Flex Classes Ends Here */
+/* Section Padding Starts Here */
+.section-padding-5px {
+  padding: 5px 0;
+}
+
+.section-padding-10px {
+  padding: 10px 0;
+}
+
+.section-padding-15px {
+  padding: 15px 0;
+}
+
+.section-padding-20px {
+  padding: 20px 0;
+}
+
+.section-padding-40px {
+  padding: 40px 0;
+}
+
+.section-padding-50px {
+  padding: 50px 0;
+}
+
+.section-padding-100px {
+  padding: 100px 0;
+}
+
+.section-padding-30px {
+  padding: 30px 0;
+}
+
+.section-padding-top-50px {
+  padding-top: 50px;
+}
+
+/* Section Padding Ends Here */
+.margin-bottom-50px {
+  margin-bottom: 50px;
+}
+
+.margin-bottom-20px {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-5px {
+  margin-bottom: 5px;
+}
+
+.margin-bottom-10px {
+  margin-bottom: 10px;
+}
+
+.margin-right-10 {
+  margin-right: 10px;
+}
+
+.margin-bottom-30px {
+  margin-bottom: 30px;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.transition {
+  transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -webkit-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -ms-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -o-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -moz-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+}
+
+/* ==========
+ Text alignment CSS Starts Here
+========== */
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/* ==========
+ CTA button CSS 
+========== */
+.rupeek-btn {
+  background: -webkit-linear-gradient(90deg, #f26622, #f78f1e);
+  background: linear-gradient(90deg, #f26622, #f78f1e);
+  display: inline-block;
+  background-size: 200% auto;
+  border-radius: 3px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  padding: 15px 55px;
+  box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.rupeek-btn:hover {
+  background-position: right center;
+}
+
+/* ==========
+ Section heading css
+========== */
+.section-heading {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.section-heading span {
+  background: -webkit-linear-gradient(90deg, #f26622, #f78f1e);
+  background: linear-gradient(90deg, #f26622, #f78f1e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==========
+ Section seperator css
+========== */
+.section-seperator {
+  -moz-box-shadow: 1px 4px 7px rgba(33, 30, 30, 0.1);
+  -webkit-box-shadow: 1px 4px 7px rgba(33, 30, 30, 0.1);
+  box-shadow: 1px 4px 7px rgba(33, 30, 30, 0.1);
+}
+
+/* ==========
+ Reset Owl Carouseul Default Control Styles
+========== */
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #f26422 !important;
+  border-color: #f26422 !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: #f8b190 !important;
+  border: 1px solid #f8b190 !important;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  background: -webkit-linear-gradient(90deg, #f26622, #f78f1e) !important;
+  background: linear-gradient(90deg, #f26622, #f78f1e) !important;
+  text-transform: uppercase;
+}
+
+/* ==========
+ Inner Pages Introduction CSS Starts Here
+========== */
+.inner-page-introduction {
+  max-width: 80%;
+  margin: 0 auto;
+  display: table;
+  font-size: 1.0666666667rem;
+  line-height: 20px;
+}
+.inner-page-introduction img {
+  max-width: 150px;
+}
+
+/* ==========
+ Container CSS Starts Here
+========== */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* ==========
+ Form Elements CSS Starts Here
+========== */
+.display-none {
+  display: none;
+}
+
+.form-element-wrapper {
+  margin-bottom: 10px;
+  position: relative;
+}
+.form-element-wrapper label {
+  margin-bottom: 5px;
+}
+
+.input-icon {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 12px;
+  background-size: 250px;
+}
+
+.icon-play-store-bg {
+  width: 250px;
+  height: 84px;
+  background-position: -500px -83px;
+  background-size: 834px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.form-wrapper textarea, .form-wrapper input[type=text], .form-wrapper input[type=password] {
+  float: left;
+  width: 100%;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+.form-wrapper input[type=submit], .form-wrapper textarea, .form-wrapper input[type=text], .form-wrapper input[type=password] {
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+
+.form-wrapper input[type=submit], .form-wrapper textarea::-ms-input-placeholder, .form-wrapper input[type=text]::-ms-input-placeholder, .form-wrapper input[type=password]::-ms-input-placeholder, .form-wrapper textarea:-ms-input-placeholder, .form-wrapper input[type=text]:-ms-input-placeholder, .form-wrapper input[type=password]:-ms-input-placeholder, .form-wrapper textarea::placeholder, .form-wrapper input[type=text]::placeholder, .form-wrapper input[type=password]::placeholder {
+  font-size: 0.8rem;
+}
+
+.form-wrapper textarea::placeholder, .form-wrapper input[type=text]::placeholder, .form-wrapper input[type=password]::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #dddddd;
+  opacity: 1;
+  /* Firefox */
+}
+.form-wrapper textarea:-ms-input-placeholder, .form-wrapper input[type=text]:-ms-input-placeholder, .form-wrapper input[type=password]:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff;
+}
+.form-wrapper textarea::-ms-input-placeholder, .form-wrapper input[type=text]::-ms-input-placeholder, .form-wrapper input[type=password]::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ffffff;
+}
+
+.form-wrapper input[type=text], .form-wrapper input[type=password] {
+  height: 45px;
+  padding: 10px 0 10px 45px;
+}
+.form-wrapper textarea {
+  resize: none;
+  padding: 10px 20px;
+}
+.form-wrapper input[type=submit] {
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.form-wrapper input[type=submit]:hover {
+  background-color: #ffffff;
+}
+
+select.form-control, .form-control {
+  border: 1px solid #ddd;
+  height: 34px;
+  background-color: transparent;
+  width: 100%;
+  padding: 3px 10px;
+}
+
+select.form-control {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../images/dropdown.svg");
+  background-size: 9px;
+  background-repeat: no-repeat;
+  background-position: 98% 15px;
+}
+
+/* ==========
+ Public Icons for form elements CSS Starts Here
+========== */
+.icon-phone {
+  background-position: -150px 0px;
+}
+
+.icon-name {
+  background-position: -25px 0px;
+}
+
+.icon-identity {
+  background-position: -50px 0px;
+}
+
+.icon-password {
+  background-position: 0px 0px;
+}
+
+.icon-organization {
+  background-position: -125px 0px;
+}
+
+.icon-phone {
+  background-position: -150px 0px;
+}
+
+.icon-email {
+  background-position: -100px 0px;
+}
+
+.icon-money {
+  background-position: -75px -50px;
+}
+
+/* ==========
+ loader CSS Starts Here
+========== */
+.loader {
+  height: 100vh;
+  background-color: rgba(173, 53, 11, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* ==========
+  CSS to hide grecaptcha-badge
+========== */
+.grecaptcha-badge {
+  display: none;
+}
+
+/* ==========
+  CSS to style tables
+========== */
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+}
+
+.table > tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+.table .table {
+  background-color: #ffffff;
+}
+
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+  padding: 5px;
+}
+
+.table-bordered {
+  border: 1px solid #dddddd;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #dddddd;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+
+table col[class*=col-] {
+  position: static;
+  float: none;
+  display: table-column;
+}
+
+table td[class*=col-],
+table th[class*=col-] {
+  position: static;
+  float: none;
+  display: table-cell;
+}
+
+/* ==========
+  Media queries
+========== */
+@media (min-width: 767.98px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (max-width: 767.98px) {
+  .inner-page-introduction {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .main-container {
+    margin-top: 65px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .hidden-mobile-devices {
+    display: none;
+  }
+
+  html {
+    font-size: 13px;
+  }
+
+  .rupeek-btn {
+    padding: 10px 35px;
+    font-size: 1.3846153846rem;
+  }
+
+  .section-heading {
+    font-size: 1.6923076923rem;
+  }
+
+  section.section-padding-50px {
+    padding: 20px 0;
+  }
+
+  .section-heading.margin-bottom-50px {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 359.98px) {
+  .section-heading {
+    font-size: 1.5384615385rem;
+  }
+}
+@media (min-width: 767.98px) {
+  .hidden-tablets-and-above-devices {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.96px) {
+  html {
+    font-size: 12px;
+  }
+}
+/* Import Header SCSS */
+/* ==========
+Define Font family
+ ========== */
+/* ==========
+Define Font Size
+ ========== */
+/* ==========
+Define font weight
+========== */
+/* ==========
+Define the color  variables 
+========== */
+/* ==========
+Define Border Radius 
+========== */
+/* ==========
+Define the breakpoints at which your layout will change,
+ adapting to different screen sizes.
+==========  */
+.input-icon, .public-icon {
+  background-repeat: no-repeat;
+  background-image: url("../images/sprites/public-sprite.svg");
+}
+
+/* Header CSS Starts Here */
+.logo-wrapper {
+  max-width: 152px;
+}
+
+.main-menu li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.main-menu li:not(:last-child) a {
+  color: #40150a;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #f26422, #f26422 50%, #40150a 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+}
+.main-menu li a:hover {
+  color: #f26422;
+  background-position: 0%;
+}
+.main-menu li a.rupeek-btn {
+  box-shadow: none;
+  font-size: initial;
+  padding: 10px 20px;
+}
+.main-menu li a.rupeek-btn:hover {
+  color: #ffffff;
+}
+.main-menu li:last-child {
+  padding-right: 0;
+}
+
+/* Hamburger Menu Starts Here */
+.hamburger-bar-1, .hamburger-bar-2, .hamburger-bar-3 {
+  width: 30px;
+  height: 5px;
+  background: -webkit-linear-gradient(90deg, #f26622, #f78f1e);
+  background: linear-gradient(90deg, #f26622, #f78f1e);
+  margin: 5px 0;
+  transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -webkit-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -ms-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -o-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -moz-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+}
+
+/* Hamburger Menu Close Button Animation */
+.active .hamburger-bar-1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.active .hamburger-bar-2 {
+  opacity: 0;
+}
+.active .hamburger-bar-3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media (max-width: 767.98px) {
+  .main-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color: #ffffff;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    max-height: calc(100vh - 65px);
+    overflow-y: auto;
+  }
+  .main-menu li {
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+
+  header {
+    position: fixed;
+    z-index: 1111;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .hamburger-menu-wrapper.active ~ .main-menu {
+    opacity: 1;
+    visibility: visible;
+    -moz-box-shadow: 0 4px 10px rgba(33, 30, 30, 0.2);
+    -webkit-box-shadow: 0 4px 10px rgba(33, 30, 30, 0.2);
+    box-shadow: 0 4px 10px rgba(33, 30, 30, 0.2);
+  }
+}
+@media (min-width: 768px) {
+  .hamburger-menu-wrapper {
+    display: none;
+  }
+}
+/* Home SCSS Starts Here*/
+/* Banner Section Starts Here */
+.banner-images {
+  position: relative;
+}
+
+.trsuted-by-thousands-wrapper .middle h3, .banner-caption h2 {
+  text-shadow: 1px 3px 2px rgba(33, 30, 30, 0.6);
+}
+
+.banner-caption {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.banner-caption h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Why Rupeek Section Starts Here */
+.why-rupeek-container {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.why-rupeek-container .flex-1 {
+  min-width: 226px;
+  max-width: 226px;
+  margin: 0 10px;
+}
+
+.why-rupeek {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  margin-bottom: 5px;
+  border: 1px solid #f26422;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.why-rupeek .image {
+  height: 65px;
+  background-image: url("../images/sprites/Why-rupeek.png");
+  background-repeat: no-repeat;
+}
+.why-rupeek .text {
+  max-width: calc(100% - 65px);
+}
+
+.no-jumping-interest {
+  width: 54px;
+  background-position: -17px -23px;
+}
+
+.save-interest {
+  width: 64px;
+  background-position: -112px -23px;
+}
+
+.insurance-cover {
+  width: 55px;
+  background-position: -217px -24px;
+}
+
+.mins-guaranteed {
+  min-width: 78px;
+  background-position: -305px -25px;
+  max-width: 78px;
+}
+
+/* Simple Convenient Wrapper */
+.simple-convenient-wrapper {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  max-width: 85%;
+  margin: 0 auto;
+}
+.simple-convenient-wrapper .flex-1 {
+  width: 100%;
+  max-width: 190px;
+}
+.simple-convenient-wrapper .flex-1:last-child .simple-convenient :after {
+  content: none;
+}
+
+.simple-convenient-connector {
+  position: relative;
+  max-width: 85%;
+  margin: 0 auto 50px;
+}
+
+.padding-bottom-80px {
+  padding-bottom: 80px;
+}
+
+.simple-convenient-connector:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-image: url("../images/simple-convenient-background.png");
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-position: 35px 53px;
+}
+
+.simple-convenient {
+  position: relative;
+}
+.simple-convenient :after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: url("../images/simple-convenient-divider.png") no-repeat center;
+  top: 40%;
+  left: 90%;
+}
+.simple-convenient .icon {
+  height: 100px;
+  margin: 0 auto 15px;
+  text-indent: -2000%;
+  overflow: hidden;
+  background-image: url("../images/sprites/Sprites-Simple-and-convenient.png");
+  background-repeat: no-repeat;
+}
+.simple-convenient .call {
+  width: 92px;
+  background-position: -29px -32px;
+}
+.simple-convenient .gold-valuation {
+  width: 105px;
+  background-position: -173px -26px;
+}
+.simple-convenient .instant-money-transfer {
+  width: 82px;
+  background-position: -334px -30px;
+}
+.simple-convenient .military-grade-security {
+  width: 66px;
+  background-position: -42px -175px;
+}
+.simple-convenient .flexibility-repayment {
+  width: 85px;
+  background-position: -183px -175px;
+}
+.simple-convenient .easy-release {
+  width: 144px;
+  background-position: -303px -175px;
+}
+.simple-convenient figcaption {
+  max-width: 170px;
+  margin: 0 auto;
+}
+
+/* ==========
+Rupeek in media sdtarts here
+========== */
+.rupeek-in-media figure {
+  padding: 40px 30px;
+  max-width: 270px;
+  min-height: 205px;
+  -moz-box-shadow: 1px 1px 10px rgba(33, 30, 30, 0.25);
+  -webkit-box-shadow: 1px 1px 10px rgba(33, 30, 30, 0.25);
+  box-shadow: 1px 1px 10px rgba(33, 30, 30, 0.25);
+  margin: 10px;
+}
+.rupeek-in-media .icon {
+  max-width: 205px;
+  background-image: url("../images/sprites/media.png");
+  height: 61px;
+  margin: 0 auto 30px;
+}
+.rupeek-in-media figcaption {
+  color: #f26422;
+  letter-spacing: 0.35px;
+}
+
+.media-1 {
+  background-position: -10px 0;
+}
+
+.media-2 {
+  background-position: -218px 0px;
+}
+
+.media-3 {
+  background-position: -465px 0px;
+}
+
+.media-4 {
+  background-position: -685px 0px;
+}
+
+.trsuted-by-thousands-wrapper, .faq-wrapper .faqs h4:after, .rupeek-in-media figcaption:after, .rupeek-in-media figcaption:before {
+  position: relative;
+}
+
+.rupeek-in-media figcaption:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10px;
+  -webkit-transform: rotate(180deg) scaleX(-1);
+  -ms-transform: rotate(180deg) scaleX(-1);
+  transform: rotate(180deg) scaleX(-1);
+  top: -3px;
+  left: -5px;
+  display: inline-block;
+}
+
+.rupeek-in-media figcaption:after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10px;
+  right: -5px;
+}
+
+/* ==========
+Testimonials Wrapper Starts Here 
+========== */
+.testimonials .icon {
+  width: 108px;
+  height: 108px;
+  background-image: url("../images/sprites/customer-testimonial-sprite.jpg");
+  border-radius: 50%;
+  display: inline-block;
+}
+.testimonials figcaption {
+  max-width: 280px;
+  margin: 20px auto 0px;
+}
+.testimonials figcaption h4 {
+  font-weight: normal;
+}
+.testimonials figcaption h5 {
+  color: #f26422;
+  font-weight: normal;
+  text-decoration: underline;
+  display: inline-block;
+}
+.testimonials figcaption p {
+  font-style: italic;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+.testimonials figcaption p strong {
+  font-family: "Archivo Black", sans-serif;
+  letter-spacing: 0;
+  font-weight: normal;
+}
+.testimonials .customer-1 {
+  background-position: 224px 223px;
+}
+.testimonials .customer-2 {
+  background-position: 334px 223px;
+}
+.testimonials .customer-3 {
+  background-position: 334px 109px;
+}
+.testimonials .customer-4 {
+  background-position: -2px -3px;
+}
+.testimonials .customer-5 {
+  background-position: 224px -3px;
+}
+
+/* ==========
+Scmemes Wrapper Starts Here 
+========== */
+.schemes {
+  margin: 10px 0;
+}
+.schemes .schemes-icon {
+  height: 250px;
+  margin: 0 auto;
+  display: table;
+  background-image: url("../images/sprites/schemes-sprite.png");
+  background-repeat: no-repeat;
+}
+.schemes .rupeek-vyapar {
+  width: 207px;
+  background-position: -16px 0px;
+}
+.schemes .rupeek-smart {
+  width: 320px;
+  background-position: -275px 0;
+}
+.schemes .rupeek-kgl {
+  width: 198px;
+  background-position: -663px 0px;
+}
+.schemes figcaption {
+  max-width: 335px;
+  margin: 0 auto;
+  display: table;
+  width: 100%;
+  padding: 20px;
+  -moz-box-shadow: 1px 1px 10px rgba(33, 30, 30, 0.25);
+  -webkit-box-shadow: 1px 1px 10px rgba(33, 30, 30, 0.25);
+  box-shadow: 1px 1px 10px rgba(33, 30, 30, 0.25);
+}
+.schemes figcaption h4 {
+  background: -webkit-linear-gradient(90deg, #f26622, #f78f1e);
+  background: linear-gradient(90deg, #f26622, #f78f1e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+.schemes figcaption .best-for {
+  padding: 30px 0 25px;
+}
+.schemes figcaption h5 {
+  font-weight: normal;
+  letter-spacing: 0.45px;
+}
+.schemes figcaption h5 span {
+  font-size: 2rem;
+}
+
+/* ==========
+Lenders Wrapper Starts Here 
+========== */
+.lenders-wrapper {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.lenders-wrapper .lenders {
+  height: 106px;
+  width: 296px;
+  background-image: url("../images/sprites/partners.png");
+  margin: 0 20px;
+  overflow: hidden;
+  text-indent: -200%;
+}
+.lenders-wrapper .federal-bank {
+  background-position: -22px 0;
+}
+.lenders-wrapper .yogakshemam-loan {
+  background-position: -362px -9px;
+}
+
+/* ==========
+Faqs Wrapper Starts Here 
+========== */
+.faq-wrapper {
+  border: 2px solid #cacedb;
+  border-radius: 3px;
+}
+.faq-wrapper .faqs {
+  border-bottom: 2px solid #cacedb;
+}
+.faq-wrapper .faqs h4 {
+  cursor: pointer;
+  padding: 25px 20px;
+}
+.faq-wrapper .faqs h4.active {
+  pointer-events: none;
+}
+.faq-wrapper .faqs h4:after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10px;
+  float: right;
+  top: 5px;
+}
+.faq-wrapper .faqs .active:after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10px;
+}
+.faq-wrapper :last-child {
+  border-bottom: none;
+}
+.faq-wrapper .faq-body {
+  padding: 0 20px;
+  display: none;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+/* ==========
+Trusted by thousands Wrapper 
+========== */
+.trsuted-by-thousands-wrapper .middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* ==========
+Media Queries Home CSS  : for mobiles
+========== */
+@media (max-width: 767.98px) {
+  /* Banner css */
+  .banner-caption {
+    -webkit-transform: initial;
+    -ms-transform: initial;
+    transform: initial;
+    position: absolute;
+    top: initial;
+    right: initial;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+  }
+  .banner-caption h2 {
+    font-size: 2.1538461538rem;
+  }
+
+  /* Why Rupeek Wrapper */
+  .why-rupeek-container .flex-1 {
+    min-width: 48%;
+    max-width: 165px;
+    margin: 0 2px;
+  }
+  .why-rupeek-container .why-rupeek {
+    padding: 0px 5px;
+  }
+  .why-rupeek-container .why-rupeek .image {
+    background-size: 350px;
+  }
+
+  .save-interest {
+    background-position: -96px -15px;
+  }
+
+  .no-jumping-interest {
+    background-position: -12px -15px;
+  }
+
+  .insurance-cover {
+    background-position: -186px -15px;
+  }
+
+  .mins-guaranteed {
+    background-position: -270px -17px;
+  }
+
+  .simple-convenient-wrapper, .simple-convenient-connector, .simple-convenient-wrapper .flex-1, .simple-convenient figcaption {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Simple and convenient wrapper */
+  .simple-convenient {
+    margin-bottom: 20px;
+  }
+  .simple-convenient :after {
+    content: none;
+  }
+  .simple-convenient .icon {
+    margin: 0 auto 5px;
+  }
+  .simple-convenient .call {
+    position: relative;
+    right: -15px;
+  }
+  .simple-convenient-connector {
+    margin: 0 auto 10px;
+  }
+  .simple-convenient-connector:after {
+    content: none;
+  }
+
+  .simple-convenient-wrapper.padding-bottom-80px {
+    padding: 0;
+  }
+  .simple-convenient-wrapper figcaption div {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    display: -webkit- inline-flex;
+    border-radius: 50%;
+    border: 2px solid #f26422;
+    color: #f26422;
+    margin-right: 10px;
+  }
+  .simple-convenient-wrapper figcaption div span {
+    font-family: "Archivo Black", sans-serif;
+  }
+
+  /* schemes wrapper */
+  .schemes {
+    margin: 0;
+    padding: 0 5px 5px;
+    overflow: hidden;
+  }
+  .schemes figcaption {
+    padding: 20px 0;
+  }
+
+  /* rupeek in media wrapper */
+  .rupeek-in-media {
+    margin: 0 auto;
+    display: table;
+  }
+
+  .rupeek-in-media-wrapper.margin-bottom-50px {
+    margin-bottom: 10px;
+  }
+
+  /* lenders wrapper */
+  .lenders-wrapper .lenders {
+    background-size: 490px;
+    background-repeat: no-repeat;
+    height: 78px;
+    width: 210px;
+  }
+  .lenders-wrapper .federal-bank {
+    background-position: -23px 0;
+  }
+  .lenders-wrapper .yogakshemam-loan {
+    background-position: -260px 0px;
+  }
+
+  /* Faqs Wrapper */
+  .faq-wrapper {
+    border-radius: 0;
+  }
+  .faq-wrapper.margin-bottom-50px {
+    margin-bottom: 20px;
+  }
+  .faq-wrapper span {
+    display: inline-block;
+    max-width: 90%;
+  }
+
+  /* Serving Locations Wrapper */
+  .serving-locations-slider .owl-carousel .owl-item img {
+    width: 100%;
+  }
+}
+/* ==========
+Media Queries Home CSS  : for mobiles preferably 
+for devices with 4inch display like Iphone 5s, Iphone SE
+========== */
+@media (max-width: 359.98px) {
+  /* why rupeek css */
+  .why-rupeek-container {
+    /*.why-rupeek:hover{
+        .no-jumping-interest {
+            background-position: 0 -70px;
+        }
+         .save-interest {
+            background-position: -65px -70px;
+        }
+        .insurance-cover{
+            background-position: -130px -70px;
+        }
+        .mins-guaranteed {
+            background-position: -199px -70px;
+        } 
+    }*/
+  }
+  .why-rupeek-container .flex-1 {
+    max-width: 150px;
+    min-width: 150px;
+    margin: 0;
+  }
+  .why-rupeek-container .flex-1:nth-child(odd) .why-rupeek {
+    margin-right: 1px;
+  }
+  .why-rupeek-container .why-rupeek {
+    padding: 2px;
+    max-width: inherit;
+    width: inherit;
+    margin-bottom: 1px;
+  }
+  .why-rupeek-container .why-rupeek .image {
+    height: 55px;
+    background-size: 260px;
+  }
+  .why-rupeek-container .why-rupeek .text {
+    max-width: calc(100% - 50px);
+  }
+  .why-rupeek-container .no-jumping-interest {
+    background-position: 0px -10px;
+  }
+  .why-rupeek-container .save-interest {
+    background-position: -65px -10px;
+  }
+  .why-rupeek-container .insurance-cover {
+    background-position: -130px -10px;
+  }
+  .why-rupeek-container .mins-guaranteed {
+    background-position: -199px -10px;
+  }
+}
+/* ==========
+Media Queries Home CSS  : for TABLETS
+========== */
+@media (min-width: 768px) and (max-width: 1199.96px) {
+  /* Why Rupeek Wrapper */
+  .why-rupeek-container .flex-1 {
+    margin: 0 10px 10px;
+    min-width: 33%;
+  }
+
+  .simple-convenient-connector:after, .simple-convenient :after {
+    content: none;
+  }
+
+  /* Simple and convenient wrapper */
+  /* Rupeek in media wrapper */
+  .rupeek-in-media figure {
+    margin: 10px auto;
+  }
+}
+/* Import Footer SCSS */
+/* ==========
+Define Font family
+ ========== */
+/* ==========
+Define Font Size
+ ========== */
+/* ==========
+Define font weight
+========== */
+/* ==========
+Define the color  variables 
+========== */
+/* ==========
+Define Border Radius 
+========== */
+/* ==========
+Define the breakpoints at which your layout will change,
+ adapting to different screen sizes.
+==========  */
+.input-icon, .public-icon {
+  background-repeat: no-repeat;
+  background-image: url("../images/sprites/public-sprite.svg");
+}
+
+/* ==========
+Footer Wrapper Starts Here 
+========== */
+.footer-links-wrapper {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.footer-links li {
+  margin-left: 50px;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.copyright-wrapper {
+  background: -webkit-linear-gradient(90deg, #f26622, #f78f1e);
+  background: linear-gradient(90deg, #f26622, #f78f1e);
+}
+.copyright-wrapper li:first-child {
+  margin-left: 0;
+}
+.copyright-wrapper li, .copyright-wrapper a {
+  color: #fff;
+}
+.copyright-wrapper a:hover {
+  color: #40150a;
+}
+
+.mobile-fixed-footer {
+  position: fixed;
+  bottom: 0;
+  padding: 5px 10px;
+  z-index: 1111;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -moz-box-shadow: inset 1px 0px 5px 3px #dddddd;
+  -webkit-box-shadow: inset 1px 0px 5px 3px #dddddd;
+  box-shadow: inset 1px 0px 5px 3px #dddddd;
+}
+.mobile-fixed-footer.active {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.mobile-fixed-footer .display-flex {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.mobile-fixed-footer .icon {
+  margin-left: 20px;
+}
+
+/* ==========
+Media Queries Footer CSS 
+========== */
+@media (max-width: 767.98px) {
+  .google-play-store-icon {
+    margin-bottom: 20px;
+  }
+
+  .footer-links li {
+    margin: 0 15px;
+  }
+  .footer-links li a {
+    color: #f26422;
+  }
+
+  .copyright-wrapper li:first-child {
+    margin-bottom: 20px;
+    display: block;
+  }
+  .copyright-wrapper li:nth-child(2) {
+    margin-left: 0;
+  }
+  .copyright-wrapper li a {
+    color: #fff;
+  }
+
+  .copyright-wrapper {
+    margin-bottom: 60px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,12 @@
+@import '../common/_variables.scss';
+header {
+    background-color: $theme-color;
+    z-index: 11;
+}
+
+.logo-wrapper {
+    h1 {
+        font-size: (25/$base-font-size)+rem;
+        margin-left: 10px;
+    }
+}

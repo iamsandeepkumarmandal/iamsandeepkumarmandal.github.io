@@ -1,0 +1,676 @@
+@charset "UTF-8";
+/* ==========
+Import Font family from fonts.google.com
+ ========== */
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow:400,400i,500,700");
+/* ==========
+Define Font family
+ ========== */
+/* ==========
+Define Font Size
+ ========== */
+/* ==========
+Define font weight
+========== */
+/* ==========
+Define the color  variables 
+========== */
+/* ==========
+Define Border Radius 
+========== */
+/* ==========
+Define the breakpoints at which your layout will change,
+ adapting to different screen sizes.
+==========  */
+/* Banner Section Starts Here */
+.banner-images {
+  position: relative;
+}
+
+.trsuted-by-thousands-wrapper .middle h3, .banner-caption h2 {
+  text-shadow: 1px 3px 2px rgba(33, 30, 30, 0.6);
+}
+
+.banner-caption {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.banner-caption h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Why Rupeek Section Starts Here */
+.why-rupeek-container {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.why-rupeek-container .flex-1 {
+  min-width: 226px;
+  max-width: 226px;
+  margin: 0 10px;
+}
+
+.why-rupeek {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  margin-bottom: 5px;
+  border: 1px solid #f26422;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.why-rupeek .image {
+  height: 65px;
+  background-image: url("../images/sprites/Why-rupeek.png");
+  background-repeat: no-repeat;
+}
+.why-rupeek .text {
+  max-width: calc(100% - 65px);
+}
+
+.why-rupeek:hover {
+  background-color: #f26422;
+  color: #ffffff;
+}
+.why-rupeek:hover .no-jumping-interest {
+  background-position: -17px -118px;
+}
+.why-rupeek:hover .save-interest {
+  background-position: -112px -118px;
+}
+.why-rupeek:hover .insurance-cover {
+  background-position: -217px -118px;
+}
+.why-rupeek:hover .mins-guaranteed {
+  background-position: -305px -118px;
+}
+
+.no-jumping-interest {
+  width: 54px;
+  background-position: -17px -23px;
+}
+
+.save-interest {
+  width: 64px;
+  background-position: -112px -23px;
+}
+
+.insurance-cover {
+  width: 55px;
+  background-position: -217px -24px;
+}
+
+.mins-guaranteed {
+  min-width: 78px;
+  background-position: -305px -25px;
+  max-width: 78px;
+}
+
+/* Simple Convenient Wrapper */
+.simple-convenient-wrapper {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  max-width: 85%;
+  margin: 0 auto;
+}
+.simple-convenient-wrapper .flex-1 {
+  width: 100%;
+  max-width: 190px;
+}
+.simple-convenient-wrapper .flex-1:last-child .simple-convenient :after {
+  content: none;
+}
+
+.simple-convenient-connector {
+  position: relative;
+  max-width: 85%;
+  margin: 0 auto 50px;
+}
+
+.padding-bottom-80px {
+  padding-bottom: 80px;
+}
+
+.simple-convenient-connector:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-image: url("../images/simple-convenient-background.png");
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-position: 35px 53px;
+}
+
+.simple-convenient {
+  position: relative;
+}
+.simple-convenient :after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: url("../images/simple-convenient-divider.png") no-repeat center;
+  top: 40%;
+  left: 90%;
+}
+.simple-convenient .icon {
+  height: 100px;
+  margin: 0 auto 15px;
+  text-indent: -2000%;
+  overflow: hidden;
+  background-image: url("../images/sprites/Sprites-Simple-and-convenient.png");
+  background-repeat: no-repeat;
+}
+.simple-convenient .call {
+  width: 92px;
+  background-position: -29px -32px;
+}
+.simple-convenient .gold-valuation {
+  width: 105px;
+  background-position: -173px -26px;
+}
+.simple-convenient .instant-money-transfer {
+  width: 82px;
+  background-position: -334px -30px;
+}
+.simple-convenient .military-grade-security {
+  width: 66px;
+  background-position: -42px -175px;
+}
+.simple-convenient .flexibility-repayment {
+  width: 85px;
+  background-position: -183px -175px;
+}
+.simple-convenient .easy-release {
+  width: 144px;
+  background-position: -303px -175px;
+}
+.simple-convenient figcaption {
+  max-width: 170px;
+  margin: 0 auto;
+}
+
+/* ==========
+Rupeek in media sdtarts here
+========== */
+.rupeek-in-media figure {
+  padding: 40px 30px;
+  max-width: 270px;
+  min-height: 205px;
+  -moz-box-shadow: 1px 1px 10px rgba(33, 30, 30, 0.25);
+  -webkit-box-shadow: 1px 1px 10px rgba(33, 30, 30, 0.25);
+  box-shadow: 1px 1px 10px rgba(33, 30, 30, 0.25);
+  margin: 10px;
+}
+.rupeek-in-media .icon {
+  max-width: 205px;
+  background-image: url("../images/sprites/media.png");
+  height: 61px;
+  margin: 0 auto 30px;
+}
+.rupeek-in-media figcaption {
+  color: #f26422;
+  letter-spacing: 0.35px;
+}
+
+.media-1 {
+  background-position: -10px 0;
+}
+
+.media-2 {
+  background-position: -218px 0px;
+}
+
+.media-3 {
+  background-position: -465px 0px;
+}
+
+.media-4 {
+  background-position: -685px 0px;
+}
+
+.trsuted-by-thousands-wrapper, .faq-wrapper .faqs h4:after, .rupeek-in-media figcaption:after, .rupeek-in-media figcaption:before {
+  position: relative;
+}
+
+.rupeek-in-media figcaption:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10px;
+  -webkit-transform: rotate(180deg) scaleX(-1);
+  -ms-transform: rotate(180deg) scaleX(-1);
+  transform: rotate(180deg) scaleX(-1);
+  top: -3px;
+  left: -5px;
+  display: inline-block;
+}
+
+.rupeek-in-media figcaption:after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10px;
+  right: -5px;
+}
+
+/* ==========
+Testimonials Wrapper Starts Here 
+========== */
+.testimonials .icon {
+  width: 108px;
+  height: 108px;
+  background-image: url("../images/sprites/customer-testimonial-sprite.jpg");
+  border-radius: 50%;
+  display: inline-block;
+}
+.testimonials figcaption {
+  max-width: 280px;
+  margin: 20px auto 0px;
+}
+.testimonials figcaption h4 {
+  font-weight: normal;
+}
+.testimonials figcaption h5 {
+  color: #f26422;
+  font-weight: normal;
+  text-decoration: underline;
+  display: inline-block;
+}
+.testimonials figcaption p {
+  font-style: italic;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+.testimonials figcaption p strong {
+  font-family: "Archivo Black", sans-serif;
+  letter-spacing: 0;
+  font-weight: normal;
+}
+.testimonials .customer-1 {
+  background-position: 224px 223px;
+}
+.testimonials .customer-2 {
+  background-position: 334px 223px;
+}
+.testimonials .customer-3 {
+  background-position: 334px 109px;
+}
+.testimonials .customer-4 {
+  background-position: -2px -3px;
+}
+.testimonials .customer-5 {
+  background-position: 224px -3px;
+}
+
+/* ==========
+Scmemes Wrapper Starts Here 
+========== */
+.schemes {
+  margin: 10px 0;
+}
+.schemes .schemes-icon {
+  height: 250px;
+  margin: 0 auto;
+  display: table;
+  background-image: url("../images/sprites/schemes-sprite.png");
+  background-repeat: no-repeat;
+}
+.schemes .rupeek-vyapar {
+  width: 207px;
+  background-position: -16px 0px;
+}
+.schemes .rupeek-smart {
+  width: 320px;
+  background-position: -275px 0;
+}
+.schemes .rupeek-kgl {
+  width: 198px;
+  background-position: -663px 0px;
+}
+.schemes figcaption {
+  max-width: 335px;
+  margin: 0 auto;
+  display: table;
+  width: 100%;
+  padding: 20px;
+  -moz-box-shadow: 1px 1px 10px rgba(33, 30, 30, 0.25);
+  -webkit-box-shadow: 1px 1px 10px rgba(33, 30, 30, 0.25);
+  box-shadow: 1px 1px 10px rgba(33, 30, 30, 0.25);
+}
+.schemes figcaption h4 {
+  background: -webkit-linear-gradient(90deg, #f26622, #f78f1e);
+  background: linear-gradient(90deg, #f26622, #f78f1e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+.schemes figcaption .best-for {
+  padding: 30px 0 25px;
+}
+.schemes figcaption h5 {
+  font-weight: normal;
+  letter-spacing: 0.45px;
+}
+.schemes figcaption h5 span {
+  font-size: 2rem;
+}
+
+/* ==========
+Lenders Wrapper Starts Here 
+========== */
+.lenders-wrapper {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.lenders-wrapper .lenders {
+  height: 106px;
+  width: 296px;
+  background-image: url("../images/sprites/partners.png");
+  margin: 0 20px;
+  overflow: hidden;
+  text-indent: -200%;
+}
+.lenders-wrapper .federal-bank {
+  background-position: -22px 0;
+}
+.lenders-wrapper .yogakshemam-loan {
+  background-position: -362px -9px;
+}
+
+/* ==========
+Faqs Wrapper Starts Here 
+========== */
+.faq-wrapper {
+  border: 2px solid #cacedb;
+  border-radius: 3px;
+}
+.faq-wrapper .faqs {
+  border-bottom: 2px solid #cacedb;
+}
+.faq-wrapper .faqs h4 {
+  cursor: pointer;
+  padding: 25px 20px;
+}
+.faq-wrapper .faqs h4.active {
+  pointer-events: none;
+}
+.faq-wrapper .faqs h4:after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10px;
+  float: right;
+  top: 5px;
+}
+.faq-wrapper .faqs .active:after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10px;
+}
+.faq-wrapper :last-child {
+  border-bottom: none;
+}
+.faq-wrapper .faq-body {
+  padding: 0 20px;
+  display: none;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+/* ==========
+Trusted by thousands Wrapper 
+========== */
+.trsuted-by-thousands-wrapper .middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* ==========
+Media Queries Home CSS  : for mobiles
+========== */
+@media (max-width: 767.98px) {
+  /* Banner css */
+  .banner-caption {
+    -webkit-transform: initial;
+    -ms-transform: initial;
+    transform: initial;
+    position: absolute;
+    top: initial;
+    right: initial;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+  }
+  .banner-caption h2 {
+    font-size: 2.1538461538rem;
+  }
+
+  /* Why Rupeek Wrapper */
+  .why-rupeek-container .flex-1 {
+    min-width: 48%;
+    max-width: 165px;
+    margin: 0 2px;
+  }
+  .why-rupeek-container .why-rupeek {
+    padding: 0px 5px;
+  }
+  .why-rupeek-container .why-rupeek .image {
+    background-size: 350px;
+  }
+
+  .why-rupeek:hover .no-jumping-interest {
+    background-position: -12px -99px;
+  }
+  .why-rupeek:hover .save-interest {
+    background-position: -96px -99px;
+  }
+  .why-rupeek:hover .insurance-cover {
+    background-position: -186px -99px;
+  }
+  .why-rupeek:hover .mins-guaranteed {
+    background-position: -270px -99px;
+  }
+
+  .save-interest {
+    background-position: -96px -15px;
+  }
+
+  .no-jumping-interest {
+    background-position: -12px -15px;
+  }
+
+  .insurance-cover {
+    background-position: -186px -15px;
+  }
+
+  .mins-guaranteed {
+    background-position: -270px -17px;
+  }
+
+  .simple-convenient-wrapper, .simple-convenient-connector, .simple-convenient-wrapper .flex-1, .simple-convenient figcaption {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Simple and convenient wrapper */
+  .simple-convenient {
+    margin-bottom: 20px;
+  }
+  .simple-convenient :after {
+    content: none;
+  }
+  .simple-convenient .icon {
+    margin: 0 auto 5px;
+  }
+  .simple-convenient .call {
+    position: relative;
+    right: -15px;
+  }
+  .simple-convenient-connector {
+    margin: 0 auto 10px;
+  }
+  .simple-convenient-connector:after {
+    content: none;
+  }
+
+  .simple-convenient-wrapper.padding-bottom-80px {
+    padding: 0;
+  }
+  .simple-convenient-wrapper figcaption div {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    display: -webkit- inline-flex;
+    border-radius: 50%;
+    border: 2px solid #f26422;
+    color: #f26422;
+    margin-right: 10px;
+  }
+  .simple-convenient-wrapper figcaption div span {
+    font-family: "Archivo Black", sans-serif;
+  }
+
+  /* schemes wrapper */
+  .schemes {
+    margin: 0;
+    padding: 0 5px 5px;
+    overflow: hidden;
+  }
+  .schemes figcaption {
+    padding: 20px 0;
+  }
+
+  /* rupeek in media wrapper */
+  .rupeek-in-media {
+    margin: 0 auto;
+    display: table;
+  }
+
+  .rupeek-in-media-wrapper.margin-bottom-50px {
+    margin-bottom: 10px;
+  }
+
+  /* lenders wrapper */
+  .lenders-wrapper .lenders {
+    background-size: 490px;
+    background-repeat: no-repeat;
+    height: 78px;
+    width: 210px;
+  }
+  .lenders-wrapper .federal-bank {
+    background-position: -23px 0;
+  }
+  .lenders-wrapper .yogakshemam-loan {
+    background-position: -260px 0px;
+  }
+
+  /* Faqs Wrapper */
+  .faq-wrapper {
+    border-radius: 0;
+  }
+  .faq-wrapper.margin-bottom-50px {
+    margin-bottom: 20px;
+  }
+  .faq-wrapper span {
+    display: inline-block;
+    max-width: 90%;
+  }
+
+  /* Serving Locations Wrapper */
+  .serving-locations-slider .owl-carousel .owl-item img {
+    width: 100%;
+  }
+}
+/* ==========
+Media Queries Home CSS  : for mobiles preferably 
+for devices with 4inch display like Iphone 5s, Iphone SE
+========== */
+@media (max-width: 359.98px) {
+  /* why rupeek css */
+  .why-rupeek-container .flex-1 {
+    max-width: 150px;
+    min-width: 150px;
+    margin: 0;
+  }
+  .why-rupeek-container .flex-1:nth-child(odd) .why-rupeek {
+    margin-right: 1px;
+  }
+  .why-rupeek-container .why-rupeek {
+    padding: 2px;
+    max-width: inherit;
+    width: inherit;
+    margin-bottom: 1px;
+  }
+  .why-rupeek-container .why-rupeek .image {
+    height: 55px;
+    background-size: 260px;
+  }
+  .why-rupeek-container .why-rupeek .text {
+    max-width: calc(100% - 50px);
+  }
+  .why-rupeek-container .no-jumping-interest {
+    background-position: 0px -10px;
+  }
+  .why-rupeek-container .save-interest {
+    background-position: -65px -10px;
+  }
+  .why-rupeek-container .insurance-cover {
+    background-position: -130px -10px;
+  }
+  .why-rupeek-container .mins-guaranteed {
+    background-position: -199px -10px;
+  }
+  .why-rupeek-container .why-rupeek:hover .no-jumping-interest {
+    background-position: 0 -70px;
+  }
+  .why-rupeek-container .why-rupeek:hover .save-interest {
+    background-position: -65px -70px;
+  }
+  .why-rupeek-container .why-rupeek:hover .insurance-cover {
+    background-position: -130px -70px;
+  }
+  .why-rupeek-container .why-rupeek:hover .mins-guaranteed {
+    background-position: -199px -70px;
+  }
+}
+/* ==========
+Media Queries Home CSS  : for TABLETS
+========== */
+@media (min-width: 768px) and (max-width: 1199.96px) {
+  /* Why Rupeek Wrapper */
+  .why-rupeek-container .flex-1 {
+    margin: 0 10px 10px;
+    min-width: 33%;
+  }
+
+  .simple-convenient-connector:after, .simple-convenient :after {
+    content: none;
+  }
+
+  /* Simple and convenient wrapper */
+  /* Rupeek in media wrapper */
+  .rupeek-in-media figure {
+    margin: 10px auto;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

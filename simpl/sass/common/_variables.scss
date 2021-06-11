@@ -1,0 +1,47 @@
+/* ==========
+Define Font family
+ ========== */
+$font-family: 'Source Sans Pro', sans-serif;
+
+/* ==========
+Define Font Size
+ ========== */
+$base-font-size : 16;
+$base-font-size-mobile : 13px;
+
+/* ==========
+Define font weight
+========== */
+$bold-font-weight : 700;
+$medium-bold-weight : 600;
+$normal-font-weight : 400;
+
+/* ==========
+Define the color  variables
+========== */
+$theme-color : #00d1c1;
+$body-font-color: #77898a;
+$body-bold-font-color: #344647;
+$white-color : #ffffff;
+$main-content-bg-color : #f7faf9;
+$footer-bg-color :  #f2f6f4;
+$border-color: #e6ebe9;
+/* ==========
+Define Border Radius
+========== */
+$base-border-radius  : 4px;
+
+/* ==========
+Define the breakpoints at which your layout will change,
+ adapting to different screen sizes.
+==========  */
+$large-devices-min : 1200;
+
+$medium-devices-max : ($large-devices-min - 0.02);
+$medium-devices-min : 992;
+
+$tablet-devices-max : ($medium-devices-max - 0.02);
+$tablet-devices-min : 768;
+
+$mobile-devices-max-width : $tablet-devices-min - 0.02;
+$iphone-devices-max-width : 360;

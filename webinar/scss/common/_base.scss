@@ -1,0 +1,572 @@
+/* ==========
+Import Font family from fonts.google.com
+ ========== */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import 'mixins.scss';
+html {
+    font-size: $base-font-size+px;
+}
+body {
+    font-family: $font-family;
+    font-size: 1rem;
+    color:$theme-color;
+    font-weight:$normal-font-weight;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.pointer-events-none {
+    pointer-events: none;
+}
+
+/* Reset Padding and Margin to 0px Starts Here*/
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+/* Reset Padding and Margin to 0px Ends Here*/
+
+/* Display Classes Starts Here */
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.display-none {
+    display: none;
+}
+
+/* Display Classes Ends Here */
+
+/* Font Weights Starts Here */
+.bold-font {
+    font-weight:$bold-font-weight;
+}
+
+.normal-font-weight {
+    font-weight: $normal-font-weight;
+}
+
+.medium-font-weight {
+    font-weight: $medium-bold-weight;
+}
+
+.light-font-weight {
+    font-weight: $light-weight;
+}
+/* Font Weights Ends Here */
+
+/* Background Color as white */
+
+.white-background {
+    background-color: $white-color;
+}
+
+.white-color {
+    color: $white-color;
+}
+
+.theme-color {
+    color: $theme-color;
+}
+
+.theme-secondary-color {
+    color: $theme-secondary-color;
+}
+
+/* Background Color as white */
+small,
+.font-small {
+    font-size: 0.88rem;
+}
+
+.normal-font-size {
+    font-size: 1rem;
+}
+
+.mandatory-star {
+    font-size: 6px;
+}
+
+.block {
+    float: left;
+    width: 100%;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+/* Flex Classes Starts Here */
+
+.display-flex {
+    display: flex;
+    -webkit-display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+    -ms-flex: 2;
+    -webkit-flex: 2;
+}
+
+.flex-align-center {
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.flex-align-bottom{
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+}
+
+.flex-justify-content-space-between {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+@media(max-width:$mobile-devices-max-width+px){
+    .flex-direction-column-mobile{
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+}
+/* Flex Classes Ends Here */
+/* Section Padding Starts Here */
+.section-padding-5px {
+    padding: 5px 0;
+}
+
+.section-padding-10px {
+    padding: 10px 0;
+}
+
+.section-padding-15px {
+    padding: 15px 0;
+}
+
+.section-padding-20px {
+    padding: 20px 0;
+}
+
+.section-padding-40px{
+    padding: 40px 0;
+}
+
+.section-padding-50px {
+    padding: 50px 0;
+}
+.section-padding-100px {
+    padding: 100px 0;
+}
+.section-padding-30px{
+    padding: 30px 0;
+}
+.section-padding-top-50px{
+    padding-top: 50px;
+}
+/* Section Padding Ends Here */
+
+.margin-bottom-50px {
+    margin-bottom: 50px;
+}
+
+.margin-bottom-20px {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-40px {
+    margin-bottom: 40px;
+}
+
+.margin-bottom-5px {
+    margin-bottom: 5px;
+}
+
+.margin-bottom-10px {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-30px {
+    margin-bottom: 30px;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.margin-top-bottom-20px {
+    margin: 20px 0;
+}
+
+.transition {
+    transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -webkit-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -ms-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -o-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -moz-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+}
+/* ==========
+ Text alignment CSS Starts Here
+========== */
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-justify{
+    text-align: justify;
+}
+.text-right{
+    text-align: right;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-capitalize{
+    text-transform: capitalize;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+/* ==========
+ CTA button CSS 
+========== */
+.videoken-btn {
+    background-color: $theme-secondary-color;
+    color: $theme-color;
+    border: 1px solid $theme-secondary-color;
+    font-size: (15/$base-font-size)+rem;
+    border-radius: $base-border-radius;
+    @extend .text-capitalize;
+    @extend .bold-font;
+    @include padding(10px 50px);   
+    @include button-box-shadow;
+    @include transition(0.2s);
+    &.new {
+        background-color: #ff61b6;
+        color: #000;
+        border: 1px solid #fe62b7;
+        font-size: (15/$base-font-size)+rem;
+        border-radius: 5px;
+        @include padding(10px 50px);  
+        @extend .text-uppercase;
+    }
+}
+.videoken-btn {
+    &:hover{
+        background-color: $theme-color;
+        color: $theme-secondary-color;
+    }
+    &.new {
+        &:hover {
+            border-color: $theme-color;
+        }
+    }
+}
+
+/* ==========
+ Section heading css
+========== */
+.section-title {
+    font-size: (50/$base-font-size)+rem;
+    color: $theme-color;
+}
+
+.section-title.white-color {
+    color: $white-color;
+}
+
+/* ==========
+ Reset Owl Carouseul Default Control Styles
+========== */
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    // background-color: $theme-secondary-color !important;
+    // border-color: $theme-secondary-color !important;
+}
+.owl-theme .owl-dots .owl-dot span{
+    background: #f8b190 !important;
+    border: 1px solid #f8b190 !important;
+}
+.owl-theme .owl-nav [class*=owl-]{
+    // background: -webkit-linear-gradient(90deg, #f26622, #f78f1e) !important;
+    // background: linear-gradient(90deg, #f26622, #f78f1e) !important;
+    text-transform: uppercase;
+}
+/* ==========
+ Container CSS Starts Here
+========== */
+.container {
+    margin-right: auto;
+    margin-left: auto
+}
+
+/* ==========
+ Form Elements CSS Starts Here
+========== */
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+} 
+
+.form-element-wrapper{
+    margin-bottom: 10px;
+    position: relative;
+    label {
+        margin-bottom: 5px;
+    }
+}
+
+
+%input-type-properties{
+    @include block;
+    @include box-shadow($value: none);
+    // background: rgba(255, 255, 255, 1);
+    // color: $white-color;
+}
+%reset-border-outline{
+    border-radius: $base-border-radius;
+    outline: none;
+    border: 2px solid $theme-secondary-color;
+}
+%form-elements-font-size{
+    font-size: (16/$base-font-size)+rem;
+}
+%placeholder-properties{
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $theme-secondary-color;
+        opacity: 1; /* Firefox */
+        @extend %form-elements-font-size;
+    }
+    
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $theme-secondary-color;
+        @extend %form-elements-font-size;
+    }
+    
+    &::-ms-input-placeholder { /* Microsoft Edge */
+        color: $theme-secondary-color;
+        @extend %form-elements-font-size;
+    }
+}
+
+%form-elements-common-css{
+    border: 1px solid $form-element-border;
+    height: 48px;
+    background-color: $white-color;
+    width: 100%;
+    padding: 3px 10px;
+    font-size: (16/$base-font-size)+rem;
+}
+.form-control {
+    @extend %form-elements-common-css;
+    border-radius: $base-border-radius;
+    &:focus {
+        border-color: $form-element-active;
+        box-shadow: none;
+    }
+}
+select.form-control {
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('/images/dropdown.svg');
+    background-size: 9px;
+    background-repeat: no-repeat;
+    background-position:  98% 15px;
+    @extend %form-elements-common-css;
+    
+}
+
+/* ==========
+  CSS to hide grecaptcha-badge
+========== */
+.grecaptcha-badge {
+    display: none !important;
+}
+/* ==========
+  CSS to style tables
+========== */
+table{
+    border-collapse: collapse;
+}
+table, th, td {
+ }
+.table {
+    width: 100%;
+    max-width: 100%;
+  }
+.table > tbody + tbody {
+    border-top: 2px solid #dddddd;
+  }
+  .table .table {
+    background-color: #ffffff;
+  }
+  .table-condensed > thead > tr > th,
+  .table-condensed > tbody > tr > th,
+  .table-condensed > tfoot > tr > th,
+  .table-condensed > thead > tr > td,
+  .table-condensed > tbody > tr > td,
+  .table-condensed > tfoot > tr > td {
+    padding: 5px;
+  }
+  .table-bordered {
+    border: 1px solid #dddddd;
+  }
+  .table-bordered > thead > tr > th,
+  .table-bordered > tbody > tr > th,
+  .table-bordered > tfoot > tr > th,
+  .table-bordered > thead > tr > td,
+  .table-bordered > tbody > tr > td,
+  .table-bordered > tfoot > tr > td {
+    border: 1px solid #dddddd;
+  }
+  .table-bordered > thead > tr > th,
+  .table-bordered > thead > tr > td {
+    border-bottom-width: 2px;
+  }
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+  .table-hover > tbody > tr:hover {
+    background-color: #f5f5f5;
+  }
+  table col[class*="col-"] {
+    position: static;
+    float: none;
+    display: table-column;
+  }
+  table td[class*="col-"],
+  table th[class*="col-"] {
+    position: static;
+    float: none;
+    display: table-cell;
+  }
+
+
+/* ==========
+  Media queries
+========== */  
+@media (min-width:$mobile-devices-max-width+px) {
+    .container {
+        width: 750px
+    }
+}
+
+@media (min-width:$medium-devices-min+px) {
+    .container {
+        width: 970px
+    }
+}
+
+@media (min-width:$large-devices-min+px) {
+    .container {
+        width: 1170px
+    }
+}
+
+@media(max-width:$mobile-devices-max-width+px){
+    %max-width-100{
+        max-width: 100%;
+        width:100%;
+    }
+
+    .container {
+        @include padding(0 10px);
+        width: 100%;
+    }
+
+    .hidden-mobile-devices{
+        display: none !important;
+    }
+
+    html {
+        font-size: $base-font-size-mobile+px;
+    }
+    
+    .inner-page-introduction {
+        @extend %max-width-100;
+    } 
+
+    .videoken-btn {
+        padding: 10px 15px;
+    }
+
+    .section-title {
+        font-size: (30/$base-font-size)+rem;
+    }
+}
+@media(max-width:($iphone-devices-max-width - 0.02)+px){
+    .section-heading{
+        font-size: (20/13)+rem;
+    }
+}
+@media(min-width:$mobile-devices-max-width+px){
+    .hidden-tablets-and-above-devices{
+        display: none !important;
+    }
+}
+
+@media(min-width:$tablet-devices-min+px) and (max-width:$tablet-devices-max+px){
+    html{
+        font-size: 12px;
+    }
+}
+
+@media(min-width:992px) and (max-width:1279.98px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media(min-width:1080px) {
+    .container-fluid {
+        max-width: 1600px;
+    }
+}
+@media(max-width: $mobile-devices-max-width+px) {
+    .flex-direction-column-mobile {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+}

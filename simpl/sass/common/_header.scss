@@ -1,0 +1,65 @@
+@import '_variables.scss';
+.header {
+    background-color: $white-color;
+    padding: 20px 0;
+    &__menu {
+        li {
+            display: inline-block;
+            padding: 0 20px;
+            a {
+                letter-spacing: 1px;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-image: linear-gradient(to right, $theme-color, $theme-color 50%, $body-font-color 50%);
+                background-size: 200% 100%;
+                background-position: 100%;
+                font-size: (14/$base-font-size)+rem;
+                &:hover {
+                    background-position: 0%;
+                }
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+}
+@media (max-width:$mobile-devices-max-width+px) {
+    .header {
+        &__menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 209, 193, 0.95);
+            z-index: 111;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            @include display(flex);
+            ul {
+                margin: auto;
+                @include transform(translateY(50px));
+                li {
+                    display: block;
+                    margin: 10px 0;
+                    a {
+                        color: #000000;
+                        background: none;
+                        -webkit-background-clip: unset;
+                        -webkit-text-fill-color: unset;
+                    }
+                }
+            }
+        }
+        &.active {
+            .header__menu {
+                opacity: 1;
+                visibility: visible;
+                ul {
+                    @include transform(translateY(0px));
+                }
+            }
+        }
+    }
+}

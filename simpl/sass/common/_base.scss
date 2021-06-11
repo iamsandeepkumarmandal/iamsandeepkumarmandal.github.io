@@ -1,0 +1,312 @@
+/* ==========
+Import Font family from fonts.google.com
+ ========== */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+@import '_variables.scss';
+@import '_mixins.scss';
+@import '_normalize.scss';
+html {
+    font-size: $base-font-size+px;
+}
+body {
+    font-family: $font-family;
+    font-size: 1rem;
+    color: $body-font-color;
+    font-weight: $normal-font-weight;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Reset Padding and Margin to 0px Starts Here*/
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+/* Reset Padding and Margin to 0px Ends Here*/
+
+/* Display Classes Starts Here */
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.display-inline {
+    display: inline;
+}
+
+/* Display Classes Ends Here */
+
+/* Font Weights Starts Here */
+.bold-font {
+    font-weight:$bold-font-weight;
+}
+
+.medium-bold-font {
+    font-weight: $medium-bold-weight;
+}
+
+.normal-font {
+    font-weight: $normal-font-weight;
+}
+
+/* Font Weights Ends Here */
+
+/* Background Color as white */
+
+.white-background {
+    background-color: $white-color;
+}
+
+.white-color {
+    color: $white-color;
+}
+
+.theme-color {
+    color: $theme-color;
+}
+
+/* Background Color as white */
+.small-font {
+    font-size: (12/$base-font-size)+rem;
+}
+
+.mandatory-star {
+    font-size: 6px;
+}
+
+.block {
+    float: left;
+    width: 100%;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Flex Classes Starts Here */
+
+.display-flex {
+    display: flex;
+    -webkit-display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+    -ms-flex: 2;
+    -webkit-flex: 2;
+}
+
+.flex-align-center {
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.flex-align-bottom{
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+}
+
+.flex-justify-content-space-between {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+@media(max-width:$mobile-devices-max-width+px){
+    .flex-direction-column-mobile{
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+}
+/* Flex Classes Ends Here */
+/* Section Padding Starts Here */
+
+.section-padding-5px {
+    padding: 5px 0;
+}
+
+.section-padding-10px {
+    padding: 10px 0;
+}
+
+.section-padding-15px {
+    padding: 15px 0;
+}
+
+.section-padding-20px {
+    padding: 20px 0;
+}
+
+.section-padding-40px{
+    padding: 40px 0;
+}
+
+.section-padding-50px {
+    padding: 50px 0;
+}
+.section-padding-100px {
+    padding: 100px 0;
+}
+.section-padding-30px{
+    padding: 30px 0;
+}
+.section-padding-top-50px{
+    padding-top: 50px;
+}
+/* Section Padding Ends Here */
+
+.margin-bottom-50px {
+    margin-bottom: 50px;
+}
+
+.margin-bottom-20px {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-5px {
+    margin-bottom: 5px;
+}
+
+.margin-bottom-10px {
+    margin-bottom: 10px;
+}
+
+.margin-right-10 {
+    margin-right: 10px;
+}
+
+.margin-bottom-30px {
+    margin-bottom: 30px;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.transition {
+    transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -webkit-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -ms-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -o-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+    -moz-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+}
+/* ==========
+ Text alignment CSS Starts Here
+========== */
+.text-center{
+    text-align: center;
+}
+.text-justify{
+    text-align: justify;
+}
+.text-right{
+    text-align: right;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-capitalize{
+    text-transform: capitalize;
+}
+/* ==========
+ CTA button CSS 
+========== */
+.simpl-btn {
+    background: -webkit-linear-gradient(to right, #00d1c1, #00d1dc);
+    background: linear-gradient(to right, #00d1c1, #00d1dc);
+    display: inline-block;
+    border-radius: $base-border-radius;
+    color: $white-color;
+    border:none;
+    outline: none;
+    padding: 15px 0;
+    font-size: (15/$base-font-size)+rem;
+    font-weight: $medium-bold-weight;
+    @include box-shadow(0 4px 8px 0,rgba(0, 209, 193, 0.3));
+}
+.simpl-btn:hover{
+    
+}
+
+/* ==========
+ Container CSS Starts Here
+========== */
+.container {
+    margin-right: auto;
+    margin-left: auto
+}
+/* ==========
+  Media queries
+========== */  
+@media (min-width:$mobile-devices-max-width+px) {
+    .container {
+        width: 750px
+    }
+}
+
+@media (min-width:$medium-devices-min+px) {
+    .container {
+        width: 970px
+    }
+}
+
+@media (min-width:$large-devices-min+px) {
+    .container {
+        width: 1170px
+    }
+}
+
+@media(max-width:$mobile-devices-max-width+px){
+    %max-width-100{
+        max-width: 100%;
+        width:100%;
+    }
+    .container {
+        padding: 0 10px;
+    }
+
+    .hidden-mobile-devices{
+        display: none;
+    }
+
+    html {
+        font-size: $base-font-size-mobile;
+    }
+    
+}
+@media(max-width:($iphone-devices-max-width - 0.02)+px){
+   
+}
+@media(min-width:$mobile-devices-max-width+px){
+    .hidden-tablets-and-above-devices{
+        display: none;
+    }
+}
+
+@media(min-width:$tablet-devices-min+px) and (max-width:$tablet-devices-max+px){
+    html{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,44 @@
+.create-video-lake {
+    @media (min-width: 768px) {
+        height: 600px;
+        display: flex;
+    }
+    background-color: #fff;
+    &--form-wrapper {
+        padding: 15px;
+        box-shadow: 2px 10px 15px 10px #dddddd;
+        border-radius: 5px;
+        min-width: 500px;
+        h2 {
+            font-size: 2.4rem;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 1rem;
+        }
+        h4 {
+            font-size: 0.9rem;
+        }
+        .organization-short-name {
+            &--check {
+                position: relative;
+                margin-left: 15px;
+                width: 100%;
+                .btn {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    height: 100%;
+                    overflow: hidden;
+                    border: 1px solid #ddd;
+                    background-color: #2f68eb;
+                    border-radius: 0;
+                    padding: 0 20px;
+                    img {
+                        max-width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

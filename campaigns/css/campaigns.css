@@ -1,0 +1,150 @@
+.campaigns-wrapper {
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 10px 15px #565656;
+  background-color: #fff;
+}
+.campaigns-wrapper .btn-primary {
+  min-width: 150px;
+  margin: 0;
+  text-align: center;
+}
+.campaigns-wrapper--categories-listing .flex-1 {
+  padding: 10px;
+  min-width: 200px;
+  max-width: 200px;
+}
+.campaigns-wrapper--categories-listing .category {
+  position: relative;
+  border: 1px solid #ddd;
+  box-shadow: 2px 5px 10px #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.campaigns-wrapper--categories-listing .category label {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 0;
+}
+.campaigns-wrapper--categories-listing .category label h5 {
+  font-size: 0.85rem;
+  margin: 0;
+  padding: 10px 5px;
+}
+.campaigns-wrapper--categories-listing .category label:hover {
+  background-color: #007aff;
+  color: #fff;
+}
+.campaigns-wrapper--categories-listing .category input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.campaigns-wrapper--categories-listing .category input[type=checkbox]:checked ~ label {
+  background-color: #007aff;
+  color: #fff;
+}
+.campaigns-wrapper--preview {
+  height: 200px;
+  background-color: #f1f1f1;
+}
+.campaigns-wrapper .email-campaigns-additional-form-elements {
+  display: none;
+}
+
+.step-wise-form-wrapper {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.step-wise-form-wrapper--title {
+  background-color: #dddddd;
+  padding: 5px 10px;
+  border-radius: 5px 5px 0 0;
+}
+.step-wise-form-wrapper--title h4 {
+  margin: 0;
+  font-size: 18px;
+}
+.step-wise-form-wrapper--title span {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.step-wise-form-wrapper--title span svg {
+  margin: auto;
+}
+.step-wise-form-wrapper--title span:hover {
+  background-color: #20a8d8;
+}
+.step-wise-form-wrapper--title span:hover svg {
+  fill: #ffffff;
+}
+.step-wise-form-wrapper.active .step-wise-form-wrapper--title span {
+  visibility: hidden;
+}
+.step-wise-form-wrapper.active .step-wise-form-wrapper--body {
+  display: block;
+}
+.step-wise-form-wrapper--body {
+  display: none;
+  padding: 10px;
+}
+.step-wise-form-wrapper--body.display-block {
+  display: block;
+}
+.step-wise-form-wrapper--progress-bar .steps {
+  height: 30px;
+  background-color: #dddddd;
+  border: 1px solid #fff;
+  position: relative;
+  overflow: hidden;
+}
+.step-wise-form-wrapper--progress-bar .steps:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.6s ease-in-out;
+}
+.step-wise-form-wrapper--progress-bar .steps:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #007aff;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+.step-wise-form-wrapper--progress-bar .steps.active:before {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transition: all 0.6s ease-in-out;
+}
+.step-wise-form-wrapper--progress-bar .steps.active:after {
+  color: #ffffff;
+}
+.step-wise-form-wrapper--progress-bar .step-1:after {
+  content: "1. Create Campaign";
+}
+.step-wise-form-wrapper--progress-bar .step-2:after {
+  content: "2. Personalization";
+}
+.step-wise-form-wrapper--progress-bar .step-3:after {
+  content: "3. Video Selection";
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/*# sourceMappingURL=campaigns.css.map */

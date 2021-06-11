@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  min-height: 100vh;
+  max-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.bodybg {
+  background-image: url("../images/bodyg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.block {
+  float: left;
+  width: 100%;
+}
+
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.sectionpadding40 {
+  padding: 40px 0;
+}
+
+.redbg {
+  background-color: red;
+}
+
+.blackbg {
+  background-color: #000;
+}
+
+.message, .error-message {
+  border: 1px solid #fff;
+  padding: 10px 0;
+}
+
+.whitecolor {
+  color: #fff;
+}
+
+.error-message {
+  border-color: red;
+}
+
+header {
+  margin-top: 55px;
+}
+
+.mainmenu {
+  max-width: calc(100% - 125px);
+  float: right;
+  line-height: 42px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.mainmenu nav {
+  float: right;
+}
+
+.mainmenu nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.mainmenu nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.13rem;
+}
+
+.mainmenu nav li a:hover {
+  color: red;
+}
+
+.nomargin {
+  margin: 0;
+}
+
+.boldfont, .mainmenu nav li a {
+  font-weight: 700;
+}
+
+.textdecoration {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1070px;
+  padding: 0 10px;
+}
+
+@media (min-width: 240px) and (max-width: 767px) {
+  .container {
+    max-width: 90%;
+    width: 100%;
+  }
+}
+
+.logo {
+  float: left;
+  max-width: 125px;
+  width: 100%;
+}
+
+.bannertextsize, .bannertext p, .bannertext a {
+  font-size: 1.66rem;
+}
+
+.bannertext {
+  position: absolute;
+  bottom: 20%;
+  max-width: 490px;
+  width: 100%;
+}
+
+.bannertext h2 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+
+.bannertext p {
+  margin-bottom: 30px;
+}
+
+.bannertext a {
+  background-color: #2595ff;
+  max-width: 255px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding: 15px 0;
+}
+
+@media (min-width: 240px) and (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+}
