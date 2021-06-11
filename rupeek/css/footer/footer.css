@@ -1,0 +1,104 @@
+/* ==========
+Define Font family
+ ========== */
+/* ==========
+Define Font Size
+ ========== */
+/* ==========
+Define font weight
+========== */
+/* ==========
+Define the color  variables 
+========== */
+/* ==========
+Define Border Radius 
+========== */
+/* ==========
+Define the breakpoints at which your layout will change,
+ adapting to different screen sizes.
+==========  */
+/* ==========
+Footer Wrapper Starts Here 
+========== */
+.footer-links-wrapper {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.footer-links li {
+  margin-left: 50px;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.copyright-wrapper {
+  background: -webkit-linear-gradient(90deg, #f26622, #f78f1e);
+  background: linear-gradient(90deg, #f26622, #f78f1e);
+}
+.copyright-wrapper li:first-child {
+  margin-left: 0;
+}
+.copyright-wrapper li, .copyright-wrapper a {
+  color: #fff;
+}
+.copyright-wrapper a:hover {
+  color: #40150a;
+}
+
+.mobile-fixed-footer {
+  position: fixed;
+  bottom: 0;
+  padding: 5px 10px;
+  z-index: 1111;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -moz-box-shadow: inset 1px 0px 5px 3px #dddddd;
+  -webkit-box-shadow: inset 1px 0px 5px 3px #dddddd;
+  box-shadow: inset 1px 0px 5px 3px #dddddd;
+}
+.mobile-fixed-footer.active {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.mobile-fixed-footer .display-flex {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.mobile-fixed-footer .icon {
+  margin-left: 20px;
+}
+
+/* ==========
+Media Queries Footer CSS 
+========== */
+@media (max-width: 767.98px) {
+  .google-play-store-icon {
+    margin-bottom: 20px;
+  }
+
+  .footer-links li {
+    margin: 0 15px;
+  }
+  .footer-links li a {
+    color: #f26422;
+  }
+
+  .copyright-wrapper li:first-child {
+    margin-bottom: 20px;
+    display: block;
+  }
+  .copyright-wrapper li:nth-child(2) {
+    margin-left: 0;
+  }
+  .copyright-wrapper li a {
+    color: #fff;
+  }
+
+  .copyright-wrapper {
+    margin-bottom: 60px;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,52 @@
+/* ==========
+Define Font family
+ ========== */
+ $font-family: 'Roboto', sans-serif;
+
+ /* ==========
+ Define Font Size
+  ========== */
+ $base-font-size : 15;
+ $base-font-size-mobile : 13;
+ 
+ /* ==========
+ Define font weight
+ ========== */
+ $bold-font-weight : 700;
+ $medium-bold-weight : 500;
+ $light-weight: 300;
+ $normal-font-weight : normal;
+ 
+ /* ==========
+ Define the color  variables 
+ ========== */
+ $theme-color : #13264F;
+ $theme-secondary-color : #DFFBFF;
+ $theme-tertiary-color : #f57f17;
+ $body-background-color: #faf9f9;
+ $theme-link-color: #40BBEA;
+ $white-color : #ffffff;
+ $gray-color :  #dddddd;
+ $label-color: #969696;
+ $form-element-border: #cecece;
+ $form-element-active: rgba(18, 38, 79, 0.3);
+ 
+ /* ==========
+ Define Border Radius 
+ ========== */
+ $base-border-radius  : 5px;
+ 
+ /* ==========
+ Define the breakpoints at which your layout will change,
+  adapting to different screen sizes.
+ ==========  */
+ $large-devices-min : 1200;
+ 
+ $medium-devices-max : ($large-devices-min - 0.02);
+ $medium-devices-min : 992;
+ 
+ $tablet-devices-max : ($medium-devices-max - 0.02);
+ $tablet-devices-min : 768;
+ 
+ $mobile-devices-max-width : $tablet-devices-min - 0.02;
+ $iphone-devices-max-width : 360;

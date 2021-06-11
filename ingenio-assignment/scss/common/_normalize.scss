@@ -1,0 +1,51 @@
+@import '../variables/_variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $base-font-size+px;
+    @media (min-width: $medium-device-min-width+px) and (max-width: $medium-device-max-width+px) {
+        font-size: $medium-device-font-size+px
+    }
+    @media (min-width: $tablet-min-width+px) and (max-width: $tablet-max-width+px) {
+        font-size: $tablet-font-size+px
+    }
+    @media (max-width: $mobile-max-width+px) {
+        font-size: $mobile-font-size+px;
+    }
+    @media (max-width: $extra-small-mobile-devices-max-width+px) {
+        font-size: $extra-small-device+px;
+    }
+}
+ol, ul {
+    list-style: none;
+    margin: 0;
+}
+
+%decoration-none {
+    text-decoration: none;
+}
+a {
+    @extend %decoration-none;
+    color: $body-font-color;
+    &:hover {
+        @extend %decoration-none;
+    }
+    &:active {
+        @extend %decoration-none;
+    }
+    &:focus {
+        @extend %decoration-none;
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin-bottom: 0px !important;
+}

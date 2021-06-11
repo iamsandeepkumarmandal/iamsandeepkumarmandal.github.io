@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Rupeek</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Sandeep Kumar" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='css/interest-payment.css' />
+</head>
+
+<body>
+    <header class="block section-padding-5px white-background">
+        <div class="container display-flex flex-align-center flex-justify-content-space-between">
+            <div class="logo-wrapper">
+                <a href='index.html'><img src='images/logo.svg' class="img-responsive" alt='' /></a>
+            </div>
+            <div class="hamburger-menu-wrapper cursor-pointer hamburger-menu_js">
+                <div class="hamburger-bar-1"></div>
+                <div class="hamburger-bar-2"></div>
+                <div class="hamburger-bar-3"></div>
+            </div>
+            <nav class="main-menu transition">
+                <ul>
+                    <li>
+                        <a href='about.html' class="transition">About</a>
+                    </li>
+                    <li>
+                        <a href='#0' class="transition">Schemes</a>
+                    </li>
+                    <li>
+                        <a href='loan-transfer.html' class="transition">Loan Transfer</a>
+                    </li>
+                    <li>
+                        <a href='careers.html' class="transition">Careers</a>
+                    </li>
+                    <li>
+                        <a href='contact-us.html' class="transition">Contact</a>
+                    </li>
+                    <li>
+                        <a class='rupeek-btn white-color transition' href='repay.html'>Repay Your Loan</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="block main-container">
+            
+        
+        <section class="interest-payment-schemes section-padding-50px section-seperator" id="initialize_app" >
+                <h3 class="section-heading text-center text-uppercase bold-font-family margin-bottom-50px">What you see is What you Pay
+                        <span> with Rupeek's Transparent Interest Schemes ?</span>
+                    </h3>
+            <div class="header  margin-bottom-20px">
+                <div class="container">
+                    <div class="display-flex flex-direction-column-mobile">
+                        <div class="flex-1">
+                                <div class="form-element-wrapper block">
+                                        <label class="block">Rupeek Scheme</label>
+                                        <select class="form-control" v-model='schemeInterestRate' @change="checkScheme">
+                                                <option v-for='option in schemesArray' :value='option.interestrate'>{{option.schemename}} - Annual Interest Rate : {{option.interestrate}} %</option>
+                                            </select>
+                                    </div>
+                        </div>
+                        <div class="flex-1">
+                                <div class="form-element-wrapper block">
+                                        <label class="block">Loan Amount</label>
+                                        <div class="block loan-amount-input">
+                                            <span>INR</span>
+                                            <input type="number" class="form-control" v-model='loanAmount' onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                                @keyup="checkLoanAmount">
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="flex-1 max-width-260px">
+                                <div class="block hidden-mobile-devices">
+                                        <label class="control-label">&nbsp;</label>
+                                    </div>
+                                <div class="block text-center">
+                                        <a class="rupeek-btn block cursor-pointer transition" @click='calculateInterestPayment'>Get Details</a>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-container ">
+                <div class="container">
+                    <div class="display-flex margin-bottom-20px interest-payment-table-wrapper flex-direction-column-mobile">
+                        <div class="flex-2">
+                            <table class="table table-bordered table-striped table-condensed table-hover">
+                                <thead>
+                                    <tr class="text-center">
+                                        <th rowspan='2' class="middle">Days</th>
+                                        <th colspan="2">Interest Re-payment</th>
+                                        <th rowspan='2' class="middle">Savings</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Rupeek</th>
+                                        <th>Competitors</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for='item in resultantClosureAmountArray'>
+                                        <td>{{item['days']}}</td>
+                                        <td>
+                                            <i class="fas fa-rupee-sign"></i> {{item['rupeekClosureAmount'].toLocaleString("en-IN")}}</td>
+                                        <td>
+                                            <i class="fas fa-rupee-sign"></i> {{item['competitorsClosureAmount'].toLocaleString("en-IN")}}</td>
+                                        <td>{{calculateSavings(item['rupeekClosureAmount'],item['competitorsClosureAmount'])}}</td>
+                                    </tr>
+                                    <tr v-if='resultantClosureAmountArray.length == 0'>
+                                        <td colspan="6" class="no-background">
+                                            <div class="block text-center not-found">
+                                                <img src="data:image/jpeg;base64,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"
+                                                    class="img-responsive display-inline" alt="" />
+                                            </div>
+                                            <div class="block text-center">
+                                                Please select the scheme and enter the loan amount to get the details
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="terms-conditions-wrapper text-center block">
+                                * Competitor Scheme assumed to be a six month scheme starting at 24% with interest rate jump of 1% for first three months
+                                for non-payment of interest
+                            </div>
+                        </div>
+                        <div class="flex-1 display-flex max-width-260px">
+                            <div class="block intertest-payment-details">
+                                <div class="intertest-payment block display-flex flex-align-center flex-direction-column-mobile">
+                                    <div class="intertest-payment-details-icon">
+                                        <span class="flexible-repayment"></span>
+                                    </div>
+                                    <div class="details">
+                                        Flexibility to repay any time within 6 month tenure without any change in the interest rate
+                                    </div>
+                                </div>
+                                <div class="intertest-payment block display-flex flex-align-center flex-direction-column-mobile">
+                                    <div class="intertest-payment-details-icon">
+                                        <span class="no-stressful-threats"></span>
+                                    </div>
+                                    <div class="details">
+                                        No stressful monthly auction threats
+                                    </div>
+                                </div>
+                                <div class="total-savings-wrapper block text-center">
+                                    <img src="images/interest-payment-savings.png" class="img-responsive" alt="" />
+                                    <div class="savings-amount white-color" v-for="(item, index) in resultantClosureAmountArray" v-if="index == resultantClosureAmountArray.length - 1">
+                                        <i class="fas fa-rupee-sign"></i> {{getTotalSavings(item).toLocaleString("en-IN")}}
+                                    </div>
+                                </div>
+                                <div class="call-to-action block text-center">
+                                    <a class="rupeek-btn cursor-pointer transition" @click='showLeadGenerationPopup'>
+                                        Shift Loan Now
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="preloader" v-if="showLoader" class="loader display-flex">
+                    <img src="images/loader.svg" class="img-responsive margin-auto" alt="" />
+                </div>
+        </section>
+    </main>
+    <footer class="block">
+        <div class="block section-padding-40px">
+            <div class="container">
+                <div class="footer-links-wrapper display-flex flex-align-center flex-direction-column-mobile">
+                    <div class="google-play-store-icon">
+                        <a href="https://play.google.com/store/apps/details?id=com.rupeek.customer" target="_blank">
+                            <img src="images/google-pay-icon.jpg" class="img-responsive" alt="" />
+                        </a>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li>
+                                <a href="#0">About </a>
+                            </li>
+                            <li>
+                                <a href="#0"> FAQs </a>
+                            </li>
+                            <li>
+                                <a href="#0"> Contact </a>
+                            </li>
+                            <li>
+                                <a href="#0"> Sign In</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrapper block footer-links section-padding-30px text-center">
+            <div class="container">
+                <ul>
+                    <li>&copy; 2015-2018 Rupeek Fintech Pvt Ltd. </li>
+                    <li>
+                        <a href="#0"> Privacy </a>
+                    </li>
+                    <li>
+                        <a href="#0"> Terms </a>
+                    </li>
+                    <li>
+                        <a href="#0"> Press</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/owl.carousel.merged.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="scripts/public-script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-recaptcha@latest/dist/vue-recaptcha.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit"></script>
+    <script src="assets/js/alertify.min.js"></script>
+    <link rel="stylesheet" href="assets/styles/alertify.css" />
+    <script src="assets/js/loadash.js"></script>
+    <script src="assets/js/vue-resource-http.js"></script>
+    <script src="scripts/calculate-interest-payment.js"></script>
+</body>
+
+</html>

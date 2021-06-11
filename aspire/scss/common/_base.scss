@@ -1,0 +1,83 @@
+@import '_normalize.scss';
+@import '_mixins.scss';
+@import '_extends.scss';
+
+.responsive-image {
+  max-width: auto;
+  height: auto;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-inline-flex {
+  display: inline-flex;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-justify-content-space-between {
+  justify-content: space-between;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.normal-font {
+  font-weight: $normal-font-weight;
+}
+
+.theme-button {
+  padding: 10px 12px;
+  background-color: $theme-button-primary-color;
+  color: $theme-white-color;
+  border-radius: $base-border-radius;
+  border: $theme-button-primary-color;
+  font-family: $font-family;
+  font-weight: $bold-font-weight;
+}
+
+.flat-button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: $font-family;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media (max-width: $mobile-devices-max-width+px) {
+  .flex-direction-column-mobile {
+    flex-direction: column;
+  }
+  .display-none-mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,166 @@
+.campaigns-wrapper {
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 10px 15px #565656;
+    background-color: #fff;
+    .btn-primary {
+        min-width: 150px;
+        margin: 0;
+        text-align: center;
+    }
+    &--categories-listing {
+        .flex-1 {
+            padding: 10px;
+            min-width: 200px;
+            max-width: 200px;
+        }
+        .category {
+            position: relative;
+            border: 1px solid #ddd;
+            box-shadow: 2px 5px 10px #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            label {
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                margin: 0;
+                h5 {
+                    font-size: 0.85rem;
+                    margin: 0;
+                    padding: 10px 5px;
+                }
+                &:hover {
+                    background-color: #007aff;
+                    color: #fff;
+                }
+            }
+            input[type=checkbox] {
+                position: absolute;
+                top: 0;
+                right: 0;
+                opacity: 0;
+                visibility: hidden;
+                &:checked {
+                    &~ label {
+                        background-color: #007aff;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    &--preview {
+        height: 200px;
+        background-color: #f1f1f1;
+    }
+    .email-campaigns-additional-form-elements {
+        display: none;
+    }
+}
+.step-wise-form-wrapper {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    &--title {
+        background-color: #dddddd;
+        padding: 5px 10px;
+        border-radius: 5px 5px 0 0;
+        h4 {
+            margin: 0;
+            font-size: 18px;
+        }
+        span {
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            display: flex;
+            border-radius: 50%;
+            cursor: pointer;
+            svg {
+                margin: auto;
+            }
+            &:hover {
+                background-color: #20a8d8;
+                svg {
+                    fill: #ffffff;
+                }
+            }
+        }
+    }
+    &.active {
+        .step-wise-form-wrapper {
+            &--title {
+                span {
+                    visibility: hidden;
+                }
+            }
+            &--body {
+                display: block;
+            }
+        }
+    }
+    &--body {
+        display: none;
+        padding: 10px;
+        &.display-block {
+            display: block;
+        }
+    }
+    &--progress-bar {
+        .steps {
+            height: 30px;
+            background-color: #dddddd;
+            border: 1px solid #fff;
+            position: relative;
+            overflow: hidden;
+            &:after {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                -webkit-transform: translate(-50%,-50%);
+                font-weight: bold;
+                text-transform: uppercase;
+                transition: all 0.6s ease-in-out;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: #007aff;
+                top: 0;
+                left: 0;
+                transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+            }
+            &.active {
+                &:before {
+                    transform: translateX(0);
+                    -webkit-transform: translateX(0);
+                    transition: all 0.6s ease-in-out;
+                }
+                &:after {
+                    color: #ffffff;
+                }
+            }
+        }
+        .step-1 {
+            &:after {
+                content: '1. Create Campaign';
+            }
+        }
+        .step-2 {
+            &:after {
+                content: '2. Personalization';
+            }
+        }
+        .step-3 {
+            &:after {
+                content: '3. Video Selection';
+            }
+        }
+    }
+}
+.flex-1 {
+    flex: 1;
+}

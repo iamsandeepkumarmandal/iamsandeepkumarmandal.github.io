@@ -1,0 +1,25 @@
+.box{
+  min-height: 200px;
+  min-width:200px;
+  flex-grow: 1;
+}
+.blue{
+  background-color: blue;
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.main-wrapper {
+  display: flex;
+  background-color: #fff;
+}
+body{
+  background-color: #ddd;
+}
+*{
+  margin: 0;
+  padding:0;
+}

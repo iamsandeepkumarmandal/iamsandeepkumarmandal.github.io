@@ -1,0 +1,106 @@
+.dashboard-wrapper {
+  // max-width: 1366px;
+  // margin: 0 auto;
+  &--navigation {
+    background-color: $theme-primary-color;
+    padding: 48px;
+    max-width: 340px;
+    @extend .w-100;
+    @media (max-width: $tablet-devices-max+px) {
+      padding: 9px 24px;
+      position: fixed;
+      max-width: 100%;
+      bottom: 0;
+      z-index: 11;
+      background-color: $theme-white-color;
+      box-shadow: 0 -3px 6px #00000014;
+    }
+    @media (min-width: $medium-devices-min+px) and  (max-width: $medium-devices-max+px) {
+      padding: 24px;
+      max-width: 260px;
+    }
+    .logo-wrapper {
+      p {
+        margin: 20px 0 80px;
+        color: $theme-white-color;
+        opacity: 0.3;
+      }
+      @media (min-width: $tablet-devices-min+px) and (max-width: $tablet-devices-max+px) {
+        display: none;
+      }
+    }
+    .main-navigation {
+      ul {
+        @media (max-width: $tablet-devices-max+px) {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      li {
+        &:not(:last-child) {
+          margin-bottom: 60px;
+          @media (max-width: $tablet-devices-max+px) {
+            margin-bottom: 0;
+          }
+        }
+        @media (max-width: $tablet-devices-max+px) {
+          display: inline-block;
+        }
+        a {
+          @extend .display-inline-flex;
+          @extend .flex-align-center;
+          color: $theme-white-color;
+          font-size: (16/$base-font-size)+rem;
+          @include transition(0.5s);
+          @media (max-width: $tablet-devices-max+px) {
+            color: $theme-text-secondary-color;
+            flex-direction: column;
+            font-size: 9px;
+            opacity: 0.5;
+          }
+          &.active {
+            @extend %navigation-menu-hover-css;
+            font-weight: $bold-font-weight;
+            img {
+              @media (max-width: $tablet-devices-max+px) {
+                filter: invert(0);
+                opacity: 1;
+              }
+            }
+          }
+          &:hover {
+            @extend %navigation-menu-hover-css;
+          }
+          img {
+            @media (min-width: $tablet-devices-min+px) {
+              margin-right: 16px;
+            }
+            @media (max-width: $tablet-devices-max+px) {
+              margin: 0 auto 5px;
+              filter: invert(1);
+              opacity: 0.4;
+            }
+          }
+        }
+      }
+    }
+  }
+  &--main-content {
+    @media (min-width: $tablet-devices-min+px) {
+      max-height: 100vh;
+      height: 100vh;
+      min-height: 700px;
+      overflow-y: auto;
+      padding: 60px;
+      width: 100%;
+    }
+    @media (max-width: $mobile-devices-max-width+px) {
+      padding: 32px 24px 0;
+      background-color: $theme-primary-color;
+      max-width: 100%;
+    }
+    @media (min-width: $tablet-devices-min+px) and (max-width: $tablet-devices-max+px) {
+      padding: 24px;
+    }
+  }
+}

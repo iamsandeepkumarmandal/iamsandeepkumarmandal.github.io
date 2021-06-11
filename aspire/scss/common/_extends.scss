@@ -1,0 +1,12 @@
+%navigation-menu-hover-css {
+  color: $theme-secondary-color;
+}
+
+%tabs-animation {
+  @media (min-width: $tablet-devices-min+px) {
+    color: rgba(34, 34, 34, 1);
+  }
+  &:after {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,60 @@
+.footer {
+    &--animation {
+        animation-duration: 40s;
+        animation-iteration-count: infinite;
+        animation-name: cityscape;
+        animation-timing-function: linear;
+        background-image: url('../images/background-pattern/footer-animation.png');
+        background-position: 0 0;
+        background-repeat: repeat-x;
+        height: 60px;
+    }
+    &--copyright {
+        background-color: #1e2020;
+    }
+}
+
+@-moz-keyframes cityscape {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -1398px 0
+    }
+}
+
+@-webkit-keyframes cityscape {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -1398px 0
+    }
+}
+
+@-o-keyframes cityscape {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -1398px 0
+    }
+}
+
+@-ms-keyframes cityscape {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -1398px 0
+    }
+}
+
+@keyframes cityscape {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -1398px 0
+    }
+}

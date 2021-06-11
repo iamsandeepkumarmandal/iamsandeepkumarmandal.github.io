@@ -1,0 +1,108 @@
+@import 'common/_mixins.scss';
+@import 'common/_normalize.scss';
+@import 'common/_base.scss';
+@import 'header/_header.scss';
+@import 'footer/_footer.scss';
+.banner-wrapper {
+    height: 40vh;
+    min-height: 350px;
+    max-height: 40vh;
+    background-color: #ffc1e6;
+    background-image: url('../images/banner/banner-cam.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    &:after {
+        content: none;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        @extend .position-absolute;
+    }
+    &--text {
+        max-width: 450px;
+        z-index: 11;
+        h1 {
+            // text-shadow: 2px 2px 10px #000;
+        }
+        li {
+            @extend .display-inline-block;
+            &:nth-child(2) {
+                padding: 0 10px;
+                margin: 0 10px;
+                border-width: 0 1px;
+                border-style: solid;
+                border-color: $white-color;
+            }
+        }
+    }
+    &--background-color-text {
+        background-color: #5cc5e6;
+        padding: 20px 10px;
+    }
+}
+.article-title {
+    border-left: 2px solid $theme-color;
+    padding-left: 10px;
+}
+.summary {
+    line-height: 20px;
+    ul {
+        padding-left: 15px;
+    }
+    li {
+        list-style: disc;
+        list-style-position: inside;
+    }
+}
+.webinar-details-wrapper {
+    background-color: $body-background-color;
+    background-image: url('../images/background-pattern/banner-background.jpg');
+    @media(min-width: $tablet-devices-min+px) {
+        .flex-1 {
+            max-width: 50%;
+            &:first-child {
+                padding-right: 15px;
+            }
+            &:last-child {
+                padding-left: 15px;
+            }
+        }
+    }
+}
+.overview-details {
+    li {
+        strong {
+            min-width: 75px;
+            margin-right: 10px;
+            @extend .display-inline-block;
+            &:after {
+                content: ':';
+                float: right;
+            }
+        }
+        line-height: 24px;
+    }
+}
+.register-form-wrapper {
+    background-color:  rgba(223, 251, 255, 0.35);
+    padding: 20px 30px;
+    box-shadow: 2px 2px 10px $theme-secondary-color;
+    border: 1px solid rgba(64, 187, 234, 0.8);
+    border-radius: 5px;
+    .field {
+        margin-bottom: 10px;
+    }
+}
+.name-designation {
+    figure {
+        img {
+            max-height: 115px;
+            border-radius: 10px;
+        }
+    }
+    figcaption {
+        margin-left: 10px;
+    }
+}

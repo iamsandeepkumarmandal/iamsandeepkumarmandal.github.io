@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Rupeek</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Sandeep Kumar" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='css/loan-calculator.css' />
+</head>
+
+<body>
+    <header class="block section-padding-5px white-background">
+        <div class="container display-flex flex-align-center flex-justify-content-space-between">
+            <div class="logo-wrapper">
+                <a href='index.html'><img src='images/logo.svg' class="img-responsive" alt='' /></a>
+            </div>
+            <div class="hamburger-menu-wrapper cursor-pointer hamburger-menu_js">
+                <div class="hamburger-bar-1"></div>
+                <div class="hamburger-bar-2"></div>
+                <div class="hamburger-bar-3"></div>
+            </div>
+            <nav class="main-menu transition">
+                <ul>
+                    <li>
+                        <a href='about.html' class="transition">About</a>
+                    </li>
+                    <li>
+                        <a href='#0' class="transition">Schemes</a>
+                    </li>
+                    <li>
+                        <a href='loan-transfer.html' class="transition">Loan Transfer</a>
+                    </li>
+                    <li>
+                        <a href='careers.html' class="transition">Careers</a>
+                    </li>
+                    <li>
+                        <a href='contact-us.html' class="transition">Contact</a>
+                    </li>
+                    <li>
+                        <a class='rupeek-btn white-color transition' href='repay.html'>Repay Your Loan</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="block main-container">
+        <section class="calculator-wrapper block section-padding-50px" id="loan-calculator">
+            <div class="container">
+                <h3 class="section-heading text-center text-uppercase bold-font-family margin-bottom-50px">Gold Loan
+                    <span>Calculator ?</span>
+                </h3>
+                <div class="calculator-header block margin-bottom-20px hidden-mobile-devices">
+                    <div class="display-flex">
+                        <div class="flex-1">
+                            <div class="calculator-header-div display-flex flex-align-center white-background cursor-pointer calculator_header_tabs_js"
+                                data-tabs='#tab-1' @click="resetSecondCalculator">
+                                <figure>
+                                    <img src="images/RequiredLoanAmount.svg" class="img-responsive" alt="loan amount icon" />
+                                </figure>
+                                <figcaption>
+                                    <h4 class="text-uppercase margin-bottom-10px">I know Required Loan Amount</h4>
+                                    <p>I need to know how much gold should I arrange to get my desired loan amount
+                                    </p>
+                                </figcaption>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="calculator-header-div display-flex flex-align-center white-background cursor-pointer calculator_header_tabs_js"
+                                data-tabs='#tab-2' @click="resetFirstCalculator">
+                                <figure>
+                                    <img src="images/OrnamentDetails.svg" class="img-responsive" alt="ornament details icon" />
+                                </figure>
+                                <figcaption>
+                                    <h4 class="text-uppercase margin-bottom-10px">I know ornament details</h4>
+                                    <p>I need to know how much loan amount are my Gold ornaments eligible for
+                                    </p>
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile view dropdown -->
+                <div class="calculator-header block margin-bottom-20px hidden-tablets-and-above-devices">
+                    <div class="col-xs-12 no-pad-mobile">
+                        <div class="form-element-wrapper block">
+                            <label>Gold purity</label>
+                            <select class="form-control calc-drop-down mobile-calculator" v-model="calculatorType" @change="displayCalculator">
+                                <option v-for="option in calculatorOptions" :value="option.value">
+                                    {{ option.text }}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-main-wrapper block margin-bottom-20px white-background">
+                    <div class="calculator-main-form block margin-bottom-30">
+                        <div class="block ornament-details-wrapper calculator_forms_js display-none" id="tab-1">
+                            <div class="text-center current-gold-rate-heading">
+                                <p class="text-uppercase">Today's per gram gold rate</p>
+                                <h5>
+                                    <i class="fas fa-rupee-sign">&nbsp;</i>
+                                    {{(Math.round(Number(currentGoldRate) * 0.75)).toLocaleString("en-IN")}}
+                                </h5>
+                            </div>
+                            <div class="first-calculator-section text-center display-flex flex-direction-column-mobile">
+                                <div class="flex-1">
+                                    <div class="form-element-wrapper block">
+                                        <label class="block">Required Loan Amount</label>
+                                        <input type="text" class="block form-control first-loan-input" :placeholder="placeholder.loanAmountHolder" @keyup="getGoldWeight"
+                                            maxlength="8" v-model="loanAmount" />
+
+                                        <span class="help-block form-error-message block" :class="{'error' : (amountNull || invalidAmount)}">
+                                            <span v-if="amountNull">{{amountErrorMessage}}</span>
+                                            <span v-if="invalidAmount">{{amountErrorMessage}}</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="form-element-wrapper block first-calculator-drop-down">
+                                        <label class="block">Gold purity</label>
+
+                                        <select class="block form-control calc-drop-down" v-model="purityValue" @change="getGoldWeight">
+                                            <option v-for="option in karatOptions" :value="option.value">
+                                                {{ option.text }}
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculate-gold-amount-result block text-center">
+                                <p class="no-margin">Required Gold in Grams (Net weight*) </p>
+                                <h5 class="no-margin">{{firstNetWeight}}</h5>
+                            </div>
+
+                            <div class="calculate-gold-amount-button block text-center section-padding-20px">
+                                <button type="button" class="rupeek-btn text-uppercase smooth_scroll_js apply-button" data-target=".calculator-lead-generation-wrapper">Click here to Apply
+                                    <i class="fa fa-angle-double-down"></i>
+                                </button>
+
+                                <button type="button" class="rupeek-btn text-uppercase high-amount-button" @click="highAmountClicked">I want higher amount</button>
+                            </div>
+
+                            <div class="terms-wrapper block">
+                                <p class="text-center gray-color font-small terms-wrapper">*Please note that as per the RBI guidelines, the net weight is calculated by deducting weight
+                                    of all the stones and other non-gold fixtures on the ornaments.</p>
+                            </div>
+                        </div>
+                        <div class="block required-loan-amount calculator_forms_js display-none" id="tab-2">
+                            <div class="text-center current-gold-rate-heading">
+                                <p class="text-uppercase">Today's per gram gold rate</p>
+                                <h5>
+                                    <i class="fas fa-rupee-sign">&nbsp;</i>{{(Math.round(Number(currentGoldRate) * 0.75)).toLocaleString("en-IN")}}
+                                </h5>
+                            </div>
+                            <div class="ornament-details-form">
+                                <div class="display-flex block text-center">
+                                    <div class="flex-1 max-width-20px hidden-mobile-devices">
+
+                                    </div>
+                                    <div class="flex-1 max-width-180px">
+                                        <h4>Gold purity </h4>
+                                    </div>
+                                    <div class="flex-1 max-width-180px">
+                                        <h4>Net Weight (grams) </h4>
+                                    </div>
+                                    <div class="flex-1 max-width-180px">
+                                        <h4 class="text-right">Loan Amount (₹)</h4>
+                                    </div>
+                                </div>
+                                <div class="display-flex block text-center flex-align-bottom margin-bottom-10px" v-for="(goldRow, index) in goldOrnamentInfo">
+                                    <div class="flex-1 max-width-20px hidden-mobile-devices">
+                                        <div class="form-element-wrapper block text-center no-margin">
+                                            <label class=" no-margin">{{ index + 1 }}</label>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1 max-width-180px">
+                                        <div class="form-element-wrapper block no-margin">
+                                            <select class="form-control calc-drop-down" v-model="goldRow.purityValue" @change="getLoanAmountOnPurityChange(index, goldRow.purityValue)">
+                                                <option v-for="option in karatOptions" :value="option.value">
+                                                    {{ option.text }}
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1 max-width-180px">
+                                        <div class="form-element-wrapper block select-schemes no-margin">
+                                            <input type="text" name="placeholder.netWeightHolder" maxlength="4" :placeholder="placeholder.netWeightHolder" class="form-control second-loan-input"
+                                                v-model="goldRow.netWeight" @keyup="calculateLoanAmount(index, goldRow.netWeight, false)"
+                                            />
+                                            <span class="help-block form-error-message" :class="{'error' : invalidWeight[index]}">
+                                                <span v-if="invalidWeight[index]">{{invalidWeightErrorMessage[index]}}</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1 max-width-180px">
+                                        <div class="form-element-wrapper block text-right no-margin">
+                                            <label class="">{{goldRow.loanAmount.toLocaleString("en-IN")}}</label>
+                                            <span v-if="goldOrnamentInfo.length > 1">
+                                                <i class="fa fa-times cursor-pointer theme-color-close-btn" @click="removeGoldRow(index)"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block text-right margin-bottom-20px" v-if="goldOrnamentInfo.length < 10">
+                                    <button type="button" class="rupeek-btn add-more-btn cursor-pointer transition" :disabled="invalidWeight.indexOf(true) != -1"
+                                        @click="addNewOrnament">Add more +</button>
+                                </div>
+                            </div>
+                            <div class="ornament-details-form">
+                                <div class="block display-flex flex-direction-column-mobile">
+                                    <div class="flex-1">
+                                        <div class="calculate-gold-amount-result block text-center">
+                                            <p>Required Gold in Grams (Net weight*) </p>
+                                            <h5>{{totalGoldWeight}}</h5>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="calculate-gold-amount-result block text-center">
+                                            <p>Total Loan Amount </p>
+                                            <h5>
+                                                <i class="fa fa-rupee"></i> {{totalLoanAmount.toLocaleString("en-IN")}}
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculate-gold-amount-button block text-center section-padding-20px">
+                                <button type="button" class="rupeek-btn text-uppercase smooth_scroll_js apply-button" data-target=".calculator-lead-generation-wrapper">Click here to Apply
+                                    <i class="fa fa-angle-double-down"></i>
+                                </button>
+
+                                <button type="button" class="rupeek-btn text-uppercase high-amount-button" @click="highAmountClicked">I want higher amount</button>
+                            </div>
+
+                            <div class="terms-wrapper block">
+                                <p class="text-center gray-color font-small terms-wrapper">*Please note that as per the RBI guidelines, the net weight is calculated by deducting weight
+                                    of all the stones and other non-gold fixtures on the ornaments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-lead-generation-wrapper block white-background">
+                    <h4 class="margin-bottom-20px">Get Gold Loan in 30 minutes</h4>
+                    <div class="display-flex flex-direction-column-mobile">
+                        <div class="flex-1">
+                            <div class="form-element">
+                                <label class="no-margin">
+                                    Name
+                                </label>
+                                <input type="text" :placeholder="placeholder.nameHolder" v-model="userName" class="form-control no-margin" @keyup="checkUserName"
+                                />
+                                <div class="help-block form-error-message" :class="{'error' : (nameNull || invalidName)}">
+                                    <span v-if="nameNull">{{userNameErrorMessage}}</span>
+                                    <span v-if="invalidName">{{userNameErrorMessage}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="form-element">
+                                <label class="no-margin">
+                                    Mobile Number
+                                </label>
+                                <input type="text" :placeholder="placeholder.mobileHolder" maxlength="10" class="form-control no-margin" v-model="mobileNumber"
+                                    @keyup="checkMobile" />
+                                <div class="help-block form-error-message" :class="{'error' : (mobileNull || invalidMobile)}">
+                                    <span v-if="mobileNull">{{mobileErrorMessage}}</span>
+                                    <span v-if="invalidMobile">{{mobileErrorMessage}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="form-element">
+                                <label class="no-margin">
+                                    &nbsp;
+                                </label>
+                                <vue-recaptcha ref="invisibleRecaptcha" @verify="onCaptchaVerify" @expired="onExpired" size="invisible" batch="inline" :sitekey="sitekey">
+                                    <button type="button" id="calculator-lead-form" class="rupeek-btn text-uppercase block" @click="executeCaptcha">Apply Now</button>
+                                </vue-recaptcha>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="preloader" v-if="showLoader" class="loader display-flex">
+                <img src="images/loader.svg" class="img-responsive margin-auto" alt="" />
+            </div>
+        </section>
+    </main>
+    <footer class="block">
+        <div class="block section-padding-40px">
+            <div class="container">
+                <div class="footer-links-wrapper display-flex flex-align-center flex-direction-column-mobile">
+                    <div class="google-play-store-icon">
+                        <a href="https://play.google.com/store/apps/details?id=com.rupeek.customer" target="_blank">
+                            <img src="images/google-pay-icon.jpg" class="img-responsive" alt="" />
+                        </a>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li>
+                                <a href="#0">About </a>
+                            </li>
+                            <li>
+                                <a href="#0"> FAQs </a>
+                            </li>
+                            <li>
+                                <a href="#0"> Contact </a>
+                            </li>
+                            <li>
+                                <a href="#0"> Sign In</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrapper block footer-links section-padding-30px text-center">
+            <div class="container">
+                <ul>
+                    <li>&copy; 2015-2018 Rupeek Fintech Pvt Ltd. </li>
+                    <li>
+                        <a href="#0"> Privacy </a>
+                    </li>
+                    <li>
+                        <a href="#0"> Terms </a>
+                    </li>
+                    <li>
+                        <a href="#0"> Press</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/owl.carousel.merged.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="scripts/public-script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-recaptcha@latest/dist/vue-recaptcha.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit"></script>
+    <script src="assets/js/alertify.min.js"></script>
+    <link rel="stylesheet" href="assets/styles/alertify.css"/>
+    <script src="assets/js/loadash.js"></script>
+    <script src="assets/js/vue-resource-http.js"></script>
+    <script src="scripts/calculator.js"></script>
+</body>
+
+</html>

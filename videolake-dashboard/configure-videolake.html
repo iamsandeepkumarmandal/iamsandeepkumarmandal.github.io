@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Campaigns</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/videolake.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="videolake-dashboard">
+            <div class="videolake-dashboard--navigation mb-3">
+                <ul>
+                    <li><a href="index.html">Settings</a></li>
+                    <li><a href="configure-videolake.html" class="active">VideoLake Manager</a></li>
+                </ul>
+            </div>
+            <div class="row mb-3">
+                <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xl-12">
+                    <div class="videolake-dashboard--card videolake-dashboard--featured-videos">
+                        <h4>Featured Videos</h4>
+                        <h5>VideoLake allows 6 videos to be featured, you can add/remove features videos from here. </h5>
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                <div class="featured-landing-video">
+                                    <div class="thumbnail-image">
+                                        <h4>Landing Page Featured Video Preview</h4>
+                                        <img src="https://i.ytimg.com/vi/TAOziHOk7iA/mqdefault.jpg"
+                                            class="img-fluid w-100" />
+                                    </div>
+                                    <h4>How Kubernetes Changed Everything with Microsoft, Google Cloud, VMware and
+                                        Google</h4>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                <div class="row mb-2">
+                                    <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="video-preview-wrapper">
+                                            <input type="checkbox" class="hidden-checkbox" id='featured-video-1'
+                                                name='featured-video' value="videoId1" />
+                                            <label class="video-preview" for='featured-video-1'>
+                                                <div class="thumbnail">
+                                                    <img src="https://i.ytimg.com/vi/TAOziHOk7iA/mqdefault.jpg"
+                                                        class="img-fluid w-100" />
+                                                    <h3>17:59</h3>
+                                                    <div class="video-preview--featured-video d-flex">
+                                                        <h5 class="m-auto">Landing video</h5>
+                                                    </div>
+                                                </div>
+                                                <h4>How Kubernetes Changed Everything with Microsoft, Google Cloud,
+                                                    VMware and Google</h4>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="video-preview-wrapper">
+                                            <input type="checkbox" class="hidden-checkbox" id='featured-video-2'
+                                                name='featured-video' value="videoId1" />
+                                            <label class="video-preview" for='featured-video-2'>
+                                                <div class="thumbnail">
+                                                    <img src="https://i.ytimg.com/vi/OPrh5t24iy4/mqdefault.jpg"
+                                                        class="img-fluid" />
+                                                    <h3>17:59</h3>
+                                                    <div class="video-preview--cta">
+                                                        <ul>
+                                                            <li>
+                                                                <a
+                                                                    class="add-landing-featured-video d-flex align-items-center">
+                                                                    <div class="icon d-flex">
+                                                                        <img src="images/delete.svg"
+                                                                            class="img-responsive m-auto" alt="">
+                                                                    </div>
+                                                                    <h6>Remove</h6>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    class="add-landing-featured-video d-flex align-items-center">
+                                                                    <div class="icon d-flex">
+                                                                        <img src="images/visible.svg"
+                                                                            class="img-responsive m-auto" alt="">
+                                                                    </div>
+                                                                    <h6>Landing featured video</h6>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <h4>How Kubernetes Changed Everything with Microsoft, Google Cloud,
+                                                    VMware and Google</h4>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="video-preview">
+                                            <div class="thumbnail">
+                                                <img src="https://i.ytimg.com/vi/TAOziHOk7iA/mqdefault.jpg"
+                                                    class="img-fluid" />
+                                                <h3>17:59</h3>
+                                                <div class="video-preview--cta">
+                                                    <ul>
+                                                        <li>
+                                                            <a
+                                                                class="add-landing-featured-video d-flex align-items-center">
+                                                                <div class="icon d-flex">
+                                                                    <img src="images/delete.svg"
+                                                                        class="img-responsive m-auto" alt="">
+                                                                </div>
+                                                                <h6>Remove</h6>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                class="add-landing-featured-video d-flex align-items-center">
+                                                                <div class="icon d-flex">
+                                                                    <img src="images/visible.svg"
+                                                                        class="img-responsive m-auto" alt="">
+                                                                </div>
+                                                                <h6>Landing featured video</h6>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <h4>How Kubernetes Changed Everything with Microsoft, Google Cloud, VMware
+                                                and Google</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="video-preview">
+                                            <div class="thumbnail">
+                                                <img src="https://i.ytimg.com/vi/OPrh5t24iy4/mqdefault.jpg"
+                                                    class="img-fluid" />
+                                                <h3>17:59</h3>
+                                                <div class="video-preview--cta">
+                                                    <ul>
+                                                        <li>
+                                                            <a
+                                                                class="add-landing-featured-video d-flex align-items-center">
+                                                                <div class="icon d-flex">
+                                                                    <img src="images/delete.svg"
+                                                                        class="img-responsive m-auto" alt="">
+                                                                </div>
+                                                                <h6>Remove</h6>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                class="add-landing-featured-video d-flex align-items-center">
+                                                                <div class="icon d-flex">
+                                                                    <img src="images/visible.svg"
+                                                                        class="img-responsive m-auto" alt="">
+                                                                </div>
+                                                                <h6>Landing featured video</h6>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <h4>How Kubernetes Changed Everything with Microsoft, Google Cloud, VMware
+                                                and Google</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="video-preview">
+                                            <div class="thumbnail">
+                                                <img src="https://i.ytimg.com/vi/TAOziHOk7iA/mqdefault.jpg"
+                                                    class="img-fluid" />
+                                                <h3>17:59</h3>
+                                                <div class="video-preview--cta">
+                                                    <ul>
+                                                        <li>
+                                                            <a
+                                                                class="add-landing-featured-video d-flex align-items-center">
+                                                                <div class="icon d-flex">
+                                                                    <img src="images/delete.svg"
+                                                                        class="img-responsive m-auto" alt="">
+                                                                </div>
+                                                                <h6>Remove</h6>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                class="add-landing-featured-video d-flex align-items-center">
+                                                                <div class="icon d-flex">
+                                                                    <img src="images/visible.svg"
+                                                                        class="img-responsive m-auto" alt="">
+                                                                </div>
+                                                                <h6>Landing featured video</h6>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <h4>How Kubernetes Changed Everything with Microsoft, Google Cloud, VMware
+                                                and Google</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="video-preview">
+                                            <div class="thumbnail">
+                                                <img src="https://i.ytimg.com/vi/OPrh5t24iy4/mqdefault.jpg"
+                                                    class="img-fluid" />
+                                                <h3>17:59</h3>
+                                                <div class="video-preview--cta">
+                                                    <ul>
+                                                        <li>
+                                                            <a
+                                                                class="add-landing-featured-video d-flex align-items-center">
+                                                                <div class="icon d-flex">
+                                                                    <img src="images/delete.svg"
+                                                                        class="img-responsive m-auto" alt="">
+                                                                </div>
+                                                                <h6>Remove</h6>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                class="add-landing-featured-video d-flex align-items-center">
+                                                                <div class="icon d-flex">
+                                                                    <img src="images/visible.svg"
+                                                                        class="img-responsive m-auto" alt="">
+                                                                </div>
+                                                                <h6>Landing featured video</h6>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <h4>How Kubernetes Changed Everything with Microsoft, Google Cloud, VMware
+                                                and Google</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 col-xl-5 col-sm-12 col-md-12 col-xs-12 offset-xl-3 offset-lg-3">
+                                <div class="search-add-videos text-center mt-3">
+                                    <h5 class="">Click here to search & add other videos from video manager</h5>
+                                    <button class="btn btn-primary text-uppercase search-videos-js">Add Videos</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xl-12">
+                    <div class="videolake-dashboard--card videolake-dashboard--categories-wrapper">
+                        <h4>Video Categories</h4>
+                        <h5>You can control the visibility of different categories on VideoLake</h5>
+                        <div class="row">
+                            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="categroies-wrapper"
+                                    style="background-image: url('https://i.ytimg.com/vi/q7v5NtV8v6I/mqdefault.jpg');">
+                                    <h4 class="category-name">Health</h4>
+                                    <h5 class="videos">4 Videos</h5>
+                                    <div class="category-cta">
+                                        <ul>
+                                            <li>
+                                                <a class="show-on-videolake d-flex">
+                                                    <h3>VISIBLE</h3>
+                                                    <div class="icon d-flex">
+                                                        <img src="images/visible.svg" class="img-responsive" alt="" />
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="categroies-wrapper"
+                                    style="background-image: url('https://i.ytimg.com/vi/iCvmsMzlF7o/mqdefault.jpg');">
+                                    <h4 class="category-name">TED Talk</h4>
+                                    <h5 class="videos">4 Videos</h5>
+                                    <div class="category-cta">
+                                        <ul>
+                                            <li>
+                                                <a class="show-on-videolake d-flex">
+                                                    <h3>ADD TO VIDEOLAKE</h3>
+                                                    <div class="icon d-flex">
+                                                        <img src="images/add-to-videolake.svg" class="img-responsive" alt="" />
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="categroies-wrapper"
+                                    style="background-image: url('https://i.ytimg.com/vi/YPxmBxON1l8/mqdefault.jpg');">
+                                    <h4 class="category-name">Politics</h4>
+                                    <h5 class="videos">14 Videos</h5>
+                                    <div class="category-cta">
+                                        <ul>
+                                            <li>
+                                                <a class="show-on-videolake d-flex">
+                                                    <h3>ADD TO VIDEOLAKE</h3>
+                                                    <div class="icon d-flex">
+                                                        <img src="images/add-to-videolake.svg" class="img-responsive" alt="" />
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="categroies-wrapper"
+                                    style="background-image: url('https://i.ytimg.com/vi/q7v5NtV8v6I/mqdefault.jpg');">
+                                    <h4 class="category-name">Health</h4>
+                                    <h5 class="videos">4 Videos</h5>
+                                    <div class="category-cta">
+                                        <ul>
+                                            <li>
+                                                <a class="show-on-videolake d-flex">
+                                                    <h3>VISIBLE</h3>
+                                                    <div class="icon d-flex">
+                                                        <img src="images/visible.svg" class="img-responsive" alt="" />
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="categroies-wrapper"
+                                    style="background-image: url('https://i.ytimg.com/vi/iCvmsMzlF7o/mqdefault.jpg');">
+                                    <h4 class="category-name">TED Talk</h4>
+                                    <h5 class="videos">4 Videos</h5>
+                                    <div class="category-cta">
+                                        <ul>
+                                            <li>
+                                                <a class="show-on-videolake d-flex">
+                                                    <h3>VISIBLE</h3>
+                                                    <div class="icon d-flex">
+                                                        <img src="images/visible.svg" class="img-responsive" alt="" />
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="categroies-wrapper"
+                                    style="background-image: url('https://i.ytimg.com/vi/YPxmBxON1l8/mqdefault.jpg');">
+                                    <h4 class="category-name">Politics</h4>
+                                    <h5 class="videos">14 Videos</h5>
+                                    <div class="category-cta">
+                                        <ul>
+                                            <li>
+                                                <a class="show-on-videolake d-flex">
+                                                    <h3>VISIBLE</h3>
+                                                    <div class="icon d-flex">
+                                                        <img src="images/visible.svg" class="img-responsive" alt="" />
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="categroies-wrapper"
+                                    style="background-image: url('https://i.ytimg.com/vi/iCvmsMzlF7o/mqdefault.jpg');">
+                                    <h4 class="category-name">TED Talk</h4>
+                                    <h5 class="videos">4 Videos</h5>
+                                    <div class="category-cta">
+                                        <ul>
+                                            <li>
+                                                <a class="show-on-videolake d-flex">
+                                                    <h3>VISIBLE</h3>
+                                                    <div class="icon d-flex">
+                                                        <img src="images/visible.svg" class="img-responsive" alt="" />
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="categroies-wrapper"
+                                    style="background-image: url('https://i.ytimg.com/vi/YPxmBxON1l8/mqdefault.jpg');">
+                                    <h4 class="category-name">Politics</h4>
+                                    <h5 class="videos">14 Videos</h5>
+                                    <div class="category-cta">
+                                        <ul>
+                                            <li>
+                                                <a class="show-on-videolake d-flex">
+                                                    <h3>VISIBLE</h3>
+                                                    <div class="icon d-flex">
+                                                        <img src="images/visible.svg" class="img-responsive" alt="" />
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xl-12">
+                        <div class="videolake-dashboard--card videolake-dashboard--topics-wrapper">
+                            <h4>Top Topics</h4>
+                            <h5>You can select/modify key topics to appear on VideoLake </h5>
+                            <div class="videolake-dashboard--topics-wrapper--topics mb-3">
+                                <h5>All Top Topic</h5>
+                                <ul>
+                                    <li><a class=""><span> Data Set</span><img src="images/close.svg" class="img-fluid" alt="Remove Topic"/></a></li>
+                                    <li><a class=""><span> Training Data </span><img src="images/close.svg" class="img-fluid" alt="Remove Topic"/></a></li>
+                                    <li><a class=""><span> File System </span><img src="images/close.svg" class="img-fluid" alt="Remove Topic"/></a></li>
+                                    <li><a class=""><span> Machine Learning </span><img src="images/close.svg" class="img-fluid" alt="Remove Topic"/></a></li>
+                                    <li><a class=""><span> Source Code </span><img src="images/close.svg" class="img-fluid" alt="Remove Topic"/></a></li>
+                                    <li><a class=""><span> Deep Learning </span><img src="images/close.svg" class="img-fluid" alt="Remove Topic"/></a></li>
+                                    <li><a class=""><span> Functionality </span><img src="images/close.svg" class="img-fluid" alt="Remove Topic"/></a></li>
+                                    <li><a class=""><span> Developers </span><img src="images/close.svg" class="img-fluid" alt="Remove Topic"/></a></li>
+                                    <li><a class=""><span> Neural Network </span><img src="images/close.svg" class="img-fluid" alt="Remove Topic"/></a></li>
+                                    <li><a class=""><span> Customers </span><img src="images/close.svg" class="img-fluid" alt="Remove Topic"/></a></li>
+                                    <li><a class=""><span> Variables </span><img src="images/close.svg" class="img-fluid" alt="Remove Topic"/></a></li>
+                                </ul>
+                            </div>
+                            <div class="videolake-dashboard--topics-wrapper--topics mb-3">
+                                <h5>Removed Topics </h5>
+                                <ul>
+                                    <li><a class=""><span> Developers </span><img src="images/add.svg" class="img-fluid" alt="Remove Topic"/></a></li>
+                                    <li><a class=""><span> Neural Network </span><img src="images/add.svg" class="img-fluid" alt="Remove Topic"/></a></li>
+                                    <li><a class=""><span> Customers </span><img src="images/add.svg" class="img-fluid" alt="Remove Topic"/></a></li>
+                                    <li><a class=""><span> Variables </span><img src="images/add.svg" class="img-fluid" alt="Remove Topic"/></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="videolake-dashboard--search-videos-wrapper search-slide-popup_js">
+                <a class="close-search-video close-search-slide-popup_js">
+                    <img src="images/close.svg" class="img-fluid" alt="" />
+                </a>
+                <h3 class="mb-3">Search Videos</h3>
+                <div class="form-group d-flex mb-4">
+                    <input type="text" placeholder="Enter video Id / title of the video" class="form-control" /><button
+                        class="btn btn-primary">SEARCH</button>
+                </div>
+                <div class="video-search-results">
+                    <div class="video mb-3 d-flex align-items-center">
+                        <div class="video--thumbnail">
+                            <img src="https://i.ytimg.com/vi/q7v5NtV8v6I/mqdefault.jpg" class="img-fluid" />
+                            <h5>14:29</h5>
+                        </div>
+                        <div class="video--details">
+                            <h4>Get Started with Azure Machine Learning</h4>
+                            <h5>Added on : 13 Dec 2019 </h5>
+                            <div class="add-to-featured-videos d-flex">
+                                <a class="add-featured-videos_js m-auto">
+                                    Add To Featured Videos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video mb-3 d-flex align-items-center">
+                        <div class="video--thumbnail">
+                            <img src="https://i.ytimg.com/vi/q7v5NtV8v6I/mqdefault.jpg" class="img-fluid" />
+                            <h5>14:29</h5>
+                        </div>
+                        <div class="video--details">
+                            <h4>Get Started with Azure Machine Learning</h4>
+                            <h5>Added on : 13 Dec 2019 </h5>
+                            <div class="add-to-featured-videos d-flex">
+                                <a class="add-featured-videos_js m-auto">
+                                    Add To Featured Videos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear-all-wrapper">
+                    <a class="clear-results">
+                        CLEAR ALL
+                    </a>
+                </div>
+            </div>
+            <div
+                class="videolake-dashboard--search-videos-wrapper--overlay search-slide-popup_js close-search-slide-popup_js">
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+        <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+@import 'common/_base.scss';
+
+/* Import Header SCSS */
+@import 'common/_header.scss';
+%inline-block {
+    display: inline-block;
+}
+.customer-welcome {
+    padding-bottom: 40px;
+    h1 {
+        font-size: (24/$base-font-size)+rem;
+        color: #4a4a4a;
+    }
+    h2 {
+        color: $body-bold-font-color;
+    }
+}
+%menu-hover-active {
+    color: $body-bold-font-color;
+}
+%width-100 {
+    width: 100%;
+}
+%border-radius {
+    border-radius: $base-border-radius;
+}
+.customer-tabs__links-wrapper {
+    border-bottom: 1px solid $border-color;
+    li {
+        @extend %inline-block;
+        padding: 0 30px;
+        &:first-child {
+            padding-left: 0px;
+        }
+        &:last-child {
+            padding-right: 0px;
+        }
+        a {
+            @extend %inline-block;
+            padding-bottom: 15px;
+            position: relative;
+            font-size: (14/$base-font-size)+rem;
+            letter-spacing: 1px;
+            @include transition(0.5s);
+            &.active {
+                @extend %menu-hover-active;
+                &:after {
+                    @extend %width-100;
+                }
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                left: 0;
+                height: 2px;
+                background-color: $body-bold-font-color;
+                @include transition(0.5s);
+            }
+            &:hover {
+                @extend %menu-hover-active;
+                &:after {
+                    @extend %width-100;
+                }
+            }
+        }
+    }
+    
+}
+
+.customer-tabs__content-wrapper {
+    background-color: $main-content-bg-color;
+    .card {
+        @extend %border-radius;
+        @include box-shadow(0 2px 10px 0,rgba(0, 0, 0, 0.08));
+        &__padding {
+            padding: 25px;
+        }
+    }
+    .total-spent {
+        p {
+            font-size: (24/$base-font-size)+rem;
+            i {
+                font-size: initial;
+            }
+        }
+    }
+    .expenditure {
+        &__progressbar {
+            position: relative;
+            height: 8px;
+            background-color: $body-font-color;
+            margin: 10px 0 20px;
+            @extend %border-radius;
+            .progress {
+                @extend %border-radius;
+                position: absolute;
+                height: 100%;
+                background-color: $theme-color;
+                width: 20%;
+            }
+        }
+    }
+    .total-spent-spending-limit-wrapper {
+        @extend %menu-hover-active;
+    }
+}
+.expenditure-wrapper {
+    &__list {
+        &:first-child {
+            header {
+                margin-top: 10px;
+            }
+        }
+        header {
+            padding: 10px 20px;
+            h5 {
+                @extend %menu-hover-active;
+            }
+            h6 {
+                @extend %menu-hover-active;
+            }   
+            .merchant {
+                h6 {
+                    font-size: (14/$base-font-size)+rem;
+                }
+            }
+            .more-button {
+                font-size: (12/$base-font-size)+rem;
+                position: relative;
+                &:after {
+                    content: "\f107";
+                    font-family: fontAwesome;
+                    position: relative;
+                    right: -5px;
+                    display: inline-block;
+                    @include transition(0.3s);
+                }
+                &.active {
+                    &:after {
+                        @include transform(rotate(180deg));
+                    }
+                }
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+        &__body {
+            padding: 10px 20px;
+            display: none;
+            &__details {
+                .icon {
+                    margin-right: 10px;
+                }
+                h5 {
+                    font-size: (18/$base-font-size)+rem;
+                }
+                
+                .paid-amount {
+                    h6 {
+                        font-size: (14/$base-font-size)+rem;
+                    }
+                }
+            }
+            
+        }
+    }
+    footer {
+        @extend %card-footer-css;
+    }
+}
+
+%padding-around-card {
+    padding: 25px 20px;
+}
+%card-footer-css {
+    padding: 15px 20px;
+    border-top: 1px solid $border-color;
+    i {
+        padding-right: 5px;
+    }
+}
+.profile-content-wrapper {
+    .profile-image-name-credit-score {
+        color: $body-bold-font-color;
+        border-bottom: 1px solid $border-color;
+        @extend %padding-around-card;
+        .profile-pic {
+            font-size: 2rem;
+        }
+        figcaption {
+            h5 {
+                font-size: (20/$base-font-size)+rem;
+            }
+        }
+        .credit-score {
+            &__ratings {
+                display: inline-block;
+                padding: 2px;
+                margin-left: 5px;
+                border: 1px solid $body-bold-font-color;
+                border-radius: $base-border-radius;
+                font-size: (12/$base-font-size)+rem;
+            }
+        }
+    }
+
+    .devices-used {
+        @extend %padding-around-card;
+        color: $body-bold-font-color;
+        border-bottom: 1px solid $border-color;
+        h6 {
+            font-size: (22/$base-font-size)+rem;
+        }
+    }
+
+    .transaction-details {
+        @extend %padding-around-card;
+        padding-bottom: 0;
+        &__graph {
+            .graph {
+                max-width: 100px;
+            }
+            .graph-info {
+                padding-left: 20px;
+                li {
+                    font-size: (14/$base-font-size)+rem;
+                    line-height: 25px;
+                }
+                .circle {
+                    display: inline-block;
+                    width: 8px;
+                    height: 8px;
+                    margin-right: 5px;
+                    border-radius: 50%;
+                    &.food {
+                        background-color: $theme-color;
+                    }
+                    &.personal-care {
+                        background-color: #ff9600;
+                    }
+                    &.clothes {
+                        background-color: #ff5950
+                    }
+                    &.travel {
+                        background-color: #77898a;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        @extend %card-footer-css;
+        .incomplete {
+            color: #ff5950;
+        }
+    }
+}
+
+.faqs-wrapper {
+    &__list {
+        padding: 0px 20px;
+        header {
+            padding: 15px 0px;
+            border-bottom: 1px solid $border-color;
+            &:before {
+                content: '\f105';
+                font-family: fontAwesome;
+                position: relative;
+                display: inline-block;
+                margin-right: 8px;
+                @include transition(0.3s);
+            }
+            &.active {
+                &:before {
+                    @include transform(rotate(90deg));
+                }
+            }
+        } 
+        .body-wrapper {
+           padding: 10px 0;
+           display: none;
+           border-bottom: 1px solid $border-color;
+        }
+        &.no-border {
+            header {
+                border-bottom: none;
+                &.active {
+                    border-bottom: 1px solid $border-color;
+                }
+            }
+            .body-wrapper {
+                border-bottom: none;
+            }
+        }
+    }
+    footer {
+        @extend %card-footer-css;
+    }
+}
+.marchants-wrapper {
+    footer {
+        @extend %card-footer-css;
+    }
+    &__list {
+        @extend %padding-around-card;
+    }
+    .merchant {
+        figure {
+            max-width: 100px;
+            height: 70px;
+            border-radius: $base-border-radius;
+            border: 1px solid $border-color;
+            margin: 0 auto;
+        }
+        h5 {
+            font-size: (10/$base-font-size)+rem;
+            margin-top: 5px;
+        }
+    }
+}
+@media (max-width:$mobile-devices-max-width+px) {
+    .customer-tabs__links-wrapper {
+        li {
+            padding: 0;
+        }
+    }
+    .customer-welcome {
+        h2 {
+            span {
+                display: block;
+            }
+        }
+    }
+    .customer-welcome {
+        &__name{
+            display: block;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+    }
+}
+@media(min-width:$tablet-devices-min+px) {
+    .customer-tabs__content-wrapper {
+        .flex-1 {
+            &:first-child {
+                padding-right: 20px;
+            }
+            &:last-child {
+                padding-left: 20px;
+            }
+        }
+    }
+}
+@import 'common/_footer.scss';

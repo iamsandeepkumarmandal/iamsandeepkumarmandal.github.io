@@ -1,0 +1,56 @@
+/* ==========
+Define Font family
+ ========== */
+ $font-family: 'Open Sans', sans-serif;
+
+/* ==========
+ Define font weight
+   ========== */
+$bold-font-weight : 700;
+$semi-bold-font-weight : 600;
+$normal-font-weight: 400;
+
+/* ==========
+  Define Font Size
+  ========== */
+$base-font-size : 14;
+$base-font-size-mobile: 13;
+
+/* ==========
+Define colours
+  ========== */
+$theme-primary-color: #0C365A;
+$theme-secondary-color: #01D167;
+
+$theme-text-primary-color: #222222;
+$theme-text-secondary-color: #222222;
+$theme-text-tertiary-color: #0C365A;
+
+$theme-button-primary-color: #325BAF;
+$theme-white-color: #ffffff;
+
+$theme-tabs-active-border-color: #23CEFD;
+
+/* ==========
+Define Border radius
+  ========== */
+$base-border-radius: 4px;
+
+/* ==========
+Define the breakpoints at which your layout will change,
+  adapting to different screen sizes.
+==========  */
+$extra-large-min: 1904;
+
+$large-devices-max: ($extra-large-min - 0.02);
+$large-devices-min : 1200;
+
+$medium-devices-max : ($large-devices-min - 0.02);
+$medium-devices-min : 992;
+
+$tablet-devices-max : ($medium-devices-min - 0.02);
+$tablet-devices-min : 768;
+
+$mobile-devices-max-width : $tablet-devices-min - 0.02;
+$small-mobile-devices-width: 480;
+$iphone-devices-max-width : 360;

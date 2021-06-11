@@ -1,0 +1,1164 @@
+/* ==========
+Define Font family
+ ========== */
+/* ==========
+Define Font Size
+ ========== */
+/* ==========
+Define font weight
+========== */
+/* ==========
+Define the color  variables 
+========== */
+/* ==========
+Define Border Radius 
+========== */
+/* ==========
+Define the breakpoints at which your layout will change,
+ adapting to different screen sizes.
+==========  */
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow:400,400i,500,700");
+.public-icon, .input-icon {
+  background-repeat: no-repeat;
+  background-image: url("../images/sprites/public-sprite.svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+  box-sizing: border-box;
+}
+
+a:focus,
+a:hover,
+a:active {
+  outline: medium none !important;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: #40150a;
+}
+
+/* Change Default Styling for <H1> TO </H6> tags */
+h1 {
+  font-size: 2rem;
+  letter-spacing: -0.2px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1.15rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Change Default Styling for <H1> TO </H6> tags */
+address {
+  font-style: normal;
+}
+
+/* ==========
+Import Font family from fonts.google.com
+ ========== */
+/* ==========
+Define Font family
+ ========== */
+/* ==========
+Define Font Size
+ ========== */
+/* ==========
+Define font weight
+========== */
+/* ==========
+Define the color  variables 
+========== */
+/* ==========
+Define Border Radius 
+========== */
+/* ==========
+Define the breakpoints at which your layout will change,
+ adapting to different screen sizes.
+==========  */
+.public-icon, .input-icon {
+  background-repeat: no-repeat;
+  background-image: url("../images/sprites/public-sprite.svg");
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1rem;
+  color: #40150a;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Reset Padding and Margin to 0px Starts Here*/
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+/* Reset Padding and Margin to 0px Ends Here*/
+/* Display Classes Starts Here */
+.display-inline-block {
+  display: inline-block;
+}
+
+.display-inline {
+  display: inline;
+}
+
+/* Display Classes Ends Here */
+/* Font Weights Starts Here */
+.bold-font-family {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: normal;
+}
+
+.bold-font {
+  font-weight: 700;
+}
+
+.normal-font {
+  font-weight: 400;
+}
+
+/* Font Weights Ends Here */
+/* Background Color as white */
+.white-background {
+  background-color: #ffffff;
+}
+
+.white-color {
+  color: #ffffff;
+}
+
+.theme-color {
+  color: #40150a;
+}
+
+/* Background Color as white */
+small,
+.font-small {
+  font-size: 0.88rem;
+}
+
+.mandatory-star {
+  font-size: 6px;
+}
+
+.block {
+  float: left;
+  width: 100%;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Flex Classes Starts Here */
+.display-flex {
+  display: flex;
+  -webkit-display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+  -ms-flex: 2;
+  -webkit-flex: 2;
+}
+
+.flex-align-center {
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.flex-align-bottom {
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+}
+
+.flex-justify-content-space-between {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+@media (max-width: 767.98px) {
+  .flex-direction-column-mobile {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+}
+/* Flex Classes Ends Here */
+/* Section Padding Starts Here */
+.section-padding-5px {
+  padding: 5px 0;
+}
+
+.section-padding-10px {
+  padding: 10px 0;
+}
+
+.section-padding-15px {
+  padding: 15px 0;
+}
+
+.section-padding-20px {
+  padding: 20px 0;
+}
+
+.section-padding-40px {
+  padding: 40px 0;
+}
+
+.section-padding-50px {
+  padding: 50px 0;
+}
+
+.section-padding-100px {
+  padding: 100px 0;
+}
+
+.section-padding-30px {
+  padding: 30px 0;
+}
+
+.section-padding-top-50px {
+  padding-top: 50px;
+}
+
+/* Section Padding Ends Here */
+.margin-bottom-50px {
+  margin-bottom: 50px;
+}
+
+.margin-bottom-20px {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-5px {
+  margin-bottom: 5px;
+}
+
+.margin-bottom-10px {
+  margin-bottom: 10px;
+}
+
+.margin-right-10 {
+  margin-right: 10px;
+}
+
+.margin-bottom-30px {
+  margin-bottom: 30px;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.transition {
+  transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -webkit-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -ms-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -o-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -moz-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+}
+
+/* ==========
+ Text alignment CSS Starts Here
+========== */
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/* ==========
+ CTA button CSS 
+========== */
+.rupeek-btn {
+  background: -webkit-linear-gradient(90deg, #f26622, #f78f1e);
+  background: linear-gradient(90deg, #f26622, #f78f1e);
+  display: inline-block;
+  background-size: 200% auto;
+  border-radius: 3px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  padding: 15px 55px;
+  box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.rupeek-btn:hover {
+  background-position: right center;
+}
+
+/* ==========
+ Section heading css
+========== */
+.section-heading {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.section-heading span {
+  background: -webkit-linear-gradient(90deg, #f26622, #f78f1e);
+  background: linear-gradient(90deg, #f26622, #f78f1e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==========
+ Section seperator css
+========== */
+.section-seperator {
+  -moz-box-shadow: 1px 4px 7px rgba(33, 30, 30, 0.1);
+  -webkit-box-shadow: 1px 4px 7px rgba(33, 30, 30, 0.1);
+  box-shadow: 1px 4px 7px rgba(33, 30, 30, 0.1);
+}
+
+/* ==========
+ Reset Owl Carouseul Default Control Styles
+========== */
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #f26422 !important;
+  border-color: #f26422 !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: #f8b190 !important;
+  border: 1px solid #f8b190 !important;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  background: -webkit-linear-gradient(90deg, #f26622, #f78f1e) !important;
+  background: linear-gradient(90deg, #f26622, #f78f1e) !important;
+  text-transform: uppercase;
+}
+
+/* ==========
+ Inner Pages Introduction CSS Starts Here
+========== */
+.inner-page-introduction {
+  max-width: 80%;
+  margin: 0 auto;
+  display: table;
+  font-size: 1.0666666667rem;
+  line-height: 20px;
+}
+.inner-page-introduction img {
+  max-width: 150px;
+}
+
+/* ==========
+ Container CSS Starts Here
+========== */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* ==========
+ Form Elements CSS Starts Here
+========== */
+.display-none {
+  display: none;
+}
+
+.form-element-wrapper {
+  margin-bottom: 10px;
+  position: relative;
+}
+.form-element-wrapper label {
+  margin-bottom: 5px;
+}
+
+.input-icon {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 12px;
+  background-size: 250px;
+}
+
+.icon-play-store-bg {
+  width: 250px;
+  height: 84px;
+  background-position: -500px -83px;
+  background-size: 834px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.form-wrapper textarea, .form-wrapper input[type=text], .form-wrapper input[type=password] {
+  float: left;
+  width: 100%;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+.form-wrapper input[type=submit], .form-wrapper textarea, .form-wrapper input[type=text], .form-wrapper input[type=password] {
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+
+.form-wrapper input[type=submit], .form-wrapper textarea::-ms-input-placeholder, .form-wrapper input[type=text]::-ms-input-placeholder, .form-wrapper input[type=password]::-ms-input-placeholder, .form-wrapper textarea:-ms-input-placeholder, .form-wrapper input[type=text]:-ms-input-placeholder, .form-wrapper input[type=password]:-ms-input-placeholder, .form-wrapper textarea::placeholder, .form-wrapper input[type=text]::placeholder, .form-wrapper input[type=password]::placeholder {
+  font-size: 0.8rem;
+}
+
+.form-wrapper textarea::placeholder, .form-wrapper input[type=text]::placeholder, .form-wrapper input[type=password]::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #dddddd;
+  opacity: 1;
+  /* Firefox */
+}
+.form-wrapper textarea:-ms-input-placeholder, .form-wrapper input[type=text]:-ms-input-placeholder, .form-wrapper input[type=password]:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff;
+}
+.form-wrapper textarea::-ms-input-placeholder, .form-wrapper input[type=text]::-ms-input-placeholder, .form-wrapper input[type=password]::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ffffff;
+}
+
+.form-wrapper input[type=text], .form-wrapper input[type=password] {
+  height: 45px;
+  padding: 10px 0 10px 45px;
+}
+.form-wrapper textarea {
+  resize: none;
+  padding: 10px 20px;
+}
+.form-wrapper input[type=submit] {
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.form-wrapper input[type=submit]:hover {
+  background-color: #ffffff;
+}
+
+select.form-control, .form-control {
+  border: 1px solid #ddd;
+  height: 34px;
+  background-color: transparent;
+  width: 100%;
+  padding: 3px 10px;
+}
+
+select.form-control {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../images/dropdown.svg");
+  background-size: 9px;
+  background-repeat: no-repeat;
+  background-position: 98% 15px;
+}
+
+/* ==========
+ Public Icons for form elements CSS Starts Here
+========== */
+.icon-phone {
+  background-position: -150px 0px;
+}
+
+.icon-name {
+  background-position: -25px 0px;
+}
+
+.icon-identity {
+  background-position: -50px 0px;
+}
+
+.icon-password {
+  background-position: 0px 0px;
+}
+
+.icon-organization {
+  background-position: -125px 0px;
+}
+
+.icon-phone {
+  background-position: -150px 0px;
+}
+
+.icon-email {
+  background-position: -100px 0px;
+}
+
+.icon-money {
+  background-position: -75px -50px;
+}
+
+/* ==========
+ loader CSS Starts Here
+========== */
+.loader {
+  height: 100vh;
+  background-color: rgba(173, 53, 11, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* ==========
+  CSS to hide grecaptcha-badge
+========== */
+.grecaptcha-badge {
+  display: none;
+}
+
+/* ==========
+  CSS to style tables
+========== */
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+}
+
+.table > tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+.table .table {
+  background-color: #ffffff;
+}
+
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+  padding: 5px;
+}
+
+.table-bordered {
+  border: 1px solid #dddddd;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #dddddd;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+
+table col[class*=col-] {
+  position: static;
+  float: none;
+  display: table-column;
+}
+
+table td[class*=col-],
+table th[class*=col-] {
+  position: static;
+  float: none;
+  display: table-cell;
+}
+
+/* ==========
+  Media queries
+========== */
+@media (min-width: 767.98px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (max-width: 767.98px) {
+  .inner-page-introduction {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .main-container {
+    margin-top: 65px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .hidden-mobile-devices {
+    display: none;
+  }
+
+  html {
+    font-size: 13px;
+  }
+
+  .rupeek-btn {
+    padding: 10px 35px;
+    font-size: 1.3846153846rem;
+  }
+
+  .section-heading {
+    font-size: 1.6923076923rem;
+  }
+
+  section.section-padding-50px {
+    padding: 20px 0;
+  }
+
+  .section-heading.margin-bottom-50px {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 359.98px) {
+  .section-heading {
+    font-size: 1.5384615385rem;
+  }
+}
+@media (min-width: 767.98px) {
+  .hidden-tablets-and-above-devices {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.96px) {
+  html {
+    font-size: 12px;
+  }
+}
+/* Import Header SCSS */
+/* ==========
+Define Font family
+ ========== */
+/* ==========
+Define Font Size
+ ========== */
+/* ==========
+Define font weight
+========== */
+/* ==========
+Define the color  variables 
+========== */
+/* ==========
+Define Border Radius 
+========== */
+/* ==========
+Define the breakpoints at which your layout will change,
+ adapting to different screen sizes.
+==========  */
+.input-icon, .public-icon {
+  background-repeat: no-repeat;
+  background-image: url("../images/sprites/public-sprite.svg");
+}
+
+/* Header CSS Starts Here */
+.logo-wrapper {
+  max-width: 152px;
+}
+
+.main-menu li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.main-menu li:not(:last-child) a {
+  color: #40150a;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #f26422, #f26422 50%, #40150a 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+}
+.main-menu li a:hover {
+  color: #f26422;
+  background-position: 0%;
+}
+.main-menu li a.rupeek-btn {
+  box-shadow: none;
+  font-size: initial;
+  padding: 10px 20px;
+}
+.main-menu li a.rupeek-btn:hover {
+  color: #ffffff;
+}
+.main-menu li:last-child {
+  padding-right: 0;
+}
+
+/* Hamburger Menu Starts Here */
+.hamburger-bar-1, .hamburger-bar-2, .hamburger-bar-3 {
+  width: 30px;
+  height: 5px;
+  background: -webkit-linear-gradient(90deg, #f26622, #f78f1e);
+  background: linear-gradient(90deg, #f26622, #f78f1e);
+  margin: 5px 0;
+  transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -webkit-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -ms-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -o-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+  -moz-transition: all 0.5s cubic-bezier(0.85, -0.03, 0.16, 0.99);
+}
+
+/* Hamburger Menu Close Button Animation */
+.active .hamburger-bar-1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.active .hamburger-bar-2 {
+  opacity: 0;
+}
+.active .hamburger-bar-3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media (max-width: 767.98px) {
+  .main-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color: #ffffff;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    max-height: calc(100vh - 65px);
+    overflow-y: auto;
+  }
+  .main-menu li {
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+
+  header {
+    position: fixed;
+    z-index: 1111;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .hamburger-menu-wrapper.active ~ .main-menu {
+    opacity: 1;
+    visibility: visible;
+    -moz-box-shadow: 0 4px 10px rgba(33, 30, 30, 0.2);
+    -webkit-box-shadow: 0 4px 10px rgba(33, 30, 30, 0.2);
+    box-shadow: 0 4px 10px rgba(33, 30, 30, 0.2);
+  }
+}
+@media (min-width: 768px) {
+  .hamburger-menu-wrapper {
+    display: none;
+  }
+}
+/* Import Footer SCSS */
+/* ==========
+Define Font family
+ ========== */
+/* ==========
+Define Font Size
+ ========== */
+/* ==========
+Define font weight
+========== */
+/* ==========
+Define the color  variables 
+========== */
+/* ==========
+Define Border Radius 
+========== */
+/* ==========
+Define the breakpoints at which your layout will change,
+ adapting to different screen sizes.
+==========  */
+.input-icon, .public-icon {
+  background-repeat: no-repeat;
+  background-image: url("../images/sprites/public-sprite.svg");
+}
+
+/* ==========
+Footer Wrapper Starts Here 
+========== */
+.footer-links-wrapper {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.footer-links li {
+  margin-left: 50px;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.copyright-wrapper {
+  background: -webkit-linear-gradient(90deg, #f26622, #f78f1e);
+  background: linear-gradient(90deg, #f26622, #f78f1e);
+}
+.copyright-wrapper li:first-child {
+  margin-left: 0;
+}
+.copyright-wrapper li, .copyright-wrapper a {
+  color: #fff;
+}
+.copyright-wrapper a:hover {
+  color: #40150a;
+}
+
+.mobile-fixed-footer {
+  position: fixed;
+  bottom: 0;
+  padding: 5px 10px;
+  z-index: 1111;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -moz-box-shadow: inset 1px 0px 5px 3px #dddddd;
+  -webkit-box-shadow: inset 1px 0px 5px 3px #dddddd;
+  box-shadow: inset 1px 0px 5px 3px #dddddd;
+}
+.mobile-fixed-footer.active {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.mobile-fixed-footer .display-flex {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.mobile-fixed-footer .icon {
+  margin-left: 20px;
+}
+
+/* ==========
+Media Queries Footer CSS 
+========== */
+@media (max-width: 767.98px) {
+  .google-play-store-icon {
+    margin-bottom: 20px;
+  }
+
+  .footer-links li {
+    margin: 0 15px;
+  }
+  .footer-links li a {
+    color: #f26422;
+  }
+
+  .copyright-wrapper li:first-child {
+    margin-bottom: 20px;
+    display: block;
+  }
+  .copyright-wrapper li:nth-child(2) {
+    margin-left: 0;
+  }
+  .copyright-wrapper li a {
+    color: #fff;
+  }
+
+  .copyright-wrapper {
+    margin-bottom: 60px;
+  }
+}
+[v-clock] {
+  display: none;
+}
+
+.interest-payment-schemes .form-control {
+  border: 2px solid #dddddd;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.no-border-bottom {
+  border-bottom: none;
+}
+
+.section-heading {
+  font-size: 2rem;
+}
+.section-heading span {
+  display: block;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.interest-payment-table-wrapper {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+.max-width-260px {
+  max-width: 360px;
+}
+
+.interest-payment-schemes .header .rupeek-btn {
+  padding: 8px 20px;
+  font-size: 1rem;
+}
+.interest-payment-schemes label {
+  margin-bottom: 2px;
+}
+.interest-payment-schemes input.form-control {
+  padding: 0 40px;
+}
+.interest-payment-table-wrapper .flex-2 {
+  padding-right: 10px;
+}
+
+.loan-amount-input {
+  position: relative;
+}
+.loan-amount-input span {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 10px;
+  font-weight: 700;
+  color: #40150a;
+}
+
+.body-container thead {
+  background-color: #f26422;
+  color: #ffffff;
+}
+.body-container thead tr:first-child + tr th {
+  text-align: right;
+}
+.body-container tbody tr:first-child th:first-child {
+  text-align: left;
+}
+.body-container tbody tr:first-child th:last-child {
+  text-align: right;
+}
+.body-container tbody tr td {
+  text-align: right;
+}
+.body-container tbody tr td i {
+  font-size: 11px;
+}
+.body-container tbody tr td:first-child {
+  text-align: left;
+}
+.body-container tbody tr td.no-background:first-child {
+  background-color: #ffffff;
+}
+
+.intertest-payment-details-icon .no-stressful-threats, .intertest-payment-details-icon .flexible-repayment {
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.intertest-payment-details-icon .flexible-repayment {
+  background-image: url(/images/sprites/banefits.svg);
+  background-position: -65px -337px;
+  background-size: 205px;
+}
+.intertest-payment-details-icon .no-stressful-threats {
+  background-image: url(/images/no-auction-threats.svg);
+  background-size: 85%;
+  background-position: center;
+}
+
+.intertest-payment-details .intertest-payment {
+  padding: 0 5px;
+  border: 1px solid rgba(221, 221, 221, 0.4);
+  border-bottom: none;
+}
+.intertest-payment-details .intertest-payment:nth-child(2) {
+  border-bottom: 1px solid rgba(221, 221, 221, 0.4);
+}
+.intertest-payment-details .intertest-payment .details {
+  max-width: calc(100% - 75px);
+  width: 100%;
+  padding-left: 5px;
+}
+.intertest-payment-details .intertest-payment-details-icon {
+  width: 75px;
+  height: 75px;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+
+.terms-conditions-wrapper {
+  font-size: 0.75rem;
+}
+
+.total-savings-wrapper {
+  position: relative;
+}
+.total-savings-wrapper img {
+  max-width: 195px;
+  min-width: 195px;
+  margin: 0 auto;
+}
+.total-savings-wrapper .savings-amount {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 45%;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/* ==========
+Media Queries for tablets and above devices
+========== */
+@media (min-width: 767.98px) {
+  .interest-payment-schemes .header .display-flex .flex-1, .interest-payment-table-wrapper .flex-1 {
+    padding: 0 10px;
+  }
+  .interest-payment-schemes .header .display-flex .flex-1:first-child, .interest-payment-table-wrapper .flex-1:first-child {
+    padding-left: 0;
+  }
+  .interest-payment-schemes .header .display-flex .flex-1:last-child, .interest-payment-table-wrapper .flex-1:last-child {
+    padding-right: 0;
+  }
+}
+/* ==========
+Media Queries for Mobile Devices
+========== */
+@media (max-width: 767.98px) {
+  .interest-payment-schemes tbody td {
+    font-size: 0.75rem;
+  }
+
+  .intertest-payment-details {
+    margin: 5px 0;
+  }
+  .intertest-payment-details .intertest-payment .details {
+    padding: 0;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .intertest-payment-details .intertest-payment-details-icon {
+    margin: 0;
+  }
+
+  .not-found img {
+    max-width: 200px;
+  }
+}
+
+/*# sourceMappingURL=interest-payment.css.map */
